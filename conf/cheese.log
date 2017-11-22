@@ -1,0 +1,81 @@
+[2017-11-21T15:21:48.007] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T15:21:48.023] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T15:21:48.024] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T15:21:48.024] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T15:21:48.028] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T15:51:51.897] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T15:51:51.897] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T15:52:01.754] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:11:06.932] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:11:06.936] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:11:16.923] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:12:37.477] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:12:37.477] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:12:47.649] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:13:32.044] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:13:32.044] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:13:40.887] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:18:13.747] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:18:13.752] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:18:23.578] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:18:37.837] [INFO] protractorLog4js - Register button Clicked
+[2017-11-21T16:20:49.251] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:20:49.251] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:20:57.804] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:20:57.851] [INFO] protractorLog4js - Register button Clicked
+[2017-11-21T16:22:52.791] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:22:52.791] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:23:02.601] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:23:19.590] [INFO] protractorLog4js - Register button Clicked
+[2017-11-21T16:28:46.783] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:28:46.799] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:28:57.338] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:30:20.563] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:30:20.584] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:30:28.881] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:31:46.596] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:31:46.596] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:31:54.759] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:32:08.147] [ERROR] protractorLog4js - In catch blockTypeError: Cannot read property 'lnk_reg' of undefined
+[2017-11-21T16:33:20.490] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:33:20.490] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:33:29.493] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:33:29.553] [ERROR] protractorLog4js - In catch blockTypeError: Cannot read property 'lnk_reg' of undefined
+[2017-11-21T16:35:33.875] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:35:33.892] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:35:43.070] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:35:57.644] [ERROR] protractorLog4js - In catch blockTypeError: Cannot read property 'lnk_reg' of undefined
+[2017-11-21T16:41:22.856] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:41:22.856] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:41:31.057] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:41:44.885] [ERROR] protractorLog4js - In catch blockTypeError: lnk_reg.click is not a function
+[2017-11-21T16:43:54.206] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:43:54.227] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:44:03.784] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:44:17.881] [ERROR] protractorLog4js - In catch blockReferenceError: lnk_reg is not defined
+[2017-11-21T16:46:47.414] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:46:47.430] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:46:55.661] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T16:48:14.000] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T16:48:14.000] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T16:48:22.415] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T17:40:13.699] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T17:40:13.704] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T17:40:22.057] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T17:40:22.167] [INFO] protractorLog4js - Clicked Register Link
+[2017-11-21T17:41:08.964] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T17:41:08.968] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T17:41:18.650] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T17:41:18.696] [ERROR] protractorLog4js - Not able to find elementNoSuchElementError: No element found using locator: By(xpath, //a[text()="Register1"])
+[2017-11-21T17:41:40.077] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T17:41:40.082] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T17:41:49.014] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T17:41:58.628] [ERROR] protractorLog4js - Not able to find elementNoSuchElementError: No element found using locator: By(xpath, //a[text()="Register1"])
+[2017-11-21T17:44:33.381] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T17:44:33.397] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T17:44:41.682] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T17:45:07.383] [ERROR] protractorLog4js - NaN
+[2017-11-21T17:45:51.678] [INFO] protractorLog4js - Starting Test With Logs
+[2017-11-21T17:45:51.678] [INFO] protractorLog4js - Url Loaded
+[2017-11-21T17:46:00.030] [INFO] protractorLog4js - Going to Click Register Link
+[2017-11-21T17:46:30.143] [ERROR] protractorLog4js -  not able to find elementNoSuchElementError: No element found using locator: By(xpath, //a[text()="Register1"])
