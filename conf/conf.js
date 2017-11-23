@@ -6,7 +6,7 @@ var HTMLReporter = require('protractor-jasmine2-html-reporter')
 
 var reporter = new HTMLReporter(
     {
-        savePath: 'C:\\Users\\Ankita Jangra\\eclipse-workspace\\Doodle\\Reports\\',
+        savePath: 'C:\\Users\\Ankita Jangra\\eclipse-workspace\\Unity\\Reports\\',
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
 
@@ -30,7 +30,7 @@ exports.config = {
 
     // Spec patterns are relative to the current working directory when
     // protractor is called.
-    specs: ['../testCases/studRegFormTest.js'],
+    specs: ['../testCases/LoginTest.js'],
     helpers: ["../node_modules/jasmine-expect/index.js"],
 
     // Options to be passed to Jasmine.
@@ -43,39 +43,33 @@ exports.config = {
 
         log4js.configure({
             appenders: {
-                cheeseLogs: { type: 'file', filename: 'cheese.log' },
-                console: { type: 'console' }
+                cheeseLogs: {type: 'file', filename: 'cheese.log'},
+                console: {type: 'console'}
             },
             categories: {
-                cheese: { appenders: ['cheeseLogs'], level: 'error' },
-                another: { appenders: ['console'], level: 'trace' },
-                default: { appenders: ['console', 'cheeseLogs'], level: 'trace' }
+                cheese: {appenders: ['cheeseLogs'], level: 'error'},
+                another: {appenders: ['console'], level: 'trace'},
+                default: {appenders: ['console', 'cheeseLogs'], level: 'trace'}
             }
         });
     },
     onPrepare: function () {
 
+
         browser.logger = log4js.getLogger('protractorLog4js'),
 
+            //For Url loading...
+            browser.ignoreSynchronization = true;
+        browser.logger.info("Starting Test With Logs")
+        browser.driver.manage().window().maximize()
+        browser.logger.info("Url is loading....");
+        browser.get('https://staging.unityinfluence.com/home')
 
+
+        //Initializing the reports
         jasmine.getEnv().addReporter(
             reporter
         )
-
-
-        var faker = require("C:\\Users\\Ankita Jangra\\eclipse-workspace\\Doodle\\node_modules\\Faker");
-        faker.locale = "en_US"
-
-        browser.params.randomFirstName = faker.Name.firstName()
-        browser.params.randomLastName = faker.Name.lastName()
-        browser.params.randomEmail = faker.Internet.email();
-        browser.params.randomPassword = "1234566"
-        browser.params.Grade = "1"
-        browser.params.randomDOB = faker.Date.between('2015-01-01', '2015-12-31')
-        browser.params.randomStreetAddress = faker.Address.streetAddress()
-        browser.params.randomCity = "Adams"
-        browser.params.randomZipCode = "01220"
-        browser.params.randomSchool = "BARBEE MONTESSORI"
 
 
     }
