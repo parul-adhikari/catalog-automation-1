@@ -3,15 +3,15 @@ var getStarted = {
         PageElements: {
 
             btn_GetStarted: element(by.xpath('//a[@class="btn def-button inlineBlock"]')),
-            pageTitle: "Influencer Advertising Simplified",
-            urlToBeChanged: "https://staging.unityinfluence.com/sign-up",
-            browserWaitTime: ""
+            pageTitle: 'Influencer Advertising Simplified',
+            urlToBeChanged: 'https://staging.unityinfluence.com/sign-up'
+
         },
 
 
         pageTitle: function pageTitle() {
 
-            expect(browser.getTitle()).toEqual(this.PageElements.pageTitle)
+            expect(browser.wait(browser.getTitle())).toEqual(this.PageElements.pageTitle)
             browser.logger.info('Page Title Verified as:' + this.PageElements.pageTitle)
 
         },
@@ -37,8 +37,8 @@ var getStarted = {
 
 
             const EC = protractor.ExpectedConditions;
-            browser.wait(EC.urlContains(this.PageElements.urlToBeChanged), this.PageElements.browserWaitTime);
-            browser.logger.info("Landing on Login page....")
+            browser.wait(EC.urlContains(this.PageElements.urlToBeChanged), 4000);
+            browser.logger.info("Landing on Unity Welcome page....")
 
         }
 
