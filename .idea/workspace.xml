@@ -2,151 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6ba4c6-29b7-45ab-a126-edd4b0c35255" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/GetStartedPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/LoginPage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testCases/GetStartedTest.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testCases/LoginTest.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Reports/screenshots/0b26082d3ed1d46aa4bda8e0b7d1ddda.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Reports/screenshots/5b1e32c720d583f8ae4834aca800dc30.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/ReadExcel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/Test.xlsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/bin/xlsx.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/bower.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/cpexcel.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/jszip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.core.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.core.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.full.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.full.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/dist/xlsx.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/formats.dot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/formats.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/jszip.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/legend.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/adler32" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/adler32.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/cfb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/cfb.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/codepage" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/codepage.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/crc32" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/crc32.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/printj" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/printj.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/ssf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/ssf.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/voc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/.bin/voc.cmd" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/adler-32/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/adler-32/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/adler-32/adler32.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/adler-32/bin/adler32.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/adler-32/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/CHANGELOG.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/bin/cfb.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/cfb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/dist/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/dist/cfb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/dist/cfb.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/dist/cfb.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/dist/xlscfb.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/types/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/cfb/xlscfb.flow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/bin/codepage.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/cptable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/cputils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/dist/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/dist/cpexcel.full.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/dist/cputils.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/codepage/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/commander/History.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/commander/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/commander/Readme.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/commander/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/commander/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/bin/crc32.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/crc32.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/types/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/crc-32/types/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/exit-on-epipe/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/exit-on-epipe/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/exit-on-epipe/exit-on-epipe.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/exit-on-epipe/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/.eslintrc" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/dist/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/dist/frac.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/dist/frac.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/dist/frac.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/frac.flow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/frac.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/frac.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/frac/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/bin/printj.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/dist/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/dist/printj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/dist/printj.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/dist/printj.min.map" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/printj.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/types/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/printj/types/tslint.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/bin/ssf.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/shim.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/ssf.flow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/ssf/ssf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/marked.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/mkdirp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/voc.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/node_modules/voc/voc.njs" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/package.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/types/index.d.ts" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/types/tsconfig.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/xlsx.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Utils/xlsx/xlsxworker.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/loginForm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/registeration_type.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/roleSelection.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/studentRegForm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/example_spec.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/loginFormTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/registrationTypeTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/roleSelectionTest.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/studRegFormTest.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Doodle.iml" afterPath="$PROJECT_DIR$/Unity.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/CommonActions.js" afterPath="$PROJECT_DIR$/Common/CommonActions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Reports/htmlReport.html" afterPath="$PROJECT_DIR$/Reports/htmlReport.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DataFile.json" afterPath="$PROJECT_DIR$/Utils/DataFile.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/cheese.log" afterPath="$PROJECT_DIR$/conf/cheese.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/conf.js" afterPath="$PROJECT_DIR$/conf/conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/debug.log" afterPath="$PROJECT_DIR$/conf/debug.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/GetStartedPage.js" afterPath="$PROJECT_DIR$/pages/GetStartedPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/LoginPage.js" afterPath="$PROJECT_DIR$/pages/LoginPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/WelcomePage.js" afterPath="$PROJECT_DIR$/pages/WelcomePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/GetStartedPageTest.js" afterPath="$PROJECT_DIR$/testCases/GetStartedPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/LoginPageTest.js" afterPath="$PROJECT_DIR$/testCases/LoginPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/WelcomePageTest.js" afterPath="$PROJECT_DIR$/testCases/WelcomePageTest.js" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -172,41 +39,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="conf.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="conf.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/conf.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25">
-              <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+            <state relative-caret-position="115">
+              <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BrandsListingPageTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCases/BrandsListingPageTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="312">
+              <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginPage.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pages/LoginPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="123">
-              <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+            <state relative-caret-position="272">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GetStartedPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pages/GetStartedPage.js">
+      <file leaf-file-name="CommonActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/CommonActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+            <state relative-caret-position="243">
+              <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginTest.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/testCases/LoginTest.js">
+      <file leaf-file-name="BrandsListingPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/BrandsListingPage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="170">
+              <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
               <folding />
             </state>
           </provider>
@@ -256,7 +133,6 @@
         <option value="$PROJECT_DIR$/pages/roleSelection.js" />
         <option value="$PROJECT_DIR$/testCases/registrationTypeTest.js" />
         <option value="$PROJECT_DIR$/testCases/studRegFormTest.js" />
-        <option value="$PROJECT_DIR$/Utils/DataFile.json" />
         <option value="$PROJECT_DIR$/pages/registeration_type.js" />
         <option value="$PROJECT_DIR$/Utils/FakeData.js" />
         <option value="$PROJECT_DIR$/pages/studentRegForm.js" />
@@ -264,10 +140,19 @@
         <option value="$PROJECT_DIR$/testCases/loginFormTest.js" />
         <option value="$PROJECT_DIR$/pages/loginForm.js" />
         <option value="$PROJECT_DIR$/pages/GetStarted.js" />
-        <option value="$PROJECT_DIR$/pages/GetStartedPage.js" />
-        <option value="$PROJECT_DIR$/conf/conf.js" />
         <option value="$PROJECT_DIR$/testCases/GetStartedTest.js" />
         <option value="$PROJECT_DIR$/testCases/LoginTest.js" />
+        <option value="$PROJECT_DIR$/Utils/DataFile.json" />
+        <option value="$PROJECT_DIR$/pages/GetStartedPage.js" />
+        <option value="$PROJECT_DIR$/testCases/GetStartedPageTest.js" />
+        <option value="$PROJECT_DIR$/pages/WelcomePage.js" />
+        <option value="$PROJECT_DIR$/testCases/WelcomePageTest.js" />
+        <option value="$PROJECT_DIR$/testCases/LoginPageTest.js" />
+        <option value="$PROJECT_DIR$/pages/BrandsListing.js" />
+        <option value="$PROJECT_DIR$/conf/conf.js" />
+        <option value="$PROJECT_DIR$/pages/BrandsListingPage.js" />
+        <option value="$PROJECT_DIR$/Common/CommonActions.js" />
+        <option value="$PROJECT_DIR$/testCases/BrandsListingPageTest.js" />
         <option value="$PROJECT_DIR$/pages/LoginPage.js" />
       </list>
     </option>
@@ -330,17 +215,27 @@
             <path>
               <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Unity" type="462c0819:PsiDirectoryNode" />
+              <item name="Common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Unity" type="462c0819:PsiDirectoryNode" />
+              <item name="conf" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Unity" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Unity" type="462c0819:PsiDirectoryNode" />
-              <item name="Reports" type="462c0819:PsiDirectoryNode" />
+              <item name="testCases" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Unity" type="462c0819:PsiDirectoryNode" />
-              <item name="testCases" type="462c0819:PsiDirectoryNode" />
+              <item name="Utils" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -512,44 +407,52 @@
       <workItem from="1511155202106" duration="14680000" />
       <workItem from="1511176655311" duration="13476000" />
       <workItem from="1511341905414" duration="854000" />
-      <workItem from="1511347972300" duration="16749000" />
+      <workItem from="1511347972300" duration="45520000" />
     </task>
+    <task id="LOCAL-00001" summary="New Conf changes as per Unity">
+      <created>1511432668794</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1511432668794</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Protractor - 2017.11.23 at 15h 14m 31s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 30m 03s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 15m 09s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 30m 53s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 15m 54s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 32m 17s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 17m 00s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 40m 38s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 17m 48s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 42m 08s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 23m 38s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 43m 04s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 28m 09s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 46m 06s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 30m 55s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 48m 26s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 42m 09s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 48m 34s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.11.23 at 15h 51m 07s.xml">
+    <history-entry file="Protractor - 2017.11.24 at 17h 49m 09s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="250867000" />
+    <option name="totallyTimeSpent" value="279638000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -564,35 +467,65 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3502455" sideWeight="0.11043873" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.072013095" sideWeight="0.64220876" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49707174" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41080198" sideWeight="0.35779122" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558245" sideWeight="0.50869566" order="0" side_tool="true" content_ui="combo" x="58" y="50" width="287" height="634" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49130434" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.8895613" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="837" height="1064" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24386252" sideWeight="0.8895613" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="837" height="1064" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3502455" sideWeight="0.11043873" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41080198" sideWeight="0.35779122" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.49130434" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38297874" sideWeight="0.8895613" order="3" side_tool="false" content_ui="tabs" x="0" y="0" width="837" height="1064" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30932897" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.072013095" sideWeight="0.64220876" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.49707174" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21558245" sideWeight="0.50869566" order="0" side_tool="true" content_ui="combo" x="58" y="50" width="287" height="634" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -632,53 +565,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/pages/LoginPage.js</url>
-          <line>19</line>
-          <properties />
-          <option name="timeStamp" value="211" />
-        </line-breakpoint>
-      </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="212" />
+      <option name="time" value="233" />
     </breakpoint-manager>
     <watches-manager />
   </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/javascript/nodejs/9.0.0/core-modules/module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="644" column="2" lean-forward="false" selection-start-line="644" selection-start-column="2" selection-end-line="644" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/debug.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/conf/TestSpecs.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Reports/screenshots/362c5d66ec57662d9b140dbd07da3ef0.png" />
-    <entry file="file://$PROJECT_DIR$/Utils/ReadExcel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Reports/screenshots/8f847aba9bca87cef3f00e88ae3071a8.png" />
     <entry file="file://$PROJECT_DIR$/Reports/screenshots/6a16135ded2d8287a67d98db72d71d1d.png" />
     <entry file="file://$PROJECT_DIR$/Reports/screenshots/d13c20effbf1f7127246bfe4c64ea2c4.png" />
     <entry file="file://$PROJECT_DIR$/node_modules/protractor-jasmine2-html-reporter/protractor.config.js">
@@ -782,13 +680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/DataFile.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="19" lean-forward="false" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Utils/logHelper.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -797,13 +688,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/TestCases.log" />
-    <entry file="file://$PROJECT_DIR$/conf/cheese.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="39" column="75" lean-forward="true" selection-start-line="39" selection-start-column="75" selection-end-line="39" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/registeration_type.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -882,42 +766,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCases/GetStartedTest.js">
+    <entry file="file://$PROJECT_DIR$/conf/debug.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="33" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCases/LoginTest.js">
+    <entry file="file://$PROJECT_DIR$/conf/cheese.log">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="223">
+          <caret line="538" column="0" lean-forward="true" selection-start-line="538" selection-start-column="0" selection-end-line="538" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/LoginPage.js">
+    <entry file="file://$PROJECT_DIR$/Utils/DataFile.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="16" column="6" lean-forward="true" selection-start-line="16" selection-start-column="6" selection-end-line="16" selection-end-column="6" />
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="false" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/WelcomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCases/WelcomePageTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCases/GetStartedPageTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pages/GetStartedPage.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        <state relative-caret-position="224">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="27" column="48" lean-forward="true" selection-start-line="27" selection-start-column="48" selection-end-line="27" selection-end-column="48" />
+        <state relative-caret-position="115">
+          <caret line="34" column="50" lean-forward="false" selection-start-line="34" selection-start-column="50" selection-end-line="34" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCases/LoginPageTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/BrandsListingPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="74" lean-forward="false" selection-start-line="10" selection-start-column="74" selection-end-line="10" selection-end-column="74" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Common/CommonActions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="17" column="5" lean-forward="false" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCases/BrandsListingPageTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="21" column="6" lean-forward="false" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/LoginPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding />
         </state>
       </provider>

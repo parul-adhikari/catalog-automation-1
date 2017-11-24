@@ -2,6 +2,8 @@
 
 var log4js = require('log4js')
 var HTMLReporter = require('protractor-jasmine2-html-reporter')
+var commonActions = require('../Common/CommonActions.js')
+
 
 
 var reporter = new HTMLReporter(
@@ -17,7 +19,7 @@ exports.config = {
     directConnect: true,
 
     //For reading json File
-    //params: require('../Utils/DataFile.json'),
+    params: require('../Utils/DataFile.json'),
 
 
     // Capabilities to be passed to the webdriver instance.
@@ -30,7 +32,7 @@ exports.config = {
 
     // Spec patterns are relative to the current working directory when
     // protractor is called.
-    specs: ['../testCases/LoginTest.js'],
+    specs: ['../testCases/BrandsListingPageTest.js'],
     helpers: ["../node_modules/jasmine-expect/index.js"],
 
     // Options to be passed to Jasmine.
@@ -55,7 +57,7 @@ exports.config = {
     },
     onPrepare: function () {
 
-
+        // For initializing the Console Logs
         browser.logger = log4js.getLogger('protractorLog4js'),
 
             //For Url loading...

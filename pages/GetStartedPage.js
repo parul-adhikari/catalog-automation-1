@@ -1,3 +1,5 @@
+
+
 var getStarted = {
 
         PageElements: {
@@ -33,14 +35,6 @@ var getStarted = {
             );
         },
 
-        waitForUrlToChange: function waitForUrlToChange() {
-
-
-            const EC = protractor.ExpectedConditions;
-            browser.wait(EC.urlContains(this.PageElements.urlToBeChanged), 4000);
-            browser.logger.info("Landing on Unity Welcome page....")
-
-        }
 
 
     }

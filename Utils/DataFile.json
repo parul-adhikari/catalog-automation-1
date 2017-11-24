@@ -1,15 +1,6 @@
 
-
 {
-  "FirstName":"Acjob",
-  "LastName":"Usser",
-  "EmailId" : "hvs@gmail.com",
-  "Password" : "1234567",
-  "Grade" : "2",
-  "DOB" : "05-12-1996",
-  "StreetAddress" : "H.No. 334364/A",
-  "City" : "Adams",
-  "ZipCode": "01220",
-  "School" : "BARBEE MONTESSORI"
+  "Email":"testuser@gmail.com",
+  "Password": "Test@1234"
 
 }

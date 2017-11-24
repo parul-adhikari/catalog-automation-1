@@ -11,13 +11,6 @@ var welcomePage = {
     },
 
 
-    pageHeading: function pageHeading() {
-
-        expect(this.PageElements.txt_PageHeading.getText()).toEqual(this.PageElements.expectedPageHeading)
-        browser.logger.info('Welcome Page Heading Verified as:' + this.PageElements.expectedPageHeading)
-
-    },
-
     clickOnLogin: function clickOnLogin() {
         expect(this.PageElements.lnk_Login.isPresent()).toBe(true)
         browser.logger.info('Unity Login Link Found')
@@ -26,14 +19,6 @@ var welcomePage = {
 
         })
 
-
-    },
-
-
-    waitForUrlToChange1: function waitForUrlToChange1() {
-        const EC = protractor.ExpectedConditions;
-        browser.wait(EC.urlContains(this.PageElements.urlToBeChanged),4000);
-        browser.logger.info("Landing on Login page....")
 
     }
 

@@ -1,4 +1,5 @@
 var page = require('../pages/GetStartedPage.js')
+var commonActions = require('../Common/CommonActions.js')
 
 
 describe('Login Page Verification', function () {
@@ -16,7 +17,9 @@ describe('Login Page Verification', function () {
 
 
         it('Verify the redirection after click', function () {
-          page.waitForUrlToChange()
+         // page.waitForUrlToChange()
+            commonActions.waitForUrlToChange(page.PageElements.urlToBeChanged)
+
 
         })
 
