@@ -1,4 +1,5 @@
 require('../testCases/LoginPageTest.js')
+var commonActions = require('../Common/CommonActions.js')
 
 var startCount
 var firstBrand
@@ -14,7 +15,8 @@ var brandsListing = {
     },
 
     checkExistingBrands: function checkExistingBrands() {
-        browser.sleep(4000)
+      //  browser.sleep(4000)
+        commonActions.waitForElement( this.PageElements.list_NoOfBrands)
 
         this.PageElements.list_NoOfBrands.count().then(function (originalCount) {
             if (originalCount > 0) {
@@ -36,7 +38,7 @@ var brandsListing = {
 
         firstBrand = this.PageElements.list_NoOfBrands.get(0)
         firstBrand.click().then(function () {
-            browser.logger.info('Brand selected..')
+            browser.logger.info('Brand selected..' +firstBrand)
 
         })
 
