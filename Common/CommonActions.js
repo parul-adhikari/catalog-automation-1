@@ -15,6 +15,19 @@ var commonActions = {
         expect(element.getText()).toEqual(expectedPageHeading)
         browser.logger.info('Page Heading Verified as:' + expectedPageHeading)
 
+    },
+
+
+    waitForElement: function waitForElement(element) {
+
+        const  EC = protractor.ExpectedConditions;
+        browser.wait(EC.visibilityOf(element)).then(function () {
+            browser.logger.info('Element is visible')
+
+        }),function (err) {
+            browser.logger.info('Element is not visible' +err)
+
+        }
     }
 }
 
