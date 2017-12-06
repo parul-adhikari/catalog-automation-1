@@ -1,6 +1,8 @@
 
 {
   "Email":"testuser@gmail.com",
-  "Password": "Test@1234"
+  "Password": "Test@1234",
+  "AdminEmail": "admin@unityinfluence.com",
+  "AdminPassword": "unityinfluence"
 
 }
