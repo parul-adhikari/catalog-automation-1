@@ -1,6 +1,6 @@
 var allCampaignPage = require('../pages/AllCampaignsPage.js')
 
-var campName
+
 describe('Verify the listing of campaigns', function () {
 
 
@@ -8,13 +8,13 @@ describe('Verify the listing of campaigns', function () {
         //Positive flow
         it('Verify the presence of active campaign', function () {
             allCampaignPage.campaign.checkActiveCampaign
+            allCampaignPage.campaign.checkActiveCampaignPresence()
         })
 
         it('Verify the active campaign Name', function () {
 
             allCampaignPage.campaign.checkActiveCampaignDetails(function (value) {
-                campName = value
-                console.log(campName)
+             var campName = value
 
             })
 
@@ -22,4 +22,3 @@ describe('Verify the listing of campaigns', function () {
         })
 
     })
-

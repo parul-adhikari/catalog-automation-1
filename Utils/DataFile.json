@@ -3,6 +3,11 @@
   "Email":"testuser@gmail.com",
   "Password": "Test@1234",
   "AdminEmail": "admin@unityinfluence.com",
-  "AdminPassword": "unityinfluence"
+  "AdminPassword": "unityinfluence",
+  "Campaign_Name" : "Automation_Campaign",
+  "InfluencerName": "Vibhor Mathur",
+  "InfluencerCompBudget": "500",
+  "InfluencerPromoBudget": "500",
+  "PersonalMessage": "This is the test message for automation testing"
 
 }

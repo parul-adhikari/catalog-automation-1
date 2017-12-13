@@ -7,7 +7,8 @@ var adminLoginPage = {
         txbx_Email: element(by.id('id_username')),
         txbx_Pswd: element(by.id('id_password')),
         btn_Login: element(by.xpath('.//*[@type=\'submit\']')),
-        urlToBeChanged: 'https://api-staging.unityinfluence.com/admin'
+       // urlToBeChanged: 'http://localhost:8000/admin/'
+        urlToBeChanged: 'https://api-staging.unityinfluence.com/admin/'
 
 
     },

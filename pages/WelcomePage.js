@@ -6,6 +6,7 @@ var welcomePage = {
         txt_PageHeading: element(by.xpath('//*[contains(text(),"Welcome to Unity!")]')),
         expectedPageHeading: "Welcome to Unity!",
         lnk_Login: element(by.xpath('//a[@href="/login"]')),
+       // urlToBeChanged: 'http://localhost:4200/login',
         urlToBeChanged: 'https://staging.unityinfluence.com/login',
 
     },

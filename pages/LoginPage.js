@@ -9,7 +9,8 @@ var loginPage = {
         btn_Login: element(by.xpath('//button[@type="submit"]')),
         txt_PageHeading: element(by.xpath('//div[@class="bold text-center login-head"]')),
         txt_expectedPageHeading: 'Log in to your Unity account',
-        urlToBeChanged: 'https://staging.unityinfluence.com/brands',
+       urlToBeChanged: 'https://staging.unityinfluence.com/brands',
+        //urlToBeChanged: 'http://localhost:4200/brands',
         alert: element(by.xpath('//*[@class="msg fixed row align-items-center error"]'))
 
     },

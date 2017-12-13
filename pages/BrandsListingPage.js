@@ -12,9 +12,9 @@ var brandsListing = {
 
         list_NoOfBrands: element.all(by.xpath('//*[@class="user-item"]')),
 
-        urlToBeChanged: 'https://staging.unityinfluence.com/brands/237/campaigns'
-                        // https://staging.unityinfluence.com/brands/237/campaigns
-        //     brandName: element(by.css('$('.user-name')'))
+       urlToBeChanged: 'https://staging.unityinfluence.com/brands/266/campaigns'
+       // urlToBeChanged: 'http://localhost:4200/brands/9/campaigns'
+
 
     },
 
