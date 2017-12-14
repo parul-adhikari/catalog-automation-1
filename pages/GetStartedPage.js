@@ -6,7 +6,7 @@ var getStarted = {
 
             btn_GetStarted: element(by.xpath('//a[@class="btn def-button inlineBlock"]')),
             pageTitle: 'Influencer Advertising Simplified',
-          urlToBeChanged: 'https://staging.unityinfluence.com/sign-up'
+          urlToBeChanged: 'https://staging.unityinfluence.com/auth/sign-up'
           //  urlToBeChanged: 'http://localhost:4200/sign-up'
 
         },

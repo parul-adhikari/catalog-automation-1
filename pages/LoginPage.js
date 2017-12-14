@@ -9,40 +9,43 @@ var loginPage = {
         btn_Login: element(by.xpath('//button[@type="submit"]')),
         txt_PageHeading: element(by.xpath('//div[@class="bold text-center login-head"]')),
         txt_expectedPageHeading: 'Log in to your Unity account',
-       urlToBeChanged: 'https://staging.unityinfluence.com/brands',
+        urlToBeChanged: 'https://staging.unityinfluence.com/brands',
         //urlToBeChanged: 'http://localhost:4200/brands',
         alert: element(by.xpath('//*[@class="msg fixed row align-items-center error"]'))
 
     },
-Wrongredentials:function Wrongredentials() {
-    this.PageElements.txbx_Email.sendKeys(browser.params.Wrongemail);
-    this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
-    this.PageElements.btn_Login.submit().then(function (){
 
-        browser.sleep(2000)
-        alert.getText().then(function (text) {
-            console.log(text)
-            browser.logger.info(text)
+
+    Wrongredentials: function Wrongredentials() {
+        this.PageElements.txbx_Email.sendKeys(browser.params.Wrongemail);
+        this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
+        this.PageElements.btn_Login.submit().then(function () {
+
+            browser.sleep(2000)
+            alert.getText().then(function (text) {
+                console.log(text)
+                browser.logger.info(text)
+
+            })
+
+            //element(by.class('fixed'))
+
 
         })
-
-        //element(by.class('fixed'))
-
-
-    })
-},
+    },
 
     doLogin: function doLogin() {
         this.PageElements.txbx_Email.sendKeys(browser.params.Email);
         this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
         this.PageElements.btn_Login.click().then(function () {
 
-            browser.logger.info('Login successful with following credentials:"\n"' +browser.params.Email + '"\n"' +'Password:'+ browser.params.Password )
-        }),function (err) {
+            browser.logger.info('Login successful with following credentials:"\n"' + browser.params.Email + '"\n"' + 'Password:' + browser.params.Password)
+        }), function (err) {
 
-            browser.logger.error(" Login button not clicked" +err)
+            browser.logger.error(" Login button not clicked" + err)
 
         }
+        browser.sleep(20000)
     }
 
 };

@@ -60,24 +60,23 @@ var addInfluencer = {
         browser.sleep(2000)
 
 
-        if (this.PageElements.notify_SuccMsg = 1) {
+        if (this.PageElements.notify_SuccMsg == 1) {
             this.PageElements.notify_SuccMsg.getText().then(function (value) {
                 expect(value.toBe("The campaign" + browser.params.Campaign_Name + "was changed successfully."))
             })
         } else {
             this.PageElements.notify_ErrorMsg.getText().then(function (value) {
-                browser.logger.error("Error Encountered" + "\t"  +value)
-                this.PageElements.errorMsg.getText()
+                browser.logger.error("Error Encountered" + "\t" + value)
 
             })
-
-
+            this.PageElements.errorMsg.getText().then(function (value2) {
+                browser.logger.error(value2)
+            })
         }
     }
+
+
 }
-
-
-
 
 
 module.exports = addInfluencer

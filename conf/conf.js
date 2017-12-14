@@ -34,7 +34,13 @@ exports.config = {
     // Spec patterns are relative to the current working directory when
     // protractor is called.
     // specs: ['../Common/EmailSentConf'],
-    specs: ['../testCases/AddInfluencerPageTest.js'],
+   // specs: ['../testCases/AdminLoginPageTest'],
+    suites: {
+      reg: '../Admin/Test/AddInfluencerPageTest.js'
+       // reg: '../Admin/Test/Te.js'
+
+
+    },
     helpers: ["../node_modules/jasmine-expect/index.js"],
 
     // Options to be passed to Jasmine.
@@ -73,9 +79,9 @@ exports.config = {
             //For Url loading...
             browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
-        browser.driver.manage().window().maximize()
+       /* browser.driver.manage().window().maximize()
         browser.logger.info("Url is loading....");
-       browser.get('https://staging.unityinfluence.com/home')
+       browser.get('https://staging.unityinfluence.com/home')*/
        // browser.get('http://localhost:4200/home')
 
         //Initializing the reports

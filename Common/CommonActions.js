@@ -26,36 +26,36 @@ var commonActions = {
     },
 
 
-    readingTableData: function readingTableData(tableElement,rowElement,rowHeadingElement) {
+    readingTableData: function readingTableData(tableElement, rowElement, rowHeadingElement) {
 
 
-        var tabledata =tableElement;
+        var tabledata = tableElement;
 
         //Get Rows
 
-        var campaignrow =rowElement;
+        var campaignrow = rowElement;
 
 
         //Get cells values
 
-       var rowHeading = rowHeadingElement;
+        var rowHeading = rowHeadingElement;
 
-       // expect(cells.get(0).getText().then(function (value) {
+        // expect(cells.get(0).getText().then(function (value) {
         expect(rowHeading.getText().then(function (value) {
-            browser.logger.info('Clicking' +' ' +value + ' Link...')
+            browser.logger.info('Clicking' + ' ' + value + ' Link...')
         }))
 
         rowHeading.click()
 
     },
 
-     selectDropdownbyNum: function selectDropdownbyNum(element, optionNum ) {
-        if (optionNum){
+    selectDropdownbyNum: function selectDropdownbyNum(element, optionNum) {
+        if (optionNum) {
             var options = element.all(by.tagName('option'))
-                .then(function(options){
-                  //  options[optionNum].click();
+                .then(function (options) {
+                    //  options[optionNum].click();
                     options[optionNum].getText().then(function (value) {
-                        browser.logger.info('Selected value is :' +value)
+                        browser.logger.info('Selected value is :' + value)
                     })
                     options[optionNum].click()
                 });
@@ -69,27 +69,25 @@ var commonActions = {
 
     switchToChildWindow: function switchToChildWindow(childWindowElement) {
         browser.sleep(10000); //This line is important
-        var winHandles=browser.getAllWindowHandles();
-        winHandles.then(function(handles)
-        {
-            var parentWindow=handles[0];
-            var popUpWindow=handles[1];
+        var winHandles = browser.getAllWindowHandles();
+        winHandles.then(function (handles) {
+            var parentWindow = handles[0];
+            var popUpWindow = handles[1];
             browser.switchTo().window(popUpWindow);
             childWindowElement.getAttribute('value').then(function (value) {
-              browser.logger.info(value)
-            }),function (err) {
-                browser.logger.error('No email address is configured for influencer' +err)
+                browser.logger.info(value)
+            }), function (err) {
+                browser.logger.error('No email address is configured for influencer' + err)
 
             }
 
             browser.switchTo().window(parentWindow);
         })
 
-    }
+    },
 
 
-    }
-
+}
 
 
 module.exports = commonActions
