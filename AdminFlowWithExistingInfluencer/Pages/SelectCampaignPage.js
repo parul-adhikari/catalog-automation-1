@@ -1,4 +1,4 @@
-require('../../Admin/Test/AdminHomePageTest')
+require('../../AdminFlowWithExistingInfluencer/Test/AdminHomePageTest')
 var commonActions = require('../../Common/CommonActions')
 //var allCampaignPageTest = require('../../testCases/AllCampaignPageTest')
 //var camp = require('../../pages/AllCampaignsPage')

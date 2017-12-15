@@ -36,8 +36,9 @@ exports.config = {
     // specs: ['../Common/EmailSentConf'],
    // specs: ['../testCases/AdminLoginPageTest'],
     suites: {
-      reg: '../Admin/Test/AddInfluencerPageTest.js'
+    //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
        // reg: '../Admin/Test/Te.js'
+        AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js'
 
 
     },

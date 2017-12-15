@@ -1,5 +1,5 @@
-var adminLoginPage = require('../../Admin/Pages/AdminLoginPage')
-var adminHomePage = require('../../Admin/Pages/AdminHomePage')
+var adminLoginPage = require('../../AdminFlowWithExistingInfluencer/Pages/AdminLoginPage')
+var adminHomePage = require('../../AdminFlowWithExistingInfluencer/Pages/AdminHomePage')
 var commonActions = require('../../Common/CommonActions.js')
 
 describe('Verify Unity Admin Login', function () {

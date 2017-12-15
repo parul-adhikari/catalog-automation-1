@@ -22,21 +22,26 @@ var gmail = {
     verifyReceivedEmail: function verifyReceivedEmail() {
 
         common.waitForElement(element.all(by.xpath('//*[@name="Chloe Van Patten"]')))
-        var emailList = element.all(by.xpath('//*[@name="Chloe Van Patten"]'))
+       var emailList = element.all(by.xpath('//*[@email="chloe@unityinfluence.com"]'))
+        // var emailList = element.all(by.xpath('//*[@name="Chloe Van Patten"]'))
 
         var myMailerName = "Chloe Van Patten";
 
-        emailList.count().then(function (originalCount) {
-            if (originalCount > 0) {
+       var start  = emailList.count()
+        console.log(start)
+
+
+          /*  .then(function (originalCount) {
+            if (originalCount >= 0) {
                 startCount = originalCount;
                 browser.logger.info('No.of Emails:' + startCount)
 
             }
             else {
                 browser.logger.info('No such Email' + startCount)
-            }
+            }*/
 
-        })
+
 
 
         var first = emailList.get(1)

@@ -1,4 +1,4 @@
-var selectCampPage = require('../../Admin/Pages/SelectCampaignPage.js')
+var selectCampPage = require('../../AdminFlowWithExistingInfluencer/Pages/SelectCampaignPage.js')
 
 
 describe('Verify the Campaign Selection which needs action to be performed', function () {

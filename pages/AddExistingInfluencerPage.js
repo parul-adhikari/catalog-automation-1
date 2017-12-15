@@ -1,5 +1,5 @@
-require('../../Admin/Test/SelectCampaignPageTest')
-var commonActions = require('../../Common/CommonActions')
+require('../testCases/SelectCampaignPageTest')
+var commonActions = require('../Common/CommonActions')
 /*var toastMsg = require('../Common/ToastMessagesTest')
 var toast = new toastMsg()*/
 

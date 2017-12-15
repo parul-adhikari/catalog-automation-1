@@ -5,9 +5,14 @@
   "AdminEmail": "admin@unityinfluence.com",
   "AdminPassword": "unityinfluence",
   "Campaign_Name" : "Automation_Campaign",
-  "InfluencerName": "Vikas Goyal",
+  "InfluencerName": "Witlinger",
   "InfluencerCompBudget": "500",
   "InfluencerPromoBudget": "500",
-  "PersonalMessage": "This is the test message for automation testing"
+  "PersonalMessage": "This is the test message for automation testing",
+  "GmailAddress" : "unitytestuser01@gmail.com",
+  "GmailPswd": "Test@123",
+  "NewInfluencerFirstName": "",
+  "NewInfluencerSecondName": "",
+  "NewInfluencerEmail" : ""
 
 }
