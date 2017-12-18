@@ -1,5 +1,7 @@
 
 {
+
+  "WrongEmail":"tes.user.com",
   "Email":"testuser@gmail.com",
   "Password": "Test@1234",
   "AdminEmail": "admin@unityinfluence.com",
@@ -9,8 +11,8 @@
   "InfluencerCompBudget": "500",
   "InfluencerPromoBudget": "500",
   "PersonalMessage": "This is the test message for automation testing",
-  "GmailAddress" : "unitytestuser01@gmail.com",
-  "GmailPswd": "Test@123",
+  "GmailAddress" : "vibhor.mathur@quovantis.com",
+  "GmailPswd": "mys@1307tery",
   "NewInfluencerFirstName": "",
   "NewInfluencerSecondName": "",
   "NewInfluencerEmail" : ""

@@ -8892,3 +8892,978 @@ Launch: 12/26/2017
 "unityinfluence
 [2017-12-15T11:18:14.455] [INFO] protractorLog4js - Landing on: https://api-staging.unityinfluence.com/admin/ Url...
 [2017-12-15T11:18:37.565] [INFO] protractorLog4js - Clicking Influencers Link...
+[2017-12-15T15:19:52.107] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:19:52.379] [INFO] protractorLog4js - Launching Unity Admin Page...
+[2017-12-15T15:19:52.383] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2017-12-15T15:20:01.002] [INFO] protractorLog4js - Landing on: https://api-staging.unityinfluence.com/admin/ Url...
+[2017-12-15T15:20:01.020] [INFO] protractorLog4js - Landing on: https://api-staging.unityinfluence.com/admin/influencer/influencer/ Url...
+[2017-12-15T15:20:01.053] [INFO] protractorLog4js - Clicking Influencers Link...
+[2017-12-15T15:33:37.518] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:33:45.385] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:34:29.134] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:37:51.583] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:39:10.985] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:39:11.001] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-15T15:39:11.415] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-15T15:39:11.439] [ERROR] protractorLog4js -  not able to find elementNoSuchElementError: No element found using locator: By(xpath, //a[@class="btn def-button inlineBlock"])
+[2017-12-15T15:39:11.694] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-15T15:39:48.225] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T15:39:48.841] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-15T15:39:49.274] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-15T15:39:49.294] [ERROR] protractorLog4js -  not able to find elementNoSuchElementError: No element found using locator: By(xpath, //a[@class="btn def-button inlineBlock"])
+[2017-12-15T15:39:49.539] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-15T15:40:49.564] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-15T15:41:00.514] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-15T15:41:01.611] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-15T16:02:02.203] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T16:02:02.203] [INFO] protractorLog4js - Url is loading....
+[2017-12-15T16:02:37.295] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-15T16:02:37.653] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-15T16:02:37.675] [ERROR] protractorLog4js -  not able to find elementNoSuchElementError: No element found using locator: By(xpath, //a[@class="btn def-button inlineBlock"])
+[2017-12-15T16:02:37.675] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-15T16:02:47.651] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-15T16:02:47.724] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-15T16:03:49.150] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T16:03:49.150] [INFO] protractorLog4js - Url is loading....
+[2017-12-15T16:04:22.432] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-15T16:04:22.470] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-15T16:04:27.590] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-15T16:04:27.590] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-15T16:04:27.912] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-15T16:04:33.241] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-15T16:04:33.244] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-15T16:04:33.256] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-15T16:04:34.330] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-15T16:04:54.353] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-15T16:07:03.085] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-15T16:07:03.087] [INFO] protractorLog4js - Url is loading....
+[2017-12-15T16:07:36.429] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-15T16:07:36.452] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-15T16:07:36.541] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-15T16:07:36.543] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-15T16:07:36.880] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-15T16:07:37.134] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-15T16:07:37.136] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-15T16:07:37.154] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-15T16:07:37.576] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-15T16:07:57.603] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T11:59:16.459] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T11:59:16.459] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T11:59:28.634] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T11:59:28.670] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T11:59:28.777] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T11:59:28.777] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T11:59:29.194] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T11:59:29.394] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T11:59:29.394] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T11:59:29.410] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T11:59:29.822] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T11:59:52.077] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T11:59:52.077] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T12:00:02.298] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T12:00:02.350] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T12:00:02.531] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T12:00:02.543] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T12:00:02.953] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T12:00:03.185] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T12:00:03.187] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T12:00:03.203] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T12:00:03.639] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T12:00:23.651] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T14:06:52.479] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:06:52.481] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:07:04.211] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T14:07:04.232] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T14:07:04.379] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T14:07:04.379] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T14:07:04.805] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T14:07:05.102] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T14:07:05.107] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T14:07:05.121] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T14:07:05.822] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T14:07:26.410] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T14:08:00.592] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:08:00.592] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:08:46.074] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T14:08:46.121] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T14:08:51.277] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T14:08:51.277] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T14:08:51.835] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T14:08:57.125] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T14:08:57.125] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T14:08:57.137] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T14:09:02.815] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T14:09:13.396] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:09:13.396] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:09:33.733] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T14:09:33.760] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T14:09:33.867] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T14:09:33.871] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T14:09:34.303] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T14:09:34.623] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T14:09:34.623] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T14:09:34.641] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T14:09:35.675] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T14:09:55.693] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T14:18:44.491] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:18:44.495] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:19:02.118] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T14:19:02.154] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T14:19:02.258] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T14:19:02.262] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T14:19:02.690] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T14:19:03.022] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T14:19:03.026] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T14:19:03.038] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T14:19:06.376] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T14:19:26.391] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T14:23:35.543] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:23:35.547] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:24:00.384] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:24:00.388] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:24:14.454] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T14:24:14.485] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T14:24:14.612] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T14:24:14.616] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T14:24:14.945] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T14:24:15.169] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T14:24:15.176] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T14:24:15.186] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T14:24:18.236] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T14:24:38.241] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T14:25:39.601] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T14:25:39.601] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T14:26:07.497] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T14:26:07.528] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T14:26:07.636] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T14:26:07.640] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T14:26:08.059] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T14:26:08.319] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T14:26:08.323] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T14:26:08.343] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T14:26:11.654] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T14:26:31.656] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T18:36:58.193] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T18:36:58.193] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T18:37:12.917] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T18:37:12.941] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T18:37:13.029] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T18:37:13.033] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T18:37:13.405] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T18:37:13.686] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T18:37:13.694] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T18:37:13.714] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T18:37:18.885] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T18:37:38.889] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T18:39:03.336] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T18:39:03.354] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T18:39:27.968] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T18:39:27.996] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T18:39:28.073] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T18:39:28.076] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T18:39:28.564] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T18:39:28.806] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T18:39:28.808] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T18:39:28.824] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T18:39:32.133] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T18:39:52.153] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:08:13.271] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:08:13.272] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:08:25.738] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:08:25.770] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:08:25.964] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:08:25.968] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:08:26.339] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:08:26.559] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:08:26.559] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:08:26.571] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:08:29.898] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:08:49.900] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:24:42.855] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:24:42.870] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:24:59.001] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:24:59.033] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:24:59.230] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:24:59.237] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:24:59.617] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:24:59.830] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:24:59.833] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:24:59.845] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:25:03.217] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:25:23.221] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:26:23.636] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:26:23.652] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:27:00.347] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:27:00.378] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:27:00.498] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:27:00.502] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:27:01.018] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:27:01.338] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:27:01.338] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:27:01.355] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:27:04.363] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:27:24.368] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:29:50.770] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:29:50.770] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:30:07.101] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:30:07.130] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:30:07.220] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:30:07.222] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:30:07.808] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:30:08.080] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:30:08.082] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:30:08.097] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:30:10.984] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:30:30.990] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:35:12.083] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:35:12.086] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:35:23.138] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:35:23.160] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:35:23.244] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:35:23.246] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:35:23.611] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:35:23.858] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:35:23.861] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:35:23.886] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:35:26.594] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:35:46.599] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:37:25.965] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:37:25.968] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:37:37.176] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:37:37.200] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:37:37.284] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:37:37.286] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:37:37.613] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:37:37.889] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:37:37.892] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:37:37.903] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:37:40.827] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:38:00.837] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:40:55.316] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:40:55.320] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:41:33.311] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:41:33.336] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:41:33.458] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:41:33.462] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:41:33.816] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:41:34.053] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:41:34.057] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:41:34.072] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:41:37.313] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:41:57.333] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T19:45:00.384] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T19:45:00.388] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T19:45:49.626] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T19:45:49.654] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T19:45:54.841] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T19:45:54.841] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T19:45:55.524] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T19:45:58.301] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T19:45:58.303] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T19:45:58.319] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T19:46:01.503] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T19:46:21.521] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T20:55:16.764] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T20:55:16.767] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T20:56:03.029] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T20:56:03.064] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T20:56:03.221] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T20:56:03.225] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T20:56:03.703] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T20:56:03.957] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T20:56:03.960] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T20:56:03.973] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T20:56:07.927] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T20:56:27.934] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T21:06:20.358] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T21:06:20.360] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T21:06:49.927] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T21:06:49.961] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T21:06:50.061] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T21:06:50.063] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T21:06:50.402] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T21:06:50.963] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T21:06:50.965] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T21:06:50.984] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T21:06:55.770] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T21:07:15.775] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T21:08:50.190] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T21:08:50.198] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T21:09:35.661] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T21:09:35.692] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T21:09:35.854] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T21:09:35.859] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T21:09:36.596] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T21:09:36.866] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T21:09:36.868] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T21:09:36.887] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T21:09:39.935] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T21:09:59.942] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T21:10:35.250] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T21:10:35.252] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T21:11:13.469] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T21:11:13.500] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T21:11:13.618] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T21:11:13.621] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T21:11:16.575] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T21:11:16.773] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T21:11:16.775] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T21:11:16.793] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T21:11:20.020] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T21:11:40.025] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-16T21:12:32.069] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-16T21:12:32.074] [INFO] protractorLog4js - Url is loading....
+[2017-12-16T21:13:04.053] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-16T21:13:04.084] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-16T21:13:04.207] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-16T21:13:04.210] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-16T21:13:04.657] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-16T21:13:04.863] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-16T21:13:04.866] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-16T21:13:04.886] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-16T21:13:07.941] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-16T21:13:27.947] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T17:32:39.696] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T17:32:39.698] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T17:32:48.656] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T17:32:48.675] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T17:32:48.760] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T17:32:48.761] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T17:32:49.115] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T17:32:49.321] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T17:32:49.324] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T17:32:49.338] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T17:32:52.284] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T17:33:12.286] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T17:53:25.700] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T17:53:25.700] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T17:53:32.438] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T17:53:32.460] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T17:53:32.541] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T17:53:32.543] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T17:53:32.879] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T17:53:33.085] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T17:53:33.088] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T17:53:33.099] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T17:53:35.632] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T17:53:55.636] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T18:02:47.914] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T18:02:47.915] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T18:02:57.229] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T18:02:57.246] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T18:02:57.328] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T18:02:57.331] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T18:02:57.651] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T18:02:57.988] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T18:02:57.990] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T18:02:58.001] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T18:03:00.560] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T18:03:20.566] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T22:55:19.393] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T22:55:19.396] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T22:55:26.688] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T22:55:26.717] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T22:55:26.805] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T22:55:26.807] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T22:55:27.127] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T22:55:27.348] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T22:55:27.351] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T22:55:27.361] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T22:55:30.074] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T22:55:50.091] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:07:09.588] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:07:09.588] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:07:15.814] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:07:15.834] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:07:15.917] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:07:15.920] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:07:16.283] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:07:16.481] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:07:16.483] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:07:16.506] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:07:19.014] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:07:39.016] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:15:40.934] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:15:40.934] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:15:47.604] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:15:47.632] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:15:47.713] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:15:47.715] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:15:48.047] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:15:48.263] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:15:48.265] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:15:48.277] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:15:50.784] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:16:10.788] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:18:47.787] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:18:47.792] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:18:54.696] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:18:54.713] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:18:54.793] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:18:54.795] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:18:55.124] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:18:55.345] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:18:55.347] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:18:55.367] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:18:57.908] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:19:17.912] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:20:29.698] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:20:29.714] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:20:36.457] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:20:36.477] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:20:36.565] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:20:36.567] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:20:36.889] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:20:37.098] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:20:37.100] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:20:37.113] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:20:39.529] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:20:59.537] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:23:18.654] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:23:18.654] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:24:10.039] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:24:10.059] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:24:10.143] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:24:10.145] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:24:10.492] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:24:10.695] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:24:10.698] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:24:10.717] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:24:13.369] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:24:33.375] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:26:41.124] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:26:41.124] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:26:48.786] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:26:48.804] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:26:48.887] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:26:48.889] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:26:49.233] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:26:49.429] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:26:49.431] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:26:49.447] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:26:52.030] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:27:12.034] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:28:37.200] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:28:37.200] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:28:43.882] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:28:43.909] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:28:44.001] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:28:44.003] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:28:44.331] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:28:44.519] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:28:44.521] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:28:44.533] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:28:47.394] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:29:07.396] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:30:53.243] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:30:53.247] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:31:00.194] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:31:00.220] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:31:00.344] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:31:00.346] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:31:00.671] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:31:00.872] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:31:00.874] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:31:00.885] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:31:03.432] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:31:23.437] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:33:07.490] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:33:07.492] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:33:14.494] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:33:14.516] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:33:14.597] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:33:14.599] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:33:14.932] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:33:15.131] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:33:15.133] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:33:15.147] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:33:17.727] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:33:37.731] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:33:58.059] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:34:29.508] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:34:29.511] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:34:36.984] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:34:36.997] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:34:37.090] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:34:37.092] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:34:37.411] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:34:37.608] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:34:37.610] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:34:37.623] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:34:40.173] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:35:00.194] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:35:20.504] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:38:31.599] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:38:31.602] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:38:40.909] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:38:40.970] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:38:41.053] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:38:41.055] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:38:41.388] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:38:41.601] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:38:41.607] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:38:41.618] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:38:43.615] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:39:03.631] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:39:23.940] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:46:12.738] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:46:12.738] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:46:25.756] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:46:25.783] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:46:25.859] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:46:25.861] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:46:26.180] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:46:26.379] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:46:26.381] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:46:26.400] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:46:28.397] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:46:30.773] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:46:31.319] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:46:54.236] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:46:54.238] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:47:02.085] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:47:02.109] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:47:02.191] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:47:02.193] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:47:02.508] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:47:02.788] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:47:02.791] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:47:02.804] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:47:04.847] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:47:07.250] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:47:07.776] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:48:14.219] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:48:14.222] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:49:13.483] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:49:13.506] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:49:13.583] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:49:13.585] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:49:13.912] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:49:14.131] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:49:14.133] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:49:14.147] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:49:16.261] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:49:18.262] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:49:18.988] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:50:58.575] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:50:58.579] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:51:09.699] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:51:09.713] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:51:14.835] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:51:14.835] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:51:15.156] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:51:20.380] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:51:20.384] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:51:20.394] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:51:32.641] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:51:34.655] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:52:05.072] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:53:53.774] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:53:53.774] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:54:01.776] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:54:01.807] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:54:01.887] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:54:01.889] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:54:02.211] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:54:02.406] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:54:02.408] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:54:02.422] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:54:04.483] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:54:06.488] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:54:07.119] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:54:38.230] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:54:38.232] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:54:46.466] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:54:46.486] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:54:46.568] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:54:46.570] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:54:46.904] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:54:47.133] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:54:47.135] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:54:47.151] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:54:49.142] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:54:51.146] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:54:51.759] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:56:21.815] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-17T23:56:21.815] [INFO] protractorLog4js - Url is loading....
+[2017-12-17T23:56:29.756] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-17T23:56:29.773] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-17T23:56:29.858] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-17T23:56:29.860] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-17T23:56:30.198] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-17T23:56:30.391] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-17T23:56:30.394] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-17T23:56:30.407] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-17T23:56:38.691] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-17T23:56:40.695] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-17T23:56:41.036] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:01:16.504] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:01:16.507] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:01:24.882] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:01:24.901] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:01:24.980] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:01:24.982] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:01:25.294] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:01:25.509] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:01:25.515] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:01:25.526] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:01:33.602] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:02:43.458] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:02:43.460] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:02:52.474] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:02:52.495] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:02:52.575] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:02:52.577] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:02:52.928] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:02:53.148] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:02:53.150] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:02:53.164] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:03:01.374] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:04:12.162] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:10:00.004] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:10:00.009] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:10:42.630] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:10:42.630] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:10:50.628] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:10:50.650] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:10:50.735] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:10:50.737] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:10:51.055] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:10:51.283] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:10:51.285] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:10:51.296] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:10:59.533] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T00:11:01.538] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:11:01.900] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:12:56.503] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:12:56.519] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:13:04.294] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:13:04.316] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:13:04.396] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:13:04.398] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:13:04.750] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:13:04.944] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:13:04.947] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:13:04.960] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:13:13.530] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:13:15.262] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:14:03.250] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:14:03.267] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:14:11.266] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:14:11.285] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:14:11.381] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:14:11.383] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:14:11.700] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:14:11.903] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:14:11.905] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:14:11.927] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:14:20.117] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T00:14:22.468] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:14:22.819] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:15:44.142] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:15:44.142] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:16:24.481] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:16:24.505] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:16:24.588] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:16:24.590] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:16:24.908] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:16:25.109] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:16:25.111] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:16:25.128] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:16:33.177] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:16:33.180] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T00:16:43.490] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:16:43.824] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:20:26.604] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:20:26.604] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:20:35.802] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:20:35.827] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:20:35.909] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:20:35.911] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:20:36.250] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:20:36.452] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:20:36.455] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:20:36.473] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:20:36.631] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+" tes.user.com"
+"Password:Test@1234
+[2017-12-18T00:20:44.660] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:20:44.662] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T00:20:48.360] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:20:48.752] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:25:46.674] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:25:46.674] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:26:20.929] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:26:20.981] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:26:21.143] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:26:21.147] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:26:21.516] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:26:21.733] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:26:21.737] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:26:21.749] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:26:21.918] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T00:26:30.575] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:26:30.579] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T00:26:37.413] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:26:38.040] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:32:21.997] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T00:32:22.013] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T00:32:41.460] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T00:32:41.484] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T00:32:41.622] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T00:32:41.628] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T00:32:41.964] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T00:32:42.160] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T00:32:42.168] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T00:32:42.180] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T00:32:42.238] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T00:32:42.340] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T00:32:50.914] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:32:50.918] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T00:32:56.319] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:32:56.354] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T00:32:56.975] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T00:32:56.975] [INFO] protractorLog4js - Login with google verified
+[2017-12-18T10:48:07.633] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T10:48:07.633] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T10:48:41.500] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T10:48:41.516] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T10:48:41.598] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T10:48:41.598] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T10:48:42.293] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T10:48:42.513] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T10:48:42.517] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T10:48:42.533] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T10:48:42.593] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T10:48:42.705] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T10:48:52.634] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T10:48:52.634] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T10:48:59.776] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T10:48:59.807] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T10:49:00.254] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T10:49:00.255] [INFO] protractorLog4js - Login with google verified
+[2017-12-18T11:06:22.562] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T11:06:22.564] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T11:06:56.113] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T11:06:56.133] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T11:07:01.274] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T11:07:01.274] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T11:07:01.695] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T11:07:06.933] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T11:07:06.935] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T11:07:06.946] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T11:07:06.994] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T11:07:07.090] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T11:07:20.382] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T11:07:20.384] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T11:07:27.437] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T11:07:27.468] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T11:07:27.780] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T11:07:27.781] [INFO] protractorLog4js - Login with google verified
+[2017-12-18T12:44:01.258] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T12:44:01.273] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T12:44:35.212] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T12:44:35.227] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T12:44:35.312] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T12:44:35.314] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T12:44:35.677] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T12:44:35.901] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T12:44:35.903] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T12:44:35.916] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T12:44:35.975] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T12:44:36.098] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T12:44:44.469] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T12:44:44.471] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T12:44:48.895] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T12:44:48.919] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T12:44:49.228] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T12:44:49.229] [INFO] protractorLog4js - Login with google verified
+[2017-12-18T14:38:39.004] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T14:38:39.004] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T14:39:12.261] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T14:39:12.283] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T14:39:12.373] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T14:39:12.375] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T14:39:12.799] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T14:39:13.014] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T14:39:13.017] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T14:39:13.031] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T14:39:13.085] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T14:39:13.189] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T14:39:21.796] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T14:39:21.797] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T14:39:28.013] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T14:39:28.029] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T14:39:28.378] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T14:39:28.379] [INFO] protractorLog4js - Login with google verified
+[2017-12-18T16:37:53.468] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T16:37:53.474] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T16:38:26.848] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T16:38:26.859] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T16:38:26.960] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T16:38:26.962] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T16:38:27.327] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T16:38:27.538] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T16:38:27.543] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T16:38:27.554] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T16:38:27.609] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T16:38:27.711] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T16:38:36.105] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T16:38:36.107] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T16:38:40.422] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T16:38:40.453] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T16:38:40.784] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T16:38:40.785] [INFO] protractorLog4js - Login with google verified
+[2017-12-18T17:51:35.188] [INFO] protractorLog4js - Starting Test With Logs
+[2017-12-18T17:51:35.192] [INFO] protractorLog4js - Url is loading....
+[2017-12-18T17:52:08.626] [INFO] protractorLog4js - Page Title Verified as:Influencer Advertising Simplified
+[2017-12-18T17:52:08.669] [INFO] protractorLog4js - Going to Click Get Started button
+[2017-12-18T17:52:08.816] [INFO] protractorLog4js - Clicked Get Started Button
+[2017-12-18T17:52:08.820] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up Url...
+[2017-12-18T17:52:09.358] [INFO] protractorLog4js - Page Heading Verified as:Welcome to Unity!
+[2017-12-18T17:52:09.596] [INFO] protractorLog4js - Unity Login Link clicked
+[2017-12-18T17:52:09.598] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2017-12-18T17:52:09.614] [INFO] protractorLog4js - Page Heading Verified as:Log in to your Unity account
+[2017-12-18T17:52:09.670] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2017-12-18T17:52:09.791] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"tes.user.com"
+"Password:Test@1234
+[2017-12-18T17:52:18.274] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T17:52:18.274] [INFO] protractorLog4js - Login successful with following credentials:"
+"testuser@gmail.com"
+"Password:Test@1234
+[2017-12-18T17:52:22.030] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T17:52:22.041] [INFO] protractorLog4js - Logout functionality verified
+[2017-12-18T17:52:22.388] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2017-12-18T17:52:22.389] [INFO] protractorLog4js - Login with google verified

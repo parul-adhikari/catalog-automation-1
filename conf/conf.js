@@ -9,7 +9,7 @@ var commonActions = require('../Common/CommonActions.js')
 
 var reporter = new HTMLReporter(
     {
-        savePath: 'C:\\Users\\Ankita Jangra\\eclipse-workspace\\Unity\\Reports\\',
+        savePath: 'E:\\Unity\\Reports',
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
 
@@ -38,7 +38,7 @@ exports.config = {
     suites: {
     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
        // reg: '../Admin/Test/Te.js'
-        AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js'
+        AdminRegression: '../Login/Test/LoginPageTest.js'
 
 
     },
@@ -80,9 +80,9 @@ exports.config = {
             //For Url loading...
             browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
-       /* browser.driver.manage().window().maximize()
+        browser.driver.manage().window().maximize()
         browser.logger.info("Url is loading....");
-       browser.get('https://staging.unityinfluence.com/home')*/
+       browser.get('https://staging.unityinfluence.com/home')
        // browser.get('http://localhost:4200/home')
 
         //Initializing the reports
