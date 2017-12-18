@@ -9,7 +9,7 @@ var mailOptions = require('../Utils/NodeMailer.js')
 
 var reporter = new HTMLReporter(
     {
-        savePath: 'C:\\Users\\Ankita Jangra\\eclipse-workspace\\Unity\\Reports\\',
+        savePath: 'E:\\Unity\\Reports',
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
 
@@ -38,11 +38,10 @@ exports.config = {
     // specs: ['../Common/EmailSentConf'],
     // specs: ['../testCases/AdminLoginPageTest'],
     suites: {
-       AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-        // reg: '../AdminFlowWithExistingInfluencer/Test/Test.js'
-        //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js'
 
-      //  test: '../Utils/NodeMailer.js'
+    //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
+       // reg: '../Admin/Test/Te.js'
+        AdminRegression: '../Login/Test/LoginPageTest.js'
 
 
     },
