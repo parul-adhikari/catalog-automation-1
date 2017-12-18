@@ -22,24 +22,20 @@ var gmail = {
     verifyReceivedEmail: function verifyReceivedEmail() {
 
         common.waitForElement(element.all(by.xpath('//*[@name="Chloe Van Patten"]')))
-       var emailList = element.all(by.xpath('//*[@email="chloe@unityinfluence.com"]'))
-        // var emailList = element.all(by.xpath('//*[@name="Chloe Van Patten"]'))
+       //var emailList = element.all(by.xpath('//*[@email="chloe@unityinfluence.com"]'))
+        var emailList = element.all(by.xpath('//*[@name="Chloe Van Patten"]'))
 
         var myMailerName = "Chloe Van Patten";
 
-       var start  = emailList.count()
-        console.log(start)
-
-
-          /*  .then(function (originalCount) {
+       emailList.count().then(function (originalCount) {
             if (originalCount >= 0) {
                 startCount = originalCount;
                 browser.logger.info('No.of Emails:' + startCount)
 
             }
             else {
-                browser.logger.info('No such Email' + startCount)
-            }*/
+                browser.logger.info('Error in fetching email count' + startCount)
+            }
 
 
 
@@ -53,6 +49,7 @@ var gmail = {
         })
 
 
+    })
     },
 
     verifyButtonInEmail: function verifyButtonInEmail() {
@@ -66,10 +63,14 @@ var gmail = {
          browser.logger.error('No Interested button found in received Email' +err)
 
         }
+        interestButton.click().then(function () {
+            browser.logger.info('Landing on Collaboration accepting page...')
+            common.waitForUrlToChange('https://staging.unityinfluence.com/influencer/collaborate/')
+        })
+
+    },
 
 
-
-    }
 
 
 }

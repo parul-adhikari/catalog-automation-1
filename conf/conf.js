@@ -4,7 +4,7 @@ var log4js = require('log4js')
 var HTMLReporter = require('protractor-jasmine2-html-reporter')
 var commonActions = require('../Common/CommonActions.js')
 //var db = require('../Common/DBConnection')
-
+var mailOptions = require('../Utils/NodeMailer.js')
 
 
 var reporter = new HTMLReporter(
@@ -17,7 +17,9 @@ var reporter = new HTMLReporter(
 
 
 exports.config = {
+/*
     directConnect: true,
+*/
 
     //For reading json File
     params: require('../Utils/DataFile.json'),
@@ -34,11 +36,13 @@ exports.config = {
     // Spec patterns are relative to the current working directory when
     // protractor is called.
     // specs: ['../Common/EmailSentConf'],
-   // specs: ['../testCases/AdminLoginPageTest'],
+    // specs: ['../testCases/AdminLoginPageTest'],
     suites: {
-    //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-       // reg: '../Admin/Test/Te.js'
-        AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js'
+       AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
+        // reg: '../AdminFlowWithExistingInfluencer/Test/Test.js'
+        //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js'
+
+      //  test: '../Utils/NodeMailer.js'
 
 
     },
@@ -73,23 +77,38 @@ exports.config = {
 
             // For db
 
-       /* browser.logger.info('Connecting to db....')
-        db.dbConnection()*/
+            /* browser.logger.info('Connecting to db....')
+             db.dbConnection()*/
 
 
             //For Url loading...
             browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
-       /* browser.driver.manage().window().maximize()
-        browser.logger.info("Url is loading....");
-       browser.get('https://staging.unityinfluence.com/home')*/
-       // browser.get('http://localhost:4200/home')
+        /* browser.driver.manage().window().maximize()
+         browser.logger.info("Url is loading....");
+        browser.get('https://staging.unityinfluence.com/home')*/
+        // browser.get('http://localhost:4200/home')
 
         //Initializing the reports
         jasmine.getEnv().addReporter(
             reporter
         )
 
+
+    },
+
+    onComplete: function () {
+        console.log("Sending Mail with reports for the test execution.");
+       /* var sys = require('util')
+        var exec = require('child_process').exec;
+
+        function puts(error, stdout, stderr) {
+           // sys.puts(stdout)
+            console.log(stdout)
+        }
+
+        exec("NodeMailer.js", puts);*/
+        mailOptions.sendEmailTo()
 
     }
 }
