@@ -1,2 +1,17 @@
 [1108/192130.159:ERROR:file_io_win.cc(179)] CreateFile C:\Users\ANKITA~1\AppData\Local\Temp\scoped_dir17100_30877\Crashpad\settings.dat: The process cannot access the file because it is being used by another process. (0x20)
 [1123/132646.369:ERROR:file_io_win.cc(179)] CreateFile C:\Users\ANKITA~1\AppData\Local\Temp\scoped_dir7124_25945\Crashpad\settings.dat: The process cannot access the file because it is being used by another process. (0x20)
+[1219/173025.574:ERROR:process_info.cc(632)] range at 0x7632332600000000, size 0x289 fully unreadable
+[1219/173025.582:ERROR:process_info.cc(632)] range at 0x7632334600000000, size 0x289 fully unreadable
+[1219/173025.582:ERROR:process_info.cc(632)] range at 0x0, size 0x289 fully unreadable
+[1219/173051.651:ERROR:process_info.cc(632)] range at 0x928d332600000000, size 0x1b4 fully unreadable
+[1219/173051.652:ERROR:process_info.cc(632)] range at 0x928d334600000000, size 0x1b4 fully unreadable
+[1219/173051.652:ERROR:process_info.cc(632)] range at 0x0, size 0x1b4 fully unreadable
+[1220/104019.836:ERROR:process_info.cc(632)] range at 0xe5ce332400000000, size 0x173 fully unreadable
+[1220/104019.845:ERROR:process_info.cc(632)] range at 0xe5ce334400000000, size 0x173 fully unreadable
+[1220/104019.845:ERROR:process_info.cc(632)] range at 0x0, size 0x173 fully unreadable
+[1220/104045.499:ERROR:process_info.cc(632)] range at 0x5c39332400000000, size 0x1b0 fully unreadable
+[1220/104045.499:ERROR:process_info.cc(632)] range at 0x5c39334400000000, size 0x1b0 fully unreadable
+[1220/104045.499:ERROR:process_info.cc(632)] range at 0x0, size 0x1b0 fully unreadable
+[1220/104211.421:ERROR:process_info.cc(632)] range at 0xfdb332400000000, size 0x1e5 fully unreadable
+[1220/104211.421:ERROR:process_info.cc(632)] range at 0xfdb334400000000, size 0x1e5 fully unreadable
+[1220/104211.421:ERROR:process_info.cc(632)] range at 0x0, size 0x1e5 fully unreadable

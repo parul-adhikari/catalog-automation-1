@@ -23,7 +23,7 @@ var searchCamp = {
         this.PageElements.txtbx_Search.sendKeys(browser.params.Campaign_Name)
         this.PageElements.btn_Search.click()
         commonActions.waitForElement(this.PageElements.lnk_expectedCamp)
-        browser.logger.info('Expected Campaign found in the search result' + this.PageElements.lnk_expectedCamp)
+        browser.logger.info('Expected Campaign found in the search result' + this.PageElements.lnk_expectedCamp.getText())
         this.PageElements.lnk_expectedCamp.click()
         commonActions.waitForUrlToChange(this.PageElements.url_toBeChanged)
 

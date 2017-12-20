@@ -7,7 +7,7 @@ describe('Verify the listing of campaigns', function () {
 
         //Positive flow
         it('Verify the presence of active campaign', function () {
-            allCampaignPage.campaign.checkActiveCampaign
+            allCampaignPage.campaign.checkActiveCampaign()
             allCampaignPage.campaign.checkActiveCampaignPresence()
         })
 

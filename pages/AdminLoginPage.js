@@ -1,4 +1,4 @@
-//require('../testCases/AllCampaignPageTest')
+require('../testCases/AllCampaignPageTest')
 
 var adminLoginPage = {
 

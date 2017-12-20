@@ -17,9 +17,9 @@ var reporter = new HTMLReporter(
 
 
 exports.config = {
-/*
+
     directConnect: true,
-*/
+
 
     //For reading json File
     params: require('../Utils/DataFile.json'),
@@ -41,7 +41,7 @@ exports.config = {
 
     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
        // reg: '../Admin/Test/Te.js'
-        AdminRegression: '../Login/Test/LoginPageTest.js'
+        AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
 
 
     },
@@ -81,12 +81,12 @@ exports.config = {
 
 
             //For Url loading...
-            browser.ignoreSynchronization = true;
+           browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
-        /* browser.driver.manage().window().maximize()
+         browser.driver.manage().window().maximize()
          browser.logger.info("Url is loading....");
-        browser.get('https://staging.unityinfluence.com/home')*/
-        // browser.get('http://localhost:4200/home')
+        browser.get('https://staging.unityinfluence.com/home')
+
 
         //Initializing the reports
         jasmine.getEnv().addReporter(
@@ -96,9 +96,9 @@ exports.config = {
 
     },
 
-    onComplete: function () {
+  /*  onComplete: function () {
         console.log("Sending Mail with reports for the test execution.");
-       /* var sys = require('util')
+       /!* var sys = require('util')
         var exec = require('child_process').exec;
 
         function puts(error, stdout, stderr) {
@@ -106,8 +106,8 @@ exports.config = {
             console.log(stdout)
         }
 
-        exec("NodeMailer.js", puts);*/
+        exec("NodeMailer.js", puts);*!/
         mailOptions.sendEmailTo()
 
-    }
+    }*/
 }

@@ -5,7 +5,7 @@ var commonActions = require('../Common/CommonActions.js')
 describe('Brand Listing Page Verification', function () {
 
     it('Verify the existing Brands', function () {
-        brandListPage.checkExistingBrands()
+        brandListPage.getBrandsList()
     })
 
     it('Choose the first brand to set campaign for', function () {
@@ -15,11 +15,18 @@ describe('Brand Listing Page Verification', function () {
 
     })
 
-    it('Verify the url after brand selection', function () {
+   /* it('Choose the second brand to set campaign for', function () {
 
-        commonActions.waitForUrlToChange(brandListPage.PageElements.urlToBeChanged)
+        brandListPage.chooseSecondBrand()
 
-    })
+
+    })*/
+
+  /*  it('Verify the url after brand selection', function () {
+
+
+
+    })*/
 
 });
 
