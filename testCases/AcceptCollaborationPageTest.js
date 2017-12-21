@@ -20,7 +20,7 @@ describe('Verify the collaboration acceptance functionality', function () {
             acceptCollaboration.addCountryDetails()
         }),
 
-        it('Verify the collaboration', function () {
+        it('Verify the New Inluencer collaboration',function () {
 
             acceptCollaboration.acceptCollaboration()
         })

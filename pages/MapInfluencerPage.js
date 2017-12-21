@@ -1,4 +1,4 @@
-//require('../testCases/AddNewInfluencerPageTest')
+require('../testCases/AddNewInfluencerPageTest')
 require('../testCases/SelectCampaignPageTest')
 var commonActions = require('../Common/CommonActions')
 /*var toastMsg = require('../Common/ToastMessagesTest')
@@ -37,9 +37,6 @@ var addInfluencer = {
         commonActions.waitForElement(this.PageElements.img_searchInfluencer)
         this.PageElements.img_searchInfluencer.click()
 
-        //  element(by.cssContainingText('option', browser.params.InfluencerName)).click();
-
-        // commonActions.switchToChildWindow(this.PageElements.search_Inf)
         var winHandles = browser.getAllWindowHandles();
         winHandles.then(function (handles) {
              var parentWindow = handles[0];
@@ -62,22 +59,39 @@ var addInfluencer = {
 
     },
 
-/*    selectInfluencerName: function selectInfluencerName() {
+  selectExistingInfluencerName: function selectExistingInfluencerName() {
 
-        commonActions.waitForElement(this.PageElements.lnk_addInfluencer)
+      commonActions.waitForElement(this.PageElements.lnk_addInfluencer)
+      browser.logger.info('Searching for an Influencer... ')
+      browser.sleep(2000)
+      this.PageElements.lnk_addInfluencer.click()
 
-        this.PageElements.lnk_addInfluencer.click()
-        this.PageElements.slctbx_Influencer.click()
-        element(by.cssContainingText('option', browser.params.InfluencerName)).click();
-        browser.logger.info('Search for an Influencer: ')
-        commonActions.switchToChildWindow(this.PageElements.search_Inf)
-        this.PageElements.search_Inf.sendKeys(browser.params.NewInfluencerFirstName)
-        element(by.xpath('//!*[@type="submit"]')).click()
+      commonActions.waitForElement(this.PageElements.img_searchInfluencer)
+      this.PageElements.img_searchInfluencer.click()
+
+      var winHandles = browser.getAllWindowHandles();
+      winHandles.then(function (handles) {
+          var parentWindow = handles[0];
+          var  popUpWindow = handles[1];
+          browser.switchTo().window(popUpWindow)
+          browser.sleep(2000)
+      })
+
+      this.PageElements.search_Inf.sendKeys(browser.params.InfluencerName)
+      element(by.xpath('//*[@type="submit"]')).click()
+      this.PageElements.lnk_NewInfName.click()
+      browser.sleep(2000)
+
+      winHandles.then(function (handles) {
+          parentWindow = handles[0];
+
+          browser.switchTo().window(parentWindow)
+      })
 
 
     },
 
-    verifyInfluencerEmail: function verifyInfluencerEmail() {
+   /* verifyInfluencerEmail: function verifyInfluencerEmail() {
 
         this.PageElements.icon_Edit.click()
         browser.logger.info('Verifying the selected influencer Email address as: ')

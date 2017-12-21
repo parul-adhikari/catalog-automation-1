@@ -103,6 +103,9 @@ var acceptCollaboration = {
                 browser.logger.error("Error occured while accepting the collboration" + err)
 
             }
+
+
+            browser.sleep(20000)
         }
 
 
