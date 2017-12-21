@@ -1,20 +1,22 @@
 // An example configuration file.
 
-var log4js = require('log4js')
-var HTMLReporter = require('protractor-jasmine2-html-reporter')
-var commonActions = require('../Common/CommonActions.js')
-//var db = require('../Common/DBConnection')
+var log4js = require('log4js');
+var HTMLReporter = require('protractor-jasmine2-html-reporter');
+var commonActions = require('../Common/CommonActions.js');
+var nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
+var handlebars = require('handlebars');
+var fs = require('fs');
 
 
 
 var reporter = new HTMLReporter(
     {
-        savePath: 'E:\\Unity\\Reports',
+        savePath: 'E:\\Unity\\conf\\Reports',
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
 
     })
-
 
 exports.config = {
     directConnect: true,
@@ -91,5 +93,60 @@ exports.config = {
         )
 
 
+    },
+    onComplete: function () {
+        return new Promise(function (fulfill, reject) {
+            console.log('teste')
+            var readHTMLFile = function(path, callback) {
+                fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
+                    if (err) {
+                        throw err;
+                        callback(err);
+                    }
+                    else {
+                        callback(null, html);
+                    }
+                });
+            };
+
+            smtpTransport = nodemailer.createTransport(smtpTransport({
+
+                service:'gmail',
+                secure: false,
+                port:587,
+                auth: {
+                    user: 'vibhor.mathur@quovantis.com', // generated ethereal user
+                    pass: 'mys@1307tery'// generated ethereal password
+                }
+            }));
+
+            readHTMLFile(__dirname + '/Reports/htmlReport.html', function(err, html) {
+                console.log(__dirname+'path')
+
+                var template = handlebars.compile(html);
+                var replacements = {
+                    username: "vibhu mathur"
+                };
+
+                var htmlToSend = template(replacements);
+                var mailOptions = {
+                    from: '"vibhor mathur" <vibhor.mathur@quovantis.com>',
+                    to : 'vibhor.mathur@quovantis.com,vib.bbbb@gmail.com',
+                    subject : 'test subject',
+                    html : htmlToSend
+                };
+                smtpTransport.sendMail(mailOptions, function (error, response) {
+                    if (error) {
+                        console.log(error);
+                        callback(error);
+                    }
+                    fulfill(info);
+
+                });
+            });
+
+        });
     }
+
+
 }
