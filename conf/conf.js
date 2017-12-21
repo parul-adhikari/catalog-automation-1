@@ -40,8 +40,9 @@ exports.config = {
     suites: {
 
     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-       // reg: '../Admin/Test/Te.js'
+       // reg: '../testCases/LoginPageTest.js'
         AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
+
 
 
     },

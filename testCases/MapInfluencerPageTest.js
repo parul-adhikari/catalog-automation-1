@@ -3,30 +3,24 @@ var commonActions = require('../Common/CommonActions')
 var gmail = require('../testCases/GmailTest')
 
 
-describe('Verify the addition of influencer', function () {
+describe('Verify the mapping of Influencers', function () {
 
 
     //Positive flow
-    it('Select New Influencer Name', function () {
+    it('Map New Influencer', function () {
 
         mapInfluencerPage.selectNewInfluencerName()
-    })
+        mapInfluencerPage.saveInfluencer()
+        mapInfluencerPage.confirmSuccessfulNotificationMessage()
 
-       /*it('Verify Influencer Email', function () {
-            mapInfluencerPage.verifyInfluencerEmail()
+    }),
+
+       /* it('Map Existing Influencer', function () {
+            mapInfluencerPage.selectExistingInfluencerName()
+            mapInfluencerPage.saveInfluencer()
+            mapInfluencerPage.confirmSuccessfulNotificationMessage()
         }),*/
 
-        it('Saving influencer Details', function () {
-
-            mapInfluencerPage.saveInfluencer()
-
-        }),
-
-        it('Verify the notification after saving', function () {
-
-            mapInfluencerPage.confirmSuccessfulNotificationMessage()
-
-        }),
 
         it('Verify the received email in inbox', function () {
             gmail.gmailSignIn(browser.params.GmailAddress,browser.params.GmailPswd)

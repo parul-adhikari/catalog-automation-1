@@ -4,7 +4,7 @@ var commonActions = require('../Common/CommonActions.js')
 
 describe('Brand Listing Page Verification', function () {
 
-    it('Verify the existing Brands', function () {
+    it('Verify the list of existing Brands', function () {
         brandListPage.getBrandsList()
     })
 

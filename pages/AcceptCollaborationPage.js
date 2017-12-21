@@ -1,5 +1,7 @@
 require('../testCases/MapInfluencerPageTest')
 var commonActions = require('../Common/CommonActions')
+var loginPage = require('../pages/LoginPage')
+var PageTitleAfterLogin = 'Unity Influence'
 
 var acceptCollaboration = {
 
@@ -14,7 +16,7 @@ var acceptCollaboration = {
 
             txbx_ShippingAdd: element(by.xpath('//*[@placeholder="Street"]')),
             dropdown_Country: element(by.xpath('//*[@class="single"]//*[contains(text(),\'Select country\')]')),
-            txbx_CountryValue:  element.all(by.css('.highlighted')),
+            txbx_CountryValue: element.all(by.css('.highlighted')),
             dropdown_State: element(by.xpath('//div[@class="single"]//*[contains(text(),"Select state")]')),
             txt_StateValue: element.all(by.css('.highlighted')),
             txbx_City: element(by.xpath('//*[@placeholder="City"]')),
@@ -28,7 +30,8 @@ var acceptCollaboration = {
 
 
         addPayPalDetails: function addPayPalDetails() {
-
+            browser.sleep(6000)
+            expect(browser.getTitle()).toEqual(PageTitleAfterLogin)
             commonActions.waitForElement(this.PageElements.txt_PageHeading)
             var pageHeading = this.PageElements.txt_PageHeading.getText()
             expect(pageHeading).toContain(browser.params.NewInfluencerFirstName)
@@ -104,8 +107,8 @@ var acceptCollaboration = {
 
             }
 
+            expect(this.PageElements.btn_Accept.isDisabled).toBe(this.PageElements.btn_Accept.isDisabled)
 
-            browser.sleep(20000)
         }
 
 

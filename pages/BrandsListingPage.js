@@ -27,10 +27,10 @@ var brandsListing = {
 
 
     chooseFirstBrand: function chooseFirstBrand() {
-
+        commonActions.waitForElement(this.PageElements.list_NoOfBrands)
         firstBrand = this.PageElements.list_NoOfBrands.get(0)
         expect(firstBrand.getText().then(function (value) {
-            browser.logger.info('First brand selected as:' + value + '' +'with which new influencer will be mapped')
+            browser.logger.info('First brand selected as:' + value + '' + 'with which new influencer will be mapped')
             //    console.log(typeof firstBrand)
             firstBrand.click()
 

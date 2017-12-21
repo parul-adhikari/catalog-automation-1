@@ -3,18 +3,15 @@ var common = require('../Common/CommonActions')
 var gmail = {
 
     gmailSignIn: function gmailSignIn(usrEmail, usrPswd) {
+
         browser.get('https://accounts.google.com')
         browser.driver.manage().window().maximize();
-        browser.sleep(6000)
-        common.waitForElement(element(by.xpath('//*[@type="email"]')))
-        element(by.xpath('//*[@type="email"]')).sendKeys(usrEmail)
-        element(by.id('identifierNext')).click()
-        browser.sleep(6000)
-        common.waitForElement(element(by.xpath('//*[@type="password"]')))
-        element(by.xpath('//*[@type="password"]')).sendKeys(usrPswd)
-        element(by.id('passwordNext')).click()
-        common.waitForUrlToChange('https://myaccount.google.com')
-        element(by.xpath('//*[@href="https://mail.google.com"]')).click()
+        browser.sleep(2000)
+
+        element(by.xpath('//*[@href="https://mail.google.com"]')).click().then(function () {
+            browser.logger.info('https://mail.google.com/mail')
+
+        })
         common.waitForUrlToChange('https://mail.google.com/mail')
     },
 
@@ -53,6 +50,7 @@ var gmail = {
     },
 
     verifyButtonInEmail: function verifyButtonInEmail() {
+        browser.sleep(6000)
 
        // var interestButton = element(by.xpath('//*[contains(text(),"m interested")]'))
         var interestButton = element(by.xpath('//*[contains(text(),"'+'m interested")]'))
