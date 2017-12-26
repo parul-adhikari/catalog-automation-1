@@ -70,7 +70,7 @@ var addInfluencer = {
         })
 
 
-        commonActions.waitForElement(this.PageElements.img_searchInfluencer)
+        commonActions.browserWaitForElement(this.PageElements.img_searchInfluencer)
         this.PageElements.img_searchInfluencer.click()
 
         var winHandles = browser.getAllWindowHandles();
@@ -78,7 +78,8 @@ var addInfluencer = {
             var parentWindow = handles[0];
             var popUpWindow = handles[1];
             browser.switchTo().window(popUpWindow)
-            browser.sleep(2000)
+           // browser.sleep(2000)
+            browser.waitForAngular();
         })
 
         this.PageElements.search_Inf.sendKeys(browser.params.InfluencerName)
@@ -86,7 +87,8 @@ var addInfluencer = {
         this.PageElements.lnk_ExistingInfName.click().then(function () {
             console.log('Addedddddddddddd')
         })
-        browser.sleep(2000)
+     //   browser.sleep(2000)
+        browser.waitForAngular();
 
         winHandles.then(function (handles) {
             parentWindow = handles[0];

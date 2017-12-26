@@ -1,3 +1,5 @@
+require('assert')
+
 var commonActions = {
 
 
@@ -26,6 +28,23 @@ var commonActions = {
     },
 
 
+    browserWaitForElement: function browserWaitForElement(element) {
+
+        return browser.isElementPresent(element).then(function (result) {
+            if (result) {
+                return true;
+            }
+            else {
+
+
+                browser.logger.error("Element '" + element + "' has not found");
+
+            }
+        }, 20000)
+
+    },
+
+
     readingTableData: function readingTableData(tableElement, rowElement, rowHeadingElement) {
 
 
@@ -47,7 +66,9 @@ var commonActions = {
 
         rowHeading.click()
 
-    },
+    }
+
+    ,
 
     selectDropdownbyNum: function selectDropdownbyNum(element, optionNum) {
         if (optionNum) {
@@ -60,11 +81,13 @@ var commonActions = {
                     options[optionNum].click()
                 });
         }
-    },
+    }
+    ,
 
     selectDropdownbyCssValue: function selectDropdownbyCssValue(selector, item) {
         element(by.cssContainingText('option', 'Vibhor Mathur')).click();
-    },
+    }
+    ,
 
 
     switchToChildWindow: function switchToChildWindow(childWindowElement) {
@@ -84,23 +107,24 @@ var commonActions = {
             browser.switchTo().window(parentWindow);
         })
 
-    },
+    }
+    ,
 
-    selectDropDownWithValue : function (dropDownElement, TimeInMilliseconds, inputValueField, inputValue) {
+    selectDropDownWithValue: function (dropDownElement, TimeInMilliseconds, inputValueField, inputValue) {
 
-    browser.waitForAngularEnabled(false);
-    browser.wait(protractor.ExpectedConditions.elementToBeClickable(dropDownElement), TimeInMilliseconds, " Element Not Found" + element)
-    dropDownElement.click()
-    if (inputValueField.isEnabled()) {
-       // inputValueField.click()
-        inputValueField.sendKeys(inputValue)
-        browser.sleep(2000)
-        browser.actions().sendKeys(protractor.Key.ENTER).perform();
-        browser.sleep(2000)
+        browser.waitForAngularEnabled(false);
+        browser.wait(protractor.ExpectedConditions.elementToBeClickable(dropDownElement), TimeInMilliseconds, " Element Not Found" + element)
+        dropDownElement.click()
+        if (inputValueField.isEnabled()) {
+            // inputValueField.click()
+            inputValueField.sendKeys(inputValue)
+            browser.sleep(2000)
+            browser.actions().sendKeys(protractor.Key.ENTER).perform();
+            browser.sleep(2000)
+
+        }
 
     }
-
-}
 
 
 }

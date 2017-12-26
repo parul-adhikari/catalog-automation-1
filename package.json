@@ -4,6 +4,7 @@
   "dependencies": {
     "Faker": "^0.7.2",
     "angular-1.5-cli": "^1.6.1",
+    "assert": "^1.4.1",
     "circular-json": "^0.4.0",
     "exceljs2": "^0.2.15",
     "express": "^4.16.2",

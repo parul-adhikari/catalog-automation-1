@@ -26,7 +26,7 @@ var loginPage = {
 
     },
     blankLoginCheck: function blankLoginCheck() {
-        commonActions.waitForElement(this.PageElements.txbx_Email)
+        commonActions.browserWaitForElement(this.PageElements.txbx_Email)
         this.PageElements.txbx_Email.clear();
         this.PageElements.txbx_Pswd.clear();
         expect(this.PageElements.btn_Login.isDisabled).toBe(this.PageElements.btn_Login.isDisabled);
@@ -40,64 +40,73 @@ var loginPage = {
         this.PageElements.txbx_Pswd.clear();
         this.PageElements.txbx_Email.sendKeys(browser.params.WrongEmail);
         this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
-        this.PageElements.btn_Login.click()
-        commonActions.waitForElement(this.PageElements.alert)
-        var alertStr = this.PageElements.alert.getText();
-        expect(alertStr).toEqual(alertMessage);
-        browser.sleep(6000)
-        browser.logger.info('Wrong credentials check verified using following +"\n"' + browser.params.WrongEmail + '"\n"' + 'Password:' + browser.params.Password)
+        this.PageElements.btn_Login.click().then(function () {
+
+            browser.sleep(6000)
+            commonActions.browserWaitForElement(element(by.css('.msg.fixed.row.align-items-center.error')))
+        })
+
+        var alertStr = element(by.css('.msg.fixed.row.align-items-center.error')).getText();
+        expect(alertStr).toContain(alertMessage)
+        browser.waitForAngular().then(function () {
+            browser.logger.info('Wrong credentials check verified using following +"\n"' + browser.params.WrongEmail + '"\n"' + '"Password:"' + browser.params.Password)
+        })
+
     },
 
     doLogin: function doLogin() {
         this.PageElements.btn_UnityLogin.click()
-        commonActions.waitForElement(this.PageElements.txbx_Email)
+        commonActions.browserWaitForElement(this.PageElements.txbx_Email)
         this.PageElements.txbx_Email.sendKeys(browser.params.Email);
         this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
         this.PageElements.btn_Login.click().then(function () {
             commonActions.waitForUrlToChange('https://staging.unityinfluence.com/brands')
             expect(browser.getCurrentUrl()).toBe('https://staging.unityinfluence.com/brands')
-
             browser.logger.info('Login successful with following credentials:"\n"' + browser.params.Email + '"\n"' + 'Password:' + browser.params.Password)
-        }), function (err) {
+        })
 
-            browser.logger.error(" Login button not clicked" + err)
-
-        }
-        browser.sleep(2000)
 
 
     },
+
     Logout: function Logout() {
         commonActions.waitForElement(this.PageElements.mybrands_Btn);
 
         this.PageElements.mybrands_Btn.click();
-        commonActions.waitForElement(this.PageElements.signout_optn);
+        commonActions.browserWaitForElement(this.PageElements.signout_optn);
         this.PageElements.signout_optn.click();
-        browser.sleep(6000)
+      //  commonActions.browserWaitForElement(browser.getTitle()).toBe(pageTitleAfterLogout)
+        // browser.sleep(6000)
+      commonActions.waitForUrlToChange('https://staging.unityinfluence.com/')
+        browser.ignoreSynchronization = false;
+        browser.waitForAngular()
         expect(browser.getTitle()).toBe(pageTitleAfterLogout);
-
         browser.logger.info('Logout functionality verified')
 
 
     },
 
     loginwithGmail: function loginwithGmail() {
-
-     //  welcome_Page.PageElements.lnk_Login.click();
-        this.PageElements.google_Login_Btn.click();
-        commonActions.waitForElement(element(by.css('input[type="email"]')))
+        commonActions.browserWaitForElement(this.PageElements.google_Login_Btn)
+        this.PageElements.google_Login_Btn.click()
+        commonActions.browserWaitForElement(element(by.css('input[type="email"]')))
         element(by.css('input[type="email"]')).sendKeys(browser.params.GmailAddress);
         element(by.css('#identifierNext')).click();
         browser.sleep(6000)
-        commonActions.waitForElement(element(by.css('input[type="email"]')))
+        commonActions.browserWaitForElement(element(by.css('input[type="password"]')))
         element(by.css('input[type="password"]')).sendKeys(browser.params.GmailPswd);
-        commonActions.waitForElement(element(by.css('#passwordNext')))
-        element(by.css('#passwordNext')).click();
+        commonActions.browserWaitForElement(element(by.css('#passwordNext')))
+        element(by.css('#passwordNext')).click().then(function () {
+            browser.logger.info('Login with google verified')
+
+        })
+
+
         commonActions.waitForUrlToChange('https://staging.unityinfluence.com/brands')
 
-       expect(browser.getTitle()).toEqual(PageTitleAfterLogin)
+        expect(browser.getTitle()).toEqual(PageTitleAfterLogin)
 
-        browser.logger.info('Login with google verified')
+
         browser.driver.manage().deleteAllCookies();
 
 
