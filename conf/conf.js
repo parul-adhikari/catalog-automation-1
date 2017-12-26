@@ -1,20 +1,25 @@
 // An example configuration file.
 
-var log4js = require('log4js')
-var HTMLReporter = require('protractor-jasmine2-html-reporter')
-var commonActions = require('../Common/CommonActions.js')
-//var db = require('../Common/DBConnection')
-var mailOptions = require('../Utils/NodeMailer.js')
+
+var log4js = require('log4js');
+var HTMLReporter = require('protractor-jasmine2-html-reporter');
+var commonActions = require('../Common/CommonActions.js');
+var nodemailer = require('nodemailer');
+var smtpTransport = require('nodemailer-smtp-transport');
+var handlebars = require('handlebars');
+var fs = require('fs');
+
 
 
 var reporter = new HTMLReporter(
     {
+
         savePath: 'C:\Users\Ankita Jangra\eclipse-workspace\Unity\Reports',
+
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
 
     })
-
 
 exports.config = {
 
@@ -96,19 +101,62 @@ exports.config = {
 
 
     },
+    onComplete: function () {
+        return new Promise(function (fulfill, reject) {
+            console.log('teste')
+            var readHTMLFile = function(path, callback) {
+                fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
+                    if (err) {
+                        throw err;
+                        callback(err);
+                    }
+                    else {
+                        callback(null, html);
+                    }
+                });
+            };
 
-  /*  onComplete: function () {
-        console.log("Sending Mail with reports for the test execution.");
-       /!* var sys = require('util')
-        var exec = require('child_process').exec;
+            smtpTransport = nodemailer.createTransport(smtpTransport({
 
-        function puts(error, stdout, stderr) {
-           // sys.puts(stdout)
-            console.log(stdout)
-        }
+                service:'gmail',
+                secure: false,
+                port:587,
+                auth: {
+                    user: 'vibhor.mathur@quovantis.com', // generated ethereal user
+                    pass: 'mys@1307tery'// generated ethereal password
+                }
+            }));
 
-        exec("NodeMailer.js", puts);*!/
-        mailOptions.sendEmailTo()
+            readHTMLFile(__dirname + '/Reports/htmlReport.html', function(err, html) {
+                console.log(__dirname+'path')
 
-    }*/
+                var template = handlebars.compile(html);
+                var replacements = {
+                    username: "vibhu mathur"
+                };
+
+                var htmlToSend = template(replacements);
+                var mailOptions = {
+                    from: '"Vibhor Mathur" <vibhor.mathur@quovantis.com>',
+                    to : 'vibhor.mathur@quovantis.com',
+                    subject : 'Automation Test Report|UNITY',
+                    html : htmlToSend
+                };
+                smtpTransport.sendMail(mailOptions, function (error, response) {
+                    if (error) {
+                        console.log(error);
+                        callback(error);
+                    }
+                    fulfill(info);
+
+                });
+            });
+
+        });
+    }
+
+
+
+
+
 }
