@@ -1,0 +1,4 @@
+#ide and workspace files
+.idea/workspace.xml
+/node_modules
+package.json

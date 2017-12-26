@@ -6,15 +6,20 @@
   "Password": "Test@1234",
   "AdminEmail": "admin@unityinfluence.com",
   "AdminPassword": "unityinfluence",
+  "FirstCampName" : "AutomationCamp2",
   "Campaign_Name" : "Automation_Campaign",
-  "InfluencerName": "Witlinger",
+  "InfluencerName": "Pete Sampras",
+  "RetailPrice":"1000",
+  "PayPal_Email" : "test@gmail.com",
   "InfluencerCompBudget": "500",
   "InfluencerPromoBudget": "500",
   "PersonalMessage": "This is the test message for automation testing",
-  "GmailAddress" : "vibhor.mathur@quovantis.com",
-  "GmailPswd": "mys@1307tery",
-  "NewInfluencerFirstName": "",
-  "NewInfluencerSecondName": "",
-  "NewInfluencerEmail" : ""
+  "GmailAddress" : "unitytestuser01@gmail.com",
+  "GmailPswd": "Test@123",
+  "NewInfluencerFirstName":"Automation",
+  "NewInfluencerSecondName": "Influencer",
+  "NewInfluencerEmail" :"unitytestuser01@gmail.com",
+  "GmailAddress1" : "vibhor.mathur@quovantis.com",
+  "GmailPswd1": "mys@1307tery"
 
 }

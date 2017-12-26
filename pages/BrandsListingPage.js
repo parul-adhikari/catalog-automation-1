@@ -10,50 +10,46 @@ var brandsListing = {
 
     PageElements: {
 
+        brands_List: element(by.xpath('//*[@class="user-listing-block"]')),
         list_NoOfBrands: element.all(by.xpath('//*[@class="user-item"]')),
 
-       urlToBeChanged: 'https://staging.unityinfluence.com/brands/266/campaigns'
-       // urlToBeChanged: 'http://localhost:4200/brands/9/campaigns'
-
-
-    },
-
-    checkExistingBrands: function checkExistingBrands() {
-
-
-        commonActions.waitForElement(this.PageElements.list_NoOfBrands)
-
-        this.PageElements.list_NoOfBrands.count().then(function (originalCount) {
-            if (originalCount > 0) {
-                startCount = originalCount;
-                browser.logger.info('No.of listed Brands:' + startCount)
-            }
-            else {
-                browser.logger.info('No Brands exists' + startCount)
-            }
-        }), function (err) {
-            browser.logger.error('Getting error in fetching brands list' + err)
-
-        }
-
+        firstBrandUrl: 'https://staging.unityinfluence.com/brands/273/campaigns',
+        secondBrandUrl: 'https://staging.unityinfluence.com/brands/266/campaigns'
 
     },
+
+    getBrandsList: function getBrandsList() {
+
+        this.PageElements.brands_List.getText().then(function (value) {
+            console.log(value)
+        })
+    },
+
 
     chooseFirstBrand: function chooseFirstBrand() {
-
+        commonActions.waitForElement(this.PageElements.list_NoOfBrands)
         firstBrand = this.PageElements.list_NoOfBrands.get(0)
         expect(firstBrand.getText().then(function (value) {
-            browser.logger.info('First brand selected as:' +value  )
+            browser.logger.info('First brand selected as:' + value + '' + 'with which new influencer will be mapped')
             //    console.log(typeof firstBrand)
             firstBrand.click()
+
+        }))
+        commonActions.waitForUrlToChange(this.PageElements.firstBrandUrl)
+
+    },
+
+    chooseSecondBrand: function chooseSecondBrand() {
+        secondBrand = this.PageElements.list_NoOfBrands.get(1)
+        expect(secondBrand.getText().then(function (value) {
+            browser.logger.info('Brand selected as:' + value + 'with which existing influencer will be mapped')
+            //    console.log(typeof firstBrand)
+            secondBrand.click()
+
         }))
 
-
-
-
-
+        commonActions.waitForUrlToChange(this.PageElements.secondBrandUrl)
     }
-
 };
 
 

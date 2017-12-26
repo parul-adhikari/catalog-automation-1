@@ -1,5 +1,6 @@
 // An example configuration file.
 
+
 var log4js = require('log4js');
 var HTMLReporter = require('protractor-jasmine2-html-reporter');
 var commonActions = require('../Common/CommonActions.js');
@@ -19,7 +20,9 @@ var reporter = new HTMLReporter(
     })
 
 exports.config = {
+
     directConnect: true,
+
 
     //For reading json File
     params: require('../Utils/DataFile.json'),
@@ -36,11 +39,13 @@ exports.config = {
     // Spec patterns are relative to the current working directory when
     // protractor is called.
     // specs: ['../Common/EmailSentConf'],
-   // specs: ['../testCases/AdminLoginPageTest'],
+    // specs: ['../testCases/AdminLoginPageTest'],
     suites: {
+
     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-       // reg: '../Admin/Test/Te.js'
-        AdminRegression: '../Login/Test/LoginPageTest.js'
+       // reg: '../testCases/LoginPageTest.js'
+        AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
+
 
 
     },
@@ -75,17 +80,17 @@ exports.config = {
 
             // For db
 
-       /* browser.logger.info('Connecting to db....')
-        db.dbConnection()*/
+            /* browser.logger.info('Connecting to db....')
+             db.dbConnection()*/
 
 
             //For Url loading...
-            browser.ignoreSynchronization = true;
+           browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
-        browser.driver.manage().window().maximize()
-        browser.logger.info("Url is loading....");
-       browser.get('https://staging.unityinfluence.com/home')
-       // browser.get('http://localhost:4200/home')
+         browser.driver.manage().window().maximize()
+         browser.logger.info("Url is loading....");
+        browser.get('https://staging.unityinfluence.com/home')
+
 
         //Initializing the reports
         jasmine.getEnv().addReporter(
@@ -130,9 +135,9 @@ exports.config = {
 
                 var htmlToSend = template(replacements);
                 var mailOptions = {
-                    from: '"vibhor mathur" <vibhor.mathur@quovantis.com>',
-                    to : 'vibhor.mathur@quovantis.com,vib.bbbb@gmail.com',
-                    subject : 'test subject',
+                    from: '"Vibhor Mathur" <vibhor.mathur@quovantis.com>',
+                    to : 'vibhor.mathur@quovantis.com',
+                    subject : 'Automation Test Report|UNITY',
                     html : htmlToSend
                 };
                 smtpTransport.sendMail(mailOptions, function (error, response) {
@@ -147,6 +152,9 @@ exports.config = {
 
         });
     }
+
+
+
 
 
 }

@@ -57,10 +57,6 @@ var addInfluencerWithCamp = {
                 })*/
 
 
-
-
-browser.sleep(30000)
-
         if (this.PageElements.notify_SuccMsg == 1) {
             this.PageElements.notify_SuccMsg.getText().then(function (value) {
                 expect(value.toBe("The campaign" + browser.params.Campaign_Name + "was changed successfully."))

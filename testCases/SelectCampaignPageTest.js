@@ -7,7 +7,7 @@ describe('Verify the Campaign Selection which needs action to be performed', fun
     //Positive flow
     it('Search for the expected campaign', function () {
 
-        selectCampPage.searchCampaign()
+        selectCampPage.searchFirstCampaign()
         })
 
 

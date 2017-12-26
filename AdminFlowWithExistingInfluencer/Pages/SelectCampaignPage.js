@@ -11,7 +11,7 @@ var searchCamp = {
         btn_Search: element(by.xpath('//*[@value="Search"]')),
         lnk_expectedCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="'+browser.params.Campaign_Name+'"]')),
         //   lnk_expectedCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="Test Camp"]')),
-        url_toBeChanged: 'https://api-staging.unityinfluence.com/admin/campaign/campaign/517/change/'
+        url_toBeChanged: 'https://api-staging.unityinfluence.com/admin/campaign/campaign/517/change/?_changelist_filters=q%3DAutomation_Camp'
         // url_toBeChanged: 'http://localhost:8000/admin/campaign/campaign/26/change'
     },
 
@@ -23,7 +23,7 @@ var searchCamp = {
         this.PageElements.txtbx_Search.sendKeys(browser.params.Campaign_Name)
         this.PageElements.btn_Search.click()
         commonActions.waitForElement(this.PageElements.lnk_expectedCamp)
-        browser.logger.info('Expected Campaign found in the search result' + this.PageElements.lnk_expectedCamp)
+        browser.logger.info('Expected Campaign found in the search result' + this.PageElements.lnk_expectedCamp.getText())
         this.PageElements.lnk_expectedCamp.click()
         commonActions.waitForUrlToChange(this.PageElements.url_toBeChanged)
 

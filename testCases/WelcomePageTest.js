@@ -9,12 +9,10 @@ describe('Verify Unity Welcome page', function () {
 
         it('Verify the Unity Login link', function () {
             unityWelcomePage.clickOnLogin()
-
-
-        }),
-
-        it('Verify the redirection on Unity Login Page', function () {
-            commonActions.waitForUrlToChange(unityWelcomePage.PageElements.urlToBeChanged)
         })
+
+        /*it('Verify the redirection on Unity Login Page', function () {
+            commonActions.waitForUrlToChange(unityWelcomePage.PageElements.urlToBeChanged)
+        })*/
 
 });

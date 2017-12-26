@@ -1,6 +1,6 @@
-var addInfluencerPage = require('../Pages/MapExistingInfluencerWithCamp')
+//var addInfluencerPage = require('../Pages/MapExistingInfluencerWithCamp')
 var commonActions = require('../../Common/CommonActions')
-var gmail = require('../../AdminFlowWithExistingInfluencer/Test/GmailTest')
+//var gmail = require('../../AdminFlowWithExistingInfluencer/Test/GmailTest')
 
 
 describe('Verify the addition of influencer', function () {

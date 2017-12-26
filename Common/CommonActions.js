@@ -86,6 +86,22 @@ var commonActions = {
 
     },
 
+    selectDropDownWithValue : function (dropDownElement, TimeInMilliseconds, inputValueField, inputValue) {
+
+    browser.waitForAngularEnabled(false);
+    browser.wait(protractor.ExpectedConditions.elementToBeClickable(dropDownElement), TimeInMilliseconds, " Element Not Found" + element)
+    dropDownElement.click()
+    if (inputValueField.isEnabled()) {
+       // inputValueField.click()
+        inputValueField.sendKeys(inputValue)
+        browser.sleep(2000)
+        browser.actions().sendKeys(protractor.Key.ENTER).perform();
+        browser.sleep(2000)
+
+    }
+
+}
+
 
 }
 

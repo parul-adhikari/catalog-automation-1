@@ -2,16 +2,64 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e6ba4c6-29b7-45ab-a126-edd4b0c35255" name="Default" comment="Test waitForElementMethod">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Reports/htmlReport.html" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Reports/screenshots/10d47a8052ae2f495b7b994b1a74a588.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Reports/screenshots/7142f376239cf482cab1381c1725a9b3.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Reports/screenshots/74a91f5e4dfc7ece4727f3df5df16fcb.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Reports/screenshots/8b13a34b0101cef6623f45a577daffd1.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Utils/NodeMailer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/.eslintrc.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/.npmignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/Gruntfile.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/LICENSE" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/lib/smtp-transport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/log4js/node_modules/nodemailer/node_modules/nodemailer-smtp-transport/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/AcceptCollaborationPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/AddNewInfluencerPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/MapInfluencerPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/pages/SelectInfluencerPage.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testCases/AcceptCollaborationPageTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testCases/AddNewInfluencerPageTest.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/testCases/MapInfluencerPageTest.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapNewInfluencerWithCamp.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Login/Pages/GetStartedPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Login/Test/GetStartedPageTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Login/Test/WelcomePageTest.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/pages/AddExistingInfluencerPage.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/testCases/AddExistInfluencerPageTest.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AddNewInfluencerPage.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AddNewInfluencerPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminHomePage.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminHomePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapExistingInfluencerWithCamp.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapExistingInfluencerWithCamp.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/SelectCampaignPage.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/SelectCampaignPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AdminLoginPageTest.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AdminLoginPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/GmailTest.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/GmailTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/Test.js" afterPath="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/Test.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Common/CommonActions.js" afterPath="$PROJECT_DIR$/Common/CommonActions.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Utils/DataFile.json" afterPath="$PROJECT_DIR$/Utils/DataFile.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/Reports/htmlReport.html" afterPath="$PROJECT_DIR$/conf/Reports/htmlReport.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/cheese.log" afterPath="$PROJECT_DIR$/conf/cheese.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/conf.js" afterPath="$PROJECT_DIR$/conf/conf.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/Faker/.jshintignore" afterPath="$PROJECT_DIR$/node_modules/Faker/.jshintignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/Faker/.jshintrc" afterPath="$PROJECT_DIR$/node_modules/Faker/.jshintrc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/Faker/.npmignore" afterPath="$PROJECT_DIR$/node_modules/Faker/.npmignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/Faker/.travis.yml" afterPath="$PROJECT_DIR$/node_modules/Faker/.travis.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/conf/debug.log" afterPath="$PROJECT_DIR$/conf/debug.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/AdminHomePage.js" afterPath="$PROJECT_DIR$/pages/AdminHomePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/AdminLoginPage.js" afterPath="$PROJECT_DIR$/pages/AdminLoginPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/BrandsListingPage.js" afterPath="$PROJECT_DIR$/pages/BrandsListingPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/GetStartedPage.js" afterPath="$PROJECT_DIR$/pages/GetStartedPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pages/SelectCampaignPage.js" afterPath="$PROJECT_DIR$/pages/SelectCampaignPage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/AdminHomePageTest.js" afterPath="$PROJECT_DIR$/testCases/AdminHomePageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/AllCampaignPageTest.js" afterPath="$PROJECT_DIR$/testCases/AllCampaignPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/BrandsListingPageTest.js" afterPath="$PROJECT_DIR$/testCases/BrandsListingPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/GetStartedPageTest.js" afterPath="$PROJECT_DIR$/testCases/GetStartedPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/GmailTest.js" afterPath="$PROJECT_DIR$/testCases/GmailTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/SelectCampaignPageTest.js" afterPath="$PROJECT_DIR$/testCases/SelectCampaignPageTest.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/testCases/WelcomePageTest.js" afterPath="$PROJECT_DIR$/testCases/WelcomePageTest.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Login/Pages/LoginPage.js" afterPath="$PROJECT_DIR$/pages/LoginPage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Login/Pages/WelcomePage.js" afterPath="$PROJECT_DIR$/pages/WelcomePage.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/Login/Test/LoginPageTest.js" afterPath="$PROJECT_DIR$/testCases/LoginPageTest.js" />
     </list>
     <ignored path="$PROJECT_DIR$/bin/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,31 +86,128 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="WelcomePage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/Pages/WelcomePage.js">
+      <file leaf-file-name="conf.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/conf/conf.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="318">
+              <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="workspace.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="44" />
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <marker date="1514272425075" expanded="true" signature="69991:70033" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="69991:70051" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="69991:70064" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="69991:70079" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70114:72282" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70127:72267" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70181:70476" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70200:70461" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70263:70441" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70303:70407" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70324:70385" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70526:70853" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70545:70838" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70640:70818" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70680:70784" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70701:70762" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70904:71230" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="70923:71215" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71017:71195" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71057:71161" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71078:71139" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71273:71538" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71292:71523" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71325:71503" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71365:71469" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71386:71447" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71589:71936" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71608:71921" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71684:71901" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71724:71867" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71745:71845" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="71988:72253" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="72007:72238" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="72040:72218" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="72080:72184" ph="..." />
+                <marker date="1514272425075" expanded="true" signature="72101:72162" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DataFile.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Utils/DataFile.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="45" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Login/Pages/LoginPage.js">
+      <file leaf-file-name="MapInfluencerPageTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCases/MapInfluencerPageTest.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-54">
-              <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+            <state relative-caret-position="123">
+              <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LoginPageTest.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Login/Test/LoginPageTest.js">
+      <file leaf-file-name="CommonActions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Common/CommonActions.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+            <state relative-caret-position="130">
+              <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MapInfluencerPage.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/MapInfluencerPage.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="191">
+              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AcceptCollaborationPageTest.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testCases/AcceptCollaborationPageTest.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -71,18 +216,8 @@
       <file leaf-file-name="cheese.log" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/conf/cheese.log">
           <provider selected="true" editor-type-id="LogFileEditorProvider">
-            <state relative-caret-position="96">
-              <caret line="9687" column="102" lean-forward="false" selection-start-line="9687" selection-start-column="52" selection-end-line="9687" selection-end-column="102" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="conf.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/conf/conf.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
-              <folding />
+            <state relative-caret-position="98957">
+              <caret line="5821" column="0" lean-forward="false" selection-start-line="5821" selection-start-column="0" selection-end-line="5821" selection-end-column="0" />
             </state>
           </provider>
         </entry>
@@ -147,13 +282,10 @@
         <option value="$PROJECT_DIR$/Admin/Pages/AddExistingInfluencerPage.js" />
         <option value="$PROJECT_DIR$/Admin/Test/GmailTest.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AddExistingInfluencerPage.js" />
-        <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/SelectCampaignPage.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AddExistInfluencerPageTest.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AdminLoginPageTest.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/SelectCampaignPageTest.js" />
-        <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/Test.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AddInfluencerPage.js" />
-        <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapExistingInfluencerWithCamp.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AddInfluencerPageTest.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AdminHomePageTest.js" />
         <option value="$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminHomePage.js" />
@@ -169,7 +301,9 @@
         <option value="$PROJECT_DIR$/conf/cheese.log" />
         <option value="$PROJECT_DIR$/Login/Pages/LoginPage.js" />
         <option value="$PROJECT_DIR$/conf/conf.js" />
-        <option value="$PROJECT_DIR$/Login/Test/LoginPageTest.js" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -218,6 +352,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -225,30 +363,10 @@
               <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
               <item name="Unity" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Unity" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Unity" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Unity" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Unity" type="462c0819:PsiDirectoryNode" />
-              <item name="Login" type="462c0819:PsiDirectoryNode" />
-              <item name="Test" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -431,9 +549,8 @@
       <workItem from="1512399600470" duration="581000" />
       <workItem from="1512537639215" duration="96767000" />
       <workItem from="1513148219144" duration="29952000" />
-      <workItem from="1513234689291" duration="35276000" />
-      <workItem from="1513331357478" duration="42291000" />
-      <workItem from="1513873831569" duration="5354000" />
+      <workItem from="1513331357478" duration="40177000" />
+      <workItem from="1513882511135" duration="4698000" />
     </task>
     <task id="LOCAL-00001" summary="New Conf changes as per Unity">
       <created>1511432668794</created>
@@ -530,22 +647,7 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Protractor - 2017.12.21 at 23h 18m 48s.xml">
-      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="Protractor - 2017.12.21 at 23h 23m 44s.xml">
-      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="Protractor - 2017.12.21 at 23h 25m 01s.xml">
-      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="Protractor - 2017.12.21 at 23h 29m 15s.xml">
-      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="Protractor - 2017.12.21 at 23h 30m 52s.xml">
-      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
-    </history-entry>
-    <history-entry file="Protractor - 2017.12.21 at 23h 33m 13s.xml">
+    <history-entry file="Protractor - 2017.12.18 at 17h 53m 09s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
     <history-entry file="Protractor - 2017.12.21 at 23h 38m 29s.xml">
@@ -557,12 +659,27 @@
     <history-entry file="Protractor - 2017.12.21 at 23h 46m 18s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
-    <history-entry file="Protractor - 2017.12.21 at 23h 49m 29s.xml">
+    <history-entry file="Protractor - 2017.12.22 at 00h 29m 38s.xml">
+      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+    <history-entry file="Protractor - 2017.12.22 at 00h 37m 22s.xml">
+      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+    <history-entry file="Protractor - 2017.12.22 at 00h 45m 51s.xml">
+      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+    <history-entry file="Protractor - 2017.12.22 at 00h 53m 06s.xml">
+      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+    <history-entry file="Protractor - 2017.12.22 at 10h 48m 04s.xml">
+      <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
+    </history-entry>
+    <history-entry file="Protractor - 2017.12.22 at 11h 33m 53s.xml">
       <configuration name="Protractor" configurationId="JavaScriptTestRunnerProtractor" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="536620000" />
+    <option name="totallyTimeSpent" value="524498000" />
   </component>
   <component name="TodoView" selected-index="3">
     <todo-panel id="selected-file">
@@ -691,7 +808,6 @@
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="391" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -709,45 +825,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/testCases/SelectCampaignPageTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="30" lean-forward="false" selection-start-line="9" selection-start-column="30" selection-end-line="9" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/GetStartedPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="74" lean-forward="false" selection-start-line="8" selection-start-column="74" selection-end-line="8" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCases/WelcomePageTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="10" column="12" lean-forward="false" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/LoginPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="48" column="4" lean-forward="false" selection-start-line="48" selection-start-column="4" selection-end-line="48" selection-end-column="4" />
-          <folding>
-            <element signature="e#734#1181#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testCases/LoginPageTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="4" lean-forward="false" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pages/AdminLoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -766,13 +843,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="true" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pages/AdminHomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -814,53 +884,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testCases/AddExistInfluencerPageTest.js">
+    <entry file="file://$PROJECT_DIR$/testCases/AddExistInfluencerPageTest.js" />
+    <entry file="file://$PROJECT_DIR$/pages/AddExistingInfluencerPage.js" />
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapNewInfluencerWithCamp.js" />
+    <entry file="file://$PROJECT_DIR$/testCases/GmailTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="30" column="79" lean-forward="false" selection-start-line="30" selection-start-column="79" selection-end-line="30" selection-end-column="79" />
+        <state relative-caret-position="575">
+          <caret line="34" column="18" lean-forward="false" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AdminLoginPageTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/GmailTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/SelectCampaignPageTest.js">
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AddNewInfluencerPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/Test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" lean-forward="true" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js" />
     <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminLoginPage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminHomePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="9" column="81" lean-forward="false" selection-start-line="9" selection-start-column="81" selection-end-line="9" selection-end-column="81" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -871,7 +924,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/AdminHomePageTest.js">
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/Test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
@@ -885,34 +938,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pages/AddExistingInfluencerPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="66" column="10" lean-forward="false" selection-start-line="66" selection-start-column="10" selection-end-line="66" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="57" lean-forward="false" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapNewInfluencerWithCamp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="23" lean-forward="false" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/AddExistingInfluencerPage.js" />
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/MapNewInfluencerTest.js" />
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/MapNewInfluencerWithCamp.js" />
     <entry file="file://$PROJECT_DIR$/Common/ToastMessagesTest.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -931,19 +959,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="8" column="7" lean-forward="false" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Common/CommonActions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <element signature="e#1308#1743#0" expanded="false" />
-            <element signature="e#1826#1907#0" expanded="false" />
-            <element signature="e#1985#2611#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -975,23 +990,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Test/WelcomePageTest.js">
+    <entry file="file://$PROJECT_DIR$/Reports/htmlReport.html" />
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Test/GmailTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="55" lean-forward="false" selection-start-line="1" selection-start-column="29" selection-end-line="1" selection-end-column="55" />
+        <state relative-caret-position="-502">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Pages/WelcomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="44" lean-forward="false" selection-start-line="0" selection-start-column="26" selection-end-line="0" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Utils/DataFile.json">
+    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminHomePage.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="11" column="33" lean-forward="false" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
@@ -999,81 +1007,125 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Test/GetStartedPageTest.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="4" column="9" lean-forward="false" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/@types/node/index.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="124">
-          <caret line="52" column="12" lean-forward="false" selection-start-line="52" selection-start-column="12" selection-end-line="52" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/AdminFlowWithExistingInfluencer/Pages/AdminHomePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="53" lean-forward="false" selection-start-line="18" selection-start-column="53" selection-end-line="18" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Pages/GetStartedPage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="8" lean-forward="false" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Login/Test/GetStartedPageTest.js" />
+    <entry file="file://$PROJECT_DIR$/Login/Test/LoginPageTest.js" />
+    <entry file="file://$PROJECT_DIR$/Login/Test/WelcomePageTest.js" />
+    <entry file="file://$PROJECT_DIR$/Login/Pages/GetStartedPage.js" />
     <entry file="file://$PROJECT_DIR$/conf/cheese.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
-        <state relative-caret-position="96">
-          <caret line="9687" column="102" lean-forward="false" selection-start-line="9687" selection-start-column="52" selection-end-line="9687" selection-end-column="102" />
+        <state relative-caret-position="98957">
+          <caret line="5821" column="0" lean-forward="false" selection-start-line="5821" selection-start-column="0" selection-end-line="5821" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Reports/htmlReport.html">
+    <entry file="file://$PROJECT_DIR$/Reports/htmlReport.html" />
+    <entry file="file://$PROJECT_DIR$/conf/htmlReport.html" />
+    <entry file="file://$PROJECT_DIR$/Login/Pages/LoginPage.js" />
+    <entry file="file://$PROJECT_DIR$/Utils/DataFile.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        <state relative-caret-position="154">
+          <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/conf/htmlReport.html">
+    <entry file="file://$PROJECT_DIR$/Common/CommonActions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="130">
+          <caret line="23" column="16" lean-forward="false" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Pages/LoginPage.js">
+    <entry file="file://$PROJECT_DIR$/testCases/MapInfluencerPageTest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="72" column="46" lean-forward="false" selection-start-line="72" selection-start-column="46" selection-end-line="72" selection-end-column="46" />
+        <state relative-caret-position="123">
+          <caret line="11" column="26" lean-forward="false" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/MapInfluencerPage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testCases/AcceptCollaborationPageTest.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="9" lean-forward="false" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conf/conf.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="122" column="29" lean-forward="false" selection-start-line="122" selection-start-column="29" selection-end-line="122" selection-end-column="29" />
+        <state relative-caret-position="182">
+          <caret line="134" column="0" lean-forward="true" selection-start-line="134" selection-start-column="0" selection-end-line="134" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Login/Test/LoginPageTest.js">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="6" lean-forward="true" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1514272425075" expanded="true" signature="69991:70033" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="69991:70051" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="69991:70064" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="69991:70079" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70114:72282" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70127:72267" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70181:70476" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70200:70461" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70263:70441" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70303:70407" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70324:70385" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70526:70853" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70545:70838" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70640:70818" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70680:70784" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70701:70762" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70904:71230" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="70923:71215" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71017:71195" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71057:71161" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71078:71139" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71273:71538" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71292:71523" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71325:71503" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71365:71469" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71386:71447" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71589:71936" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71608:71921" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71684:71901" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71724:71867" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71745:71845" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="71988:72253" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="72007:72238" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="72040:72218" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="72080:72184" ph="..." />
+            <marker date="1514272425075" expanded="true" signature="72101:72162" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>

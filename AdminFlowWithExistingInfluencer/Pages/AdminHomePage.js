@@ -7,7 +7,7 @@ var adminHomePage = {
         txt_PageHeading: element(by.xpath('//*[@id="content"]/h1')),
         tble_CampElement: element.all(by.xpath('//*[@id="content-main"]/div[3]/table/caption')),
         tble_campaignrow: element.all(by.xpath('//*[@class="model-campaign"]')),
-        tble_CampRowHeading: element.all(by.xpath('//*[contains(text(),"Influencers")]')),
+        tble_CampRowHeading: element.all(by.xpath('//*[contains(text(),"Campaigns")]')),
 
         tble_InfColHeading: element(by.xpath('//*[@href="/admin/influencer/"]')),
         tble_InfluencerRow: element(by.xpath('//tr[@class="model-influencer"]')),
