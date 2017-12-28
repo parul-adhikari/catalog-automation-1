@@ -1,5 +1,5 @@
-//require('../testCases/AdminHomePageTest')
-require('../testCases/AddNewInfluencerPageTest')
+require('../testCases/AdminHomePageTest')
+//require('../testCases/AddNewInfluencerPageTest')
 var commonActions = require('../Common/CommonActions')
 /*var allCampaignPageTest = require('../testCases/AllCampaignPageTest')
 var camp = require('../pages/AllCampaignsPage')*/

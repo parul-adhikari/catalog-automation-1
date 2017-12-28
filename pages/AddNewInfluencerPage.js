@@ -2,6 +2,7 @@
 var commonActions = require('../Common/CommonActions')
 var inlfuencerListingPage = require('../pages/SelectInfluencerPage')
 var homePage = require('../pages/AdminHomePage')
+
 var addNewInfluencerDetails = {
 
     PageElements: {

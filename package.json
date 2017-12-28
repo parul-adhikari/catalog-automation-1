@@ -13,7 +13,7 @@
     "jasmine-expect": "^3.8.1",
     "jasmine2-custom-message": "^0.8.4",
     "json-stringify-safe": "^5.0.1",
-    "log4js": "^2.3.12",
+    "log4js": "^2.4.1",
     "log4js-protractor-appender": "^1.1.2",
     "mail-listener2": "^0.3.1",
     "nodemailer": "^4.4.0",
@@ -25,5 +25,8 @@
     "protractor-jasmine2-html-reporter": "0.0.7",
     "selenium-webdriver": "^2.45.0",
     "xlsx": "^0.11.8"
+  },
+  "scripts": {
+    "start": "C:\Users\Ankita Jangra\eclipse-workspace\Unity\conf\conf.js"
   }
 }

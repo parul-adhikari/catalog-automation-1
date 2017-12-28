@@ -8,12 +8,13 @@ describe('Verify the mapping of Influencers', function () {
 
     //Positive flow
     it('Map New Influencer', function () {
+        mapInfluencerPage.removeAlreadyExistedInfluencer()
 
-        mapInfluencerPage.selectNewInfluencerName()
+        /*mapInfluencerPage.selectNewInfluencerName()
         mapInfluencerPage.saveInfluencer()
-        mapInfluencerPage.confirmSuccessfulNotificationMessage()
+        mapInfluencerPage.confirmSuccessfulNotificationMessage()*/
 
-    }),
+    })
 
        /* it('Map Existing Influencer', function () {
             mapInfluencerPage.selectExistingInfluencerName()
@@ -21,7 +22,7 @@ describe('Verify the mapping of Influencers', function () {
             mapInfluencerPage.confirmSuccessfulNotificationMessage()
         }),*/
 
-
+/*
         it('Verify the received email in inbox', function () {
             gmail.gmailSignIn(browser.params.GmailAddress,browser.params.GmailPswd)
             gmail.verifyReceivedEmail()
@@ -32,7 +33,7 @@ describe('Verify the mapping of Influencers', function () {
         gmail.verifyButtonInEmail()
 
 
-    })
+    })*/
 
 
 })

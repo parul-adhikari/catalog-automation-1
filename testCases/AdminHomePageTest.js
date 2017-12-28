@@ -5,16 +5,16 @@ describe('Verify the Admin Home Page', function () {
 
 
     //Positive flow
-    it('Click on Influencer Link',function () {
+    /*it('Click on Influencer Link',function () {
         adminHomePage.clickInfluencerLink()
-    })
+    })*/
 
 
 
-   /* it('Click on Campaign Link', function () {
+    it('Click on Campaign Link', function () {
         adminHomePage.clickCampaignLink()
 
-    })*/
+    })
 
 
 });

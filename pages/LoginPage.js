@@ -66,18 +66,18 @@ var loginPage = {
         })
 
 
-
     },
 
     Logout: function Logout() {
+        browser.sleep(1000)
         commonActions.waitForElement(this.PageElements.mybrands_Btn);
 
         this.PageElements.mybrands_Btn.click();
         commonActions.browserWaitForElement(this.PageElements.signout_optn);
         this.PageElements.signout_optn.click();
-      //  commonActions.browserWaitForElement(browser.getTitle()).toBe(pageTitleAfterLogout)
+        //  commonActions.browserWaitForElement(browser.getTitle()).toBe(pageTitleAfterLogout)
         // browser.sleep(6000)
-      commonActions.waitForUrlToChange('https://staging.unityinfluence.com/')
+        commonActions.waitForUrlToChange('https://staging.unityinfluence.com/')
         browser.ignoreSynchronization = false;
         browser.waitForAngular()
         expect(browser.getTitle()).toBe(pageTitleAfterLogout);
@@ -98,16 +98,10 @@ var loginPage = {
         commonActions.browserWaitForElement(element(by.css('#passwordNext')))
         element(by.css('#passwordNext')).click().then(function () {
             browser.logger.info('Login with google verified')
+            commonActions.waitForUrlToChange('https://staging.unityinfluence.com/brands')
 
         })
-
-
-        commonActions.waitForUrlToChange('https://staging.unityinfluence.com/brands')
-
         expect(browser.getTitle()).toEqual(PageTitleAfterLogin)
-
-
-        browser.driver.manage().deleteAllCookies();
 
 
     },

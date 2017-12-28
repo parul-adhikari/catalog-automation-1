@@ -45,7 +45,7 @@ exports.config = {
     suites: {
 
     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-        reg: '../testCases/LoginPageTest.js'
+        reg: '../testCases/MapInfluencerPageTest.js'
        // AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
 
 
@@ -55,7 +55,8 @@ exports.config = {
 
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 90000
+     // allScriptsTimeout : 90000
+         defaultTimeoutInterval: 90000
     },
 
 
@@ -91,7 +92,7 @@ exports.config = {
         browser.logger.info("Starting Test With Logs")
          browser.driver.manage().window().maximize()
          browser.logger.info("Url is loading....");
-        browser.get('https://staging.unityinfluence.com/home')
+      //  browser.get('https://staging.unityinfluence.com/home')
 
 
         //Initializing the reports
@@ -122,8 +123,8 @@ exports.config = {
                 secure: false,
                 port:587,
                 auth: {
-                    user: 'vibhor.mathur@quovantis.com', // generated ethereal user
-                    pass: 'mys@1307tery'// generated ethereal password
+                    user: 'unitytestuser01@gmail.com', // generated ethereal user
+                    pass: 'Test@123'// generated ethereal password
                 }
             }));
 
@@ -137,8 +138,8 @@ exports.config = {
 
                 var htmlToSend = template(replacements);
                 var mailOptions = {
-                    from: '"Vibhor Mathur" <vibhor.mathur@quovantis.com>',
-                    to : 'vibhor.mathur@quovantis.com',
+                    from: '"Ankita" <unitytestuser01@gmail.com>',
+                    to : 'unitytestuser01@gmail.com',
                     subject : 'Automation Test Report|UNITY',
                     html : htmlToSend
                 };

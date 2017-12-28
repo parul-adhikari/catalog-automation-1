@@ -1,4 +1,4 @@
-require('../testCases/AddNewInfluencerPageTest')
+//require('../testCases/AddNewInfluencerPageTest')
 require('../testCases/SelectCampaignPageTest')
 var commonActions = require('../Common/CommonActions')
 /*var toastMsg = require('../Common/ToastMessagesTest')
@@ -28,9 +28,41 @@ var addInfluencer = {
         btn_SaveEditing: element(by.xpath('//*[@value="Save and continue editing"]'))
     },
 
+    removeAlreadyExistedInfluencer: function removeAlreadyExistedInfluencer() {
+        browser.sleep(2000)
+        var rowList = element.all(by.xpath('//tr[starts-with(@id,"campaigninfluencer")]'))
+        rowList.count().then(function (value) {
+
+
+            if (value > 1) {
+                browser.logger.info("Row size is: " + value)
+                rowList.getText().then(function (value) {
+                    console.log('Table Rows are:' + value)
+                })
+                browser.logger.warn("Please  delete the previously added Influcencer to continue...")
+                element(by.css('#id_campaigninfluencer_set-0-DELETE')).click().then(function () {
+                    browser.logger.info("Delete checkbox clicked to delete the influencer")
+                    element(by.xpath('//*[@value="Save and continue editing"]')).submit().then(function () {
+                        browser.logger.info('Successfully deleted...')
+                    })
+                })
+            }
+            else {
+                browser.logger.info("No added influencer..")
+                commonActions.waitForElement(element(by.xpath('//*[text()="Add another Influencer"]')))
+                element(by.xpath('//*[text()="Add another Influencer"]')).click().then(function () {
+                    browser.logger.info('Add Influencer link clicked')
+                })
+
+            }
+        })
+
+    },
+
+
     selectNewInfluencerName: function selectNewInfluencerName(influencerName) {
 
-
+        browser.sleep(3000)
         commonActions.waitForElement(this.PageElements.lnk_addInfluencer)
         this.PageElements.lnk_addInfluencer.click().then(function () {
             browser.logger.info('Add Influencer link clicked')
@@ -78,7 +110,7 @@ var addInfluencer = {
             var parentWindow = handles[0];
             var popUpWindow = handles[1];
             browser.switchTo().window(popUpWindow)
-           // browser.sleep(2000)
+            // browser.sleep(2000)
             browser.waitForAngular();
         })
 
@@ -87,7 +119,7 @@ var addInfluencer = {
         this.PageElements.lnk_ExistingInfName.click().then(function () {
             console.log('Addedddddddddddd')
         })
-     //   browser.sleep(2000)
+        //   browser.sleep(2000)
         browser.waitForAngular();
 
         winHandles.then(function (handles) {
@@ -99,12 +131,6 @@ var addInfluencer = {
 
     },
 
-    /* verifyInfluencerEmail: function verifyInfluencerEmail() {
-
-         this.PageElements.icon_Edit.click()
-         browser.logger.info('Verifying the selected influencer Email address as: ')
-         commonActions.switchToChildWindow(this.PageElements.txbx_InfluencerEmail)
-     },*/
 
     saveInfluencer: function saveInfluencer() {
         this.PageElements.txbx_RetailPrice.clear()

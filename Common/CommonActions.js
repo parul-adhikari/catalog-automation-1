@@ -7,7 +7,7 @@ var commonActions = {
 
 
         const EC = protractor.ExpectedConditions;
-        browser.wait(EC.urlContains(expectedUrl), 60000);
+        browser.wait(EC.urlContains(expectedUrl), 10000);
         browser.logger.info("Landing on: " + expectedUrl + " Url...")
 
     },
@@ -27,7 +27,33 @@ var commonActions = {
         expect(element.isPresent()).toBeTruthy();
     },
 
+    waitElementToBeVisible: function waitElementToBeVisible(element) {
+        const EC = protractor.ExpectedConditions;
+        browser.wait(EC.visibilityOf(element), 10000)
 
+    },
+
+    waitElementToBeClickable: function waitElementToBeClickable(element) {
+        const EC = protractor.ExpectedConditions;
+        browser.wait(EC.elementToBeClickable(element), 10000)
+
+    },
+
+    waitUntilReady: function waitUntilReady(element) {
+        return browser.wait(function (element) {
+            return element.isPresent();
+        }, 10000).then(function () {
+            return browser.wait(function () {
+                return element.isDisplayed()
+
+            }, 10000);
+        });
+
+
+    },
+
+
+    //this function need to be replaced with above (in future- ready to use now)
     browserWaitForElement: function browserWaitForElement(element) {
 
         return browser.isElementPresent(element).then(function (result) {
@@ -90,25 +116,22 @@ var commonActions = {
     ,
 
 
-    switchToChildWindow: function switchToChildWindow(childWindowElement) {
-        browser.sleep(10000); //This line is important
-        var winHandles = browser.getAllWindowHandles();
-        winHandles.then(function (handles) {
-            var parentWindow = handles[0];
-            var popUpWindow = handles[1];
-            browser.switchTo().window(popUpWindow);
-            childWindowElement.getAttribute('value').then(function (value) {
-                browser.logger.info(value)
-            }), function (err) {
-                browser.logger.error('No email address is configured for influencer' + err)
+    switchToWindow: function switchToWindow(clickedElement, childWindowElement) {
+        clickedElement.click().then(function () {
+            browser.sleep(500);
+            browser.getAllWindowHandles().then(function (handles) {
+                parentWindowHandle = handles[0],
+                    newWindowHandle = handles[1]; // this is your new window
+                browser.switchTo().window(newWindowHandle).then(function () {
+                    // fill in the form here
+                    expect(browser.getCurrentUrl()).toMatch('');
+                });
+                browser.switchTo().window(parentWindowHandle)
+            });
+        });
 
-            }
+    },
 
-            browser.switchTo().window(parentWindow);
-        })
-
-    }
-    ,
 
     selectDropDownWithValue: function (dropDownElement, TimeInMilliseconds, inputValueField, inputValue) {
 
@@ -123,6 +146,18 @@ var commonActions = {
             browser.sleep(2000)
 
         }
+
+    },
+
+    waitForCheckboxToBeChecked: function waitForCheckboxToBeChecked(element) {
+
+        browser.wait(function () {
+            return (element.getAttribute('checked')).then(function (isElementChecked) {
+                return (isElementChecked)
+            },10000)
+
+
+        })
 
     }
 
