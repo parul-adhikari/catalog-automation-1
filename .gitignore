@@ -1,5 +1,3 @@
 #ide and workspace files
-.idea/workspace.xml
+/.idea/workspace.xml
 /node_modules
-package.json
-/package.json
