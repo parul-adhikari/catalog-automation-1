@@ -10,10 +10,11 @@ var handlebars = require('handlebars');
 var fs = require('fs');
 
 
-
 var reporter = new HTMLReporter(
     {
-        savePath: 'E:\\Unity\\conf\\Reports',
+
+        savePath: 'C:\Users\Ankita Jangra\eclipse-workspace\Unity\Reports',
+
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
 
@@ -41,11 +42,9 @@ exports.config = {
     // specs: ['../Common/EmailSentConf'],
     // specs: ['../testCases/AdminLoginPageTest'],
     suites: {
-
-    //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-       // reg: '../testCases/LoginPageTest.js'
-        AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
-
+        AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js',
+        reg: '../testCases/MapInfluencerPageTest.js',
+        AdminRegression: '../testCases/AcceptCollaborationPageTest.js',
 
 
     },
@@ -53,6 +52,7 @@ exports.config = {
 
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
+        // allScriptsTimeout : 90000
         defaultTimeoutInterval: 90000
     },
 
@@ -85,11 +85,11 @@ exports.config = {
 
 
             //For Url loading...
-           browser.ignoreSynchronization = true;
+            browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
-         browser.driver.manage().window().maximize()
-         browser.logger.info("Url is loading....");
-        browser.get('https://staging.unityinfluence.com/home')
+        browser.driver.manage().window().maximize()
+        browser.logger.info("Url is loading....");
+        //  browser.get('https://staging.unityinfluence.com/home')
 
 
         //Initializing the reports
@@ -102,7 +102,7 @@ exports.config = {
     onComplete: function () {
         return new Promise(function (fulfill, reject) {
             console.log('teste')
-            var readHTMLFile = function(path, callback) {
+            var readHTMLFile = function (path, callback) {
                 fs.readFile(path, {encoding: 'utf-8'}, function (err, html) {
                     if (err) {
                         throw err;
@@ -116,17 +116,17 @@ exports.config = {
 
             smtpTransport = nodemailer.createTransport(smtpTransport({
 
-                service:'gmail',
+                service: 'gmail',
                 secure: false,
-                port:587,
+                port: 587,
                 auth: {
-                    user: 'vibhor.mathur@quovantis.com', // generated ethereal user
-                    pass: 'mys@1307tery'// generated ethereal password
+                    user: 'unitytestuser01@gmail.com', // generated ethereal user
+                    pass: 'Test@123'// generated ethereal password
                 }
             }));
 
-            readHTMLFile(__dirname + '/Reports/htmlReport.html', function(err, html) {
-                console.log(__dirname+'path')
+            readHTMLFile(__dirname + '/Reports/htmlReport.html', function (err, html) {
+                console.log(__dirname + 'path')
 
                 var template = handlebars.compile(html);
                 var replacements = {
@@ -135,10 +135,10 @@ exports.config = {
 
                 var htmlToSend = template(replacements);
                 var mailOptions = {
-                    from: '"Vibhor Mathur" <vibhor.mathur@quovantis.com>',
-                    to : 'vibhor.mathur@quovantis.com',
-                    subject : 'Automation Test Report|UNITY',
-                    html : htmlToSend
+                    from: '"Ankita" <unitytestuser01@gmail.com>',
+                    to: 'unitytestuser01@gmail.com',
+                    subject: 'Automation Test Report|UNITY',
+                    html: htmlToSend
                 };
                 smtpTransport.sendMail(mailOptions, function (error, response) {
                     if (error) {
@@ -152,9 +152,6 @@ exports.config = {
 
         });
     }
-
-
-
 
 
 }

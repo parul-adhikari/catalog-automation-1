@@ -2,6 +2,10 @@ var loginPage = require('../pages/LoginPage.js')
 var commonActions = require('../Common/CommonActions')
 
 describe('Verify Login functionality', function () {
+    
+    afterEach(function () {
+        browser.manage().deleteAllCookies();
+    })
 
     it('Verify login page heading', function () {
         //  loginPage.checkPageHeading()
