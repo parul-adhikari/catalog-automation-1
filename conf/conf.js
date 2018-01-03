@@ -3,7 +3,7 @@
 
 var log4js = require('log4js');
 var HTMLReporter = require('protractor-jasmine2-html-reporter');
-var commonActions = require('../Common/CommonActions.js');
+//var commonActions = require('../Common/CommonActions.js');
 var nodemailer = require('nodemailer');
 var smtpTransport = require('nodemailer-smtp-transport');
 var handlebars = require('handlebars');
@@ -39,12 +39,20 @@ exports.config = {
 
     // Spec patterns are relative to the current working directory when
     // protractor is called.
-    // specs: ['../Common/EmailSentConf'],
-    // specs: ['../testCases/AdminLoginPageTest'],
+   // specs: ['../e2e/Admin/**/*.spec.js'],
+    specs: ['../e2e/Admin/MapInfluncer/*.spec.js'],
     suites: {
+<<<<<<< HEAD
         AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js',
         reg: '../testCases/MapInfluencerPageTest.js',
         AdminRegression: '../testCases/AcceptCollaborationPageTest.js',
+=======
+
+    //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
+     //   reg: ['../testCases/AdminLoginPageTest.js','../testCases/AdminHomePageTest.js']
+       // AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
+
+>>>>>>> 9ee5b08fb199ca7a3d975e69a629e249dbbe7fbb
 
 
     },
@@ -85,11 +93,19 @@ exports.config = {
 
 
             //For Url loading...
+<<<<<<< HEAD
             browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs")
         browser.driver.manage().window().maximize()
         browser.logger.info("Url is loading....");
         //  browser.get('https://staging.unityinfluence.com/home')
+=======
+           browser.ignoreSynchronization = true;
+        browser.logger.info("Starting Test With Logs");
+         browser.driver.manage().window().maximize();
+         browser.logger.info("Url is loading....");
+      //  browser.get('https://staging.unityinfluence.com/home')
+>>>>>>> 9ee5b08fb199ca7a3d975e69a629e249dbbe7fbb
 
 
         //Initializing the reports
@@ -145,7 +161,7 @@ exports.config = {
                         console.log(error);
                         callback(error);
                     }
-                    fulfill(info);
+                    fulfill(this.info);
 
                 });
             });

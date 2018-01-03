@@ -1,7 +1,6 @@
-require('../../AdminFlowWithExistingInfluencer/Test/AdminLoginPageTest')
-var commonActions = require('../../Common/CommonActions')
+var CommonActions = require('../../../Common/CommonActions');
 
-var adminHomePage = {
+var Home = {
 
     PageElements: {
         txt_PageHeading: element(by.xpath('//*[@id="content"]/h1')),
@@ -17,15 +16,15 @@ var adminHomePage = {
     },
 
     clickCampaignLink: function clickCampaignLink() {
-        commonActions.readingTableData(this.PageElements.tble_CampElement, this.PageElements.tble_campaignrow, this.PageElements.tble_CampRowHeading)
+        CommonActions.readingTableData(this.PageElements.tble_CampElement, this.PageElements.tble_campaignrow, this.PageElements.tble_CampRowHeading)
 
     },
 
     clickInfluencerLink: function clickInfluencerLink() {
-        commonActions.readingTableData(this.PageElements.tble_InfColHeading, this.PageElements.tble_InfluencerRow, this.PageElements.tble_InfRowHeading)
-        commonActions.waitForUrlToChange(this.PageElements.exp_AddInfUrl)
+        CommonActions.readingTableData(this.PageElements.tble_InfColHeading, this.PageElements.tble_InfluencerRow, this.PageElements.tble_InfRowHeading)
+        CommonActions.waitForUrlToChange(this.PageElements.exp_AddInfUrl)
     }
-}
+};
 
 
-module.exports = adminHomePage
+module.exports = Home;

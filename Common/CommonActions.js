@@ -1,4 +1,5 @@
-require('assert')
+require('assert');
+var sgpt = require('sg-protractor-tools');
 
 var commonActions = {
 
@@ -19,11 +20,16 @@ var commonActions = {
 
     },
 
+scrollToElement: function scrollToElement(element) {
+
+    sgpt.scroll.scrollTo(element);
+},
+
 
     waitForElement: function waitForElement(element) {
 
         const EC = protractor.ExpectedConditions;
-        browser.wait(EC.presenceOf(element), 10000)
+        browser.wait(EC.presenceOf(element), 10000);
         expect(element.isPresent()).toBeTruthy();
     },
 
@@ -41,7 +47,7 @@ var commonActions = {
 
     waitUntilReady: function waitUntilReady(element) {
         return browser.wait(function (element) {
-            return element.isPresent();
+            return element.isPresent().toBeTruthy();
         }, 10000).then(function () {
             return browser.wait(function () {
                 return element.isDisplayed()

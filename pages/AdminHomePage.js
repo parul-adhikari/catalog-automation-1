@@ -1,4 +1,4 @@
-require('../testCases/AdminLoginPageTest')
+//require('../testCases/AdminLoginPageTest')
 var commonActions = require('../Common/CommonActions')
 
 var adminHomePage = {
