@@ -10,7 +10,7 @@ describe('Verify the collaboration acceptance functionality', function () {
         acceptCollaboration.addPayPalDetails()
     }),
 
-        it('Verify the successful shiipping', function () {
+        it('Verify the successful shippping', function () {
 
             acceptCollaboration.addShippingAddr()
         }),

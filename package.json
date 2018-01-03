@@ -24,9 +24,7 @@
     "protractor": "^5.2.0",
     "protractor-jasmine2-html-reporter": "0.0.7",
     "selenium-webdriver": "^2.45.0",
+    "sg-protractor-tools": "^1.0.4",
     "xlsx": "^0.11.8"
-  },
-  "scripts": {
-    "start": "C:\Users\Ankita Jangra\eclipse-workspace\Unity\conf\conf.js"
   }
 }
