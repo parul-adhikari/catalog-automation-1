@@ -5,6 +5,7 @@ let AddInfluncer = require('../AddInfluncer/AddInfluncer.po');
 let CommonActions = require('../../../Common/CommonActions');
 let Gmail = require('../../../Common/GmailTest');
 let Login = require('../AdminLogin/Login.po');
+let AcceptCollaboration = require('../AcceptCollaboration/AcceptCollaboration.po');
 
 
 describe('Verify the Influencer mapping functionality', function () {
@@ -42,10 +43,11 @@ describe('Verify the Influencer mapping functionality', function () {
             expect(MapInfluencerPage.PageElements.rowList.count()).toBeLessThan(2);
             browser.logger.info('Influncer is not mapped with Campaign on page load')
 
+
         })
     });
 
-    it('Verify the matched status of an influncer when mapped to non-shipping campaign', () => {
+    it('Verify the matched status of an influncer when mapped to non-shipping campaign and mail triggered in inbox', () => {
         SelectCamp.searchCampaign(browser.params.NotShippedCampaign);
         MapInfluencerPage.removeAlreadyExistedInfluencer();
         MapInfluencerPage.selectNewInfluencerName();
@@ -57,46 +59,111 @@ describe('Verify the Influencer mapping functionality', function () {
         statusDropDown.$('option:checked').getText().then((value) => {
             browser.logger.info('Status is :' + value);
 
-        })
+        });
+
+        //Verify email received in inbox
+        Gmail.gmailSignIn(browser.params.GmailAddress, browser.params.GmailPswd);
+        expect(browser.getCurrentUrl()).toContain('https://mail.google.com/mail');
+        Gmail.verifyReceivedEmail();
+        let email_Subject = element(by.xpath('//*[@class="ha"]'));
+        CommonActions.waitForElement(email_Subject);
+        expect(email_Subject.getText()).toContain('Unity | Paid collaboration opportunity with');
+
+    });
+    it('Verify that same details should be there in collaboration email', () => {
+        SelectCamp.searchCampaign(browser.params.NotShippedCampaign);
+        MapInfluencerPage.removeAlreadyExistedInfluencer();
+        MapInfluencerPage.selectNewInfluencerName();
+        MapInfluencerPage.saveInfluencer();
+
+        Gmail.gmailSignIn(browser.params.GmailAddress, browser.params.GmailPswd);
+        expect(browser.getCurrentUrl()).toContain('https://mail.google.com/mail');
+        Gmail.verifyReceivedEmail();
+
+        //Verify that same details should be there in collaboration email
+        let emailContent = element.all(by.xpath('//*[starts-with(@id,":")]//following::table//following::tr[3]/td/span[2]'));
+        CommonActions.waitForElement(emailContent);
+        CommonActions.scrollToElement(emailContent);
+        emailContent.map(function (elm, index) {
+            return {
+
+                index: index,
+                text: elm.getText(),
+
+            }
+        }).then(function (arr) {
+            console.log(arr.slice(2, 7));
+
+            expect(arr.slice(2, 7)).toEqual([
+                {index: 2, text: 'Automation_Product'},
+                {index: 3, text: 'This is the test automation description'},
+                {index: 4, text: '01/03/2018'},
+                {index: 5, text: 'Photo'},
+                {index: 6, text: '01/10/2018'}])
+        });
+
+
     });
 
 
-    it('Map New Influencer with Campaign having shipping address', () => {
+    it('Verify Map New Influencer with Campaign having shipping address and email triggered in inbox', () => {
 
         SelectCamp.searchCampaign(browser.params.FirstCampName);
         MapInfluencerPage.removeAlreadyExistedInfluencer();
         MapInfluencerPage.selectNewInfluencerName();
         MapInfluencerPage.saveInfluencer();
-        let list = element.all(by.xpath('//*[@class="form-row field-not_interested_influencers"]//following::div[@class="readonly"]'));
+        let statusDropDown = element(by.css('#id_campaigninfluencer_set-0-status'));
+        expect(statusDropDown.$('option:checked').getText()).toEqual('Matched');
+        expect(statusDropDown.isDisabled).toBe(statusDropDown.isDisabled);
+
+        statusDropDown.$('option:checked').getText().then((value) => {
+            browser.logger.info('Status is :' + value);
+
+        });
+
+        /*let list = element.all(by.xpath('//!*[@class="form-row field-not_interested_influencers"]//following::div[@class="readonly"]'));
         CommonActions.waitForElement(list);
         CommonActions.scrollToElement(list);
-        expect(list.getText()).toMatch(firstName);
+        expect(list.getText()).toMatch(firstName);*/
+
+
+        //Verify email received in inbox
+        Gmail.gmailSignIn(browser.params.GmailAddress, browser.params.GmailPswd);
+        expect(browser.getCurrentUrl()).toContain('https://mail.google.com/mail');
+        Gmail.verifyReceivedEmail();
+        let email_Subject = element(by.xpath('//*[@class="ha"]'));
+        expect(email_Subject.getText()).toContain('Unity | Paid collaboration opportunity with');
+
     });
+});
+
+it('Verify Map New Influencer with Campaign having shipping address and email triggered in inbox', () => {
+
+    SelectCamp.searchCampaign(browser.params.FirstCampName);
+    MapInfluencerPage.removeAlreadyExistedInfluencer();
+   for(let i =0;i<=2;i++)
+   {
+    MapInfluencerPage.selectNewInfluencerName();
+    MapInfluencerPage.saveInfluencer();
+
+    };
+
+    /*let list = element.all(by.xpath('//!*[@class="form-row field-not_interested_influencers"]//following::div[@class="readonly"]'));
+    CommonActions.waitForElement(list);
+    CommonActions.scrollToElement(list);
+    expect(list.getText()).toMatch(firstName);*/
+
+
+    //Verify email received in inbox
+    Gmail.gmailSignIn(browser.params.GmailAddress, browser.params.GmailPswd);
+    expect(browser.getCurrentUrl()).toContain('https://mail.google.com/mail');
+    Gmail.verifyReceivedEmail();
+    let email_Subject = element(by.xpath('//*[@class="ha"]'));
+    expect(email_Subject.getText()).toContain('Unity | Paid collaboration opportunity with');
 
 });
 
 
-    describe('Verify the email in inbox', () => {
-
-        it('Verify the received email in inbox', () => {
-            // var email_Subject = element(by.xpath('.//!*[@id=":n2"]'));
-            Gmail.gmailSignIn(browser.params.GmailAddress, browser.params.GmailPswd);
-            expect(browser.getCurrentUrl()).toContain('https://mail.google.com/mail');
-            Gmail.verifyReceivedEmail();
-            let email_Subject = element(by.xpath('//*[@class="ha"]'));
-            expect(email_Subject.getText()).toContain('Unity | Paid collaboration opportunity with');
-
-        });
-
-        it('Verify the collboration', () => {
-            Gmail.verifyButtonInEmail()
-
-
-        });
-
-
-
-    });
 
 
 

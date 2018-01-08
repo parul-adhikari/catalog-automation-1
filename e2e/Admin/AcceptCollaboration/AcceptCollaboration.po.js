@@ -22,10 +22,26 @@ var AcceptCollaboration = {
             txbx_CountryValue: element.all(by.css('.highlighted')),
             txt_StateValue: element.all(by.css('.highlighted')),
             btn_Accept: element(by.css('.btn.def-button.text-align-center.d-inline-block.gene.small-text')),
-            btn_ShippingAdd: element(by.css('.btn.def-button.small-text.ml-auto.mr-0.mt-0.submit'))
+            btn_ShippingAdd: element(by.css('.btn.def-button.small-text.ml-auto.mr-0.mt-0.submit')),
+            div_CollaborationDetails : element(by.css('.brand-info-container.row.no-gutters')),
+            list_CollaborationDetails: element.all(by.css('.col-12'))
 
 
         },
+
+
+    collaborationDetails : function collaborationDetails() {
+        CommonActions.waitForElement(this.PageElements.list_CollaborationDetails);
+        CommonActions.scrollToElement(this.PageElements.list_CollaborationDetails);
+        this.PageElements.list_CollaborationDetails.getText().then((value)=> {
+            browser.logger.info(value + 'on collaboration page');
+            this.PageElements.list_CollaborationDetails.getText().then(function (value2) {
+                browser.logger.info('Campaign information is as as follows' + '\n' +value2)
+
+            })
+        })
+
+    },
 
 
         addPayPalDetails: function addPayPalDetails() {

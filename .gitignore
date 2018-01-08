@@ -1,7 +1,7 @@
 #ide and workspace files
 /.idea/workspace.xml
 /node_modules
-/conf/cheese.log
+/conf/cheese.txt
 /package-lock.json
 /package.json
 

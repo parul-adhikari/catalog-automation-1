@@ -28,8 +28,6 @@ describe('Verify the collaboration acceptance functionality', function () {
             AcceptCollaboration.acceptCollaboration()
         });
 
-        it('Verify the details on Colloaboration page', () => {
 
-        })
 
 });
