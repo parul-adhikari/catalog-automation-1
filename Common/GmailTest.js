@@ -4,7 +4,7 @@ var Gmail = {
 
     gmailSignIn: function gmailSignIn(usrEmail, usrPswd) {
         browser.get('https://accounts.google.com');
-        browser.driver.manage().window().maximize();
+        browser.driver.manage().window().setSize(420,600);
         browser.sleep(2000);
         var link_Gmail = element(by.xpath('//*[@href="https://mail.google.com"]'));
 

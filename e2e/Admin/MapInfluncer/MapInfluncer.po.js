@@ -143,6 +143,9 @@ var MapInfluencer = {
         this.PageElements.txtbx_Message.sendKeys(browser.params.PersonalMessage);
         this.PageElements.btn_SaveEditing.click().then(function () {
             browser.logger.info('Influencer details saved...')
+        },function (err) {
+
+            browser.logger.error("Error occured" +err)
         });
         //  browser.sleep(6000)
     },
