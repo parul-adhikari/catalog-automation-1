@@ -21,16 +21,10 @@
     "pg": "^6.4.1",
     "pg-format": "^1.0.4",
     "pg-promise": "^7.3.2",
-    "protractor": "^5.2.0",
+    "protractor": "^5.3.0",
     "protractor-jasmine2-html-reporter": "0.0.7",
     "selenium-webdriver": "^2.45.0",
     "sg-protractor-tools": "^1.0.4",
     "xlsx": "^0.11.8"
-<<<<<<< HEAD
-  },
-  "scripts": {
-    "start": "E:\Unity\conf\conf.js"
-=======
->>>>>>> 9ee5b08fb199ca7a3d975e69a629e249dbbe7fbb
   }
 }

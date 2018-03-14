@@ -1,17 +1,10 @@
-var Faker = require("E:\\Unity\\node_modules\\faker\\lib\\fake.js");
+var faker = require('faker');
 
+var fakeData =function (){
 
-     var randomName = Faker.name.findName
-    // browser.params.randomEmail = Faker.internet.email()
-    // browser.params.randomePassword = Faker.internet.password()
-    // browser.params.Grade = "Grade 1"
+    this.randomFirstName = faker.Name.firstName();
+    this.randomLastName= faker.Name.lastName();
+    this.randomPhoneNumber= faker.PhoneNumber.phoneNumber();
+};
 
-
-
-
-module.exports=new Faker
-
-
-
-
-
+module.exports = new fakeData();

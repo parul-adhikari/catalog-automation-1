@@ -1,5 +1,5 @@
 {
-  "Url": "https://staging.unityinfluence.com/home",
+  "Url": "https://staging.unityinfluence.com",
   "AdminUrl" : "https://api-staging.unityinfluence.com/admin/login/?next=/admin/",
   "WrongEmail": "tes.user.com",
   "Email": "testuser@gmail.com",
@@ -14,11 +14,14 @@
   "InfluencerCompBudget": "50",
   "InfluencerPromoBudget": "50",
   "PersonalMessage": "This is the test message for automation testing",
-  "GmailAddress": "unitytestuser01@gmail.com",
-  "GmailPswd": "Test@123",
+  "FacebookGmailAddress1": "unitytestuser01@gmail.com",
+  "FacebookGmailAddress2": "unitytestuser02@gmail.com",
+  "FacebookGmailPswd": "Test@123",
   "NewInfluencerFirstName": "Automation",
   "NewInfluencerSecondName": "Influencer",
   "NewInfluencerEmail": "unitytestuser01@gmail.com",
   "GmailAddress1": "vibhor.mathur@quovantis.com",
-  "GmailPswd1": "mys@1307tery"
+  "GmailPswd1": "mys@1307tery",
+  "Allreadymappedinfluencer":"witlinger",
+  "ValidPasswordForCustomSignup":"Quovantis123"
 }
