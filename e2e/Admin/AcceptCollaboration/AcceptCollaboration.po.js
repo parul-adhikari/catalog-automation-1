@@ -1,5 +1,6 @@
 var CommonActions = require('../../../Common/CommonActions');
-var LoginPage = require('../../StagingApp/Login/login.po');
+var LoginPage = require('../../FrontEndApp/PageObject/Login.po');
+var fakeData = require('../../../Utils/FakeData.js');
 
 
 var AcceptCollaboration = {
@@ -23,28 +24,45 @@ var AcceptCollaboration = {
             txt_StateValue: element.all(by.css('.highlighted')),
             btn_Accept: element(by.css('.btn.def-button.text-align-center.d-inline-block.gene.small-text')),
             btn_ShippingAdd: element(by.css('.btn.def-button.small-text.ml-auto.mr-0.mt-0.submit')),
-            div_CollaborationDetails : element(by.css('.brand-info-container.row.no-gutters')),
-            list_CollaborationDetails: element.all(by.css('.col-12'))
+            div_CollaborationDetails: element(by.css('.brand-info-container.row.no-gutters')),
+            list_CollaborationDetails: element.all(by.css('.details-info.small-text')),
+            txt_Pageheadinginfluencername: element(by.css('.heading-text.text-center>span'))
 
 
         },
 
+//collaboration details check
+        collaborationDetails: function collaborationDetails() {
+            CommonActions.waitForElement(this.PageElements.list_CollaborationDetails);
+            CommonActions.scrollToElement(this.PageElements.list_CollaborationDetails);
+            this.PageElements.list_CollaborationDetails.getText().then((value) => {
+                browser.logger.info(value + 'on collaboration page');
+                this.PageElements.list_CollaborationDetails.getText().then(function (value2) {
+                    browser.logger.info('Campaign information is as as follows' + '\n' + value2)
 
-    collaborationDetails : function collaborationDetails() {
-        CommonActions.waitForElement(this.PageElements.list_CollaborationDetails);
-        CommonActions.scrollToElement(this.PageElements.list_CollaborationDetails);
-        this.PageElements.list_CollaborationDetails.getText().then((value)=> {
-            browser.logger.info(value + 'on collaboration page');
-            this.PageElements.list_CollaborationDetails.getText().then(function (value2) {
-                browser.logger.info('Campaign information is as as follows' + '\n' +value2)
+
+                })
+                CommonActions.waitForElement(this.PageElements.txt_Pageheadinginfluencername);
+                expect(this.PageElements.txt_Pageheadinginfluencername.getText()).toMatch(fakeData.randomFirstName)
+
+                this.PageElements.list_CollaborationDetails.then(function (items) {
+                    expect(items.length).toBe(8);
+                    expect(items[0].getText()).toBe('AutomationBrand');
+                    expect(items[1].getText()).toBe('This is the automation test brand');
+                    expect(items[2].getText()).toBe('Automation_Product');
+                    expect(items[3].getText()).toBe('This is the test automation description');
+                    expect(items[4].getText()).toBe('$' + browser.params.InfluencerCompBudget+' '+'+'+' '+'$'+browser.params.InfluencerPromoBudget + ' ' + 'promotion budget.');
+
+
+                });
 
             })
-        })
 
-    },
+        },
 
 
         addPayPalDetails: function addPayPalDetails() {
+
             //  browser.sleep(6000)
             expect(browser.getTitle()).toEqual(LoginPage.PageElements.PageTitleAfterLogin);
             CommonActions.waitForElement(
@@ -56,7 +74,7 @@ var AcceptCollaboration = {
             //   this.PageElements.txbx_PaypalEmail.sendKeys(browser.params.PayPal_Email)
             expect(this.PageElements.btn_PaymentSubmit.isEnabled).toBe(this.PageElements.btn_PaymentSubmit.isEnabled);
 
-            this.PageElements.btn_PaymentSubmit.click().then( value => {
+            this.PageElements.btn_PaymentSubmit.click().then(value => {
 
                 browser.logger.info("Submitted PayPal Email")
 
@@ -113,6 +131,7 @@ var AcceptCollaboration = {
 
         acceptCollaboration: function acceptCollaboration() {
 
+
             commonActions.waitForElement(this.PageElements.btn_Accept)
             expect(this.PageElements.btn_Accept.isEnabled).toBe(this.PageElements.btn_Accept.isEnabled)
             this.PageElements.btn_Accept.click().then(function () {
@@ -127,8 +146,6 @@ var AcceptCollaboration = {
             expect(this.PageElements.btn_Accept.isDisabled).toBe(this.PageElements.btn_Accept.isDisabled)
 
         },
-
-
 
 
     }

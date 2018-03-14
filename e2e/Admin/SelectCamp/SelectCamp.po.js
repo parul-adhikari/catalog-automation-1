@@ -1,7 +1,6 @@
 var CommonActions = require('../../../Common/CommonActions');
 
 
-
 var SelectCamp = {
 
     PageElements: {
@@ -11,8 +10,8 @@ var SelectCamp = {
 
         //xpath locators
         btn_Search: element(by.xpath('//*[@value="Search"]')),
-        lnk_expectFirstCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="'+browser.params.FirstCampName+'"]')),
-        lnk_expectedCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="'+browser.params.Campaign_Name+'"]')),
+        lnk_expectFirstCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="' + browser.params.FirstCampName + '"]')),
+        lnk_expectedCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="' + browser.params.Campaign_Name + '"]')),
 
 
         //Text to be Matched
@@ -24,17 +23,13 @@ var SelectCamp = {
     searchCampaign: function searchCampaign(CampName) {
         browser.logger.info('Searching for the expected active campaign...');
         CommonActions.waitElementToBeClickable(this.PageElements.txtbx_Search);
-
         this.PageElements.txtbx_Search.sendKeys(CampName);
-        this.PageElements.btn_Search.click().then(function () {
+        console.log("hello i am here");
+        this.PageElements.btn_Search.click();
+        CommonActions.waitElementToBeVisible(element(by.xpath('//*[@class=\'field-name\']//*[text()="' + CampName + '"]')));
+        element(by.xpath('//*[@class=\'field-name\']//*[text()="' + CampName + '"]')).click();
+        browser.logger.info('Campaign' + '\n' + CampName + '\n' + 'is clicked from search result')
 
-        CommonActions.waitElementToBeVisible(element(by.xpath('//*[@class=\'field-name\']//*[text()="'+CampName+'"]')));
-        element(by.xpath('//*[@class=\'field-name\']//*[text()="'+CampName+'"]')).click().then(function () {
-            browser.logger.info('Campaign'+'\n' +CampName+ '\n' + 'is clicked from search result')
-
-        });
-
-        });
 
     }
 

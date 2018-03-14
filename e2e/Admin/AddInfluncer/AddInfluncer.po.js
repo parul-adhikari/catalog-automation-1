@@ -1,6 +1,9 @@
 var CommonActions = require('../../../Common/CommonActions');
 var HomePage = require('../AdminHome/Home.po');
+var fakeData = require('../../../Utils/FakeData.js');
 
+
+var firstName = fakeData.randomFirstName;
 
 var AddNewInfluencer = {
 
@@ -27,6 +30,7 @@ var AddNewInfluencer = {
 
     },
 
+
     clickInfluncerLink: function clickInfluncerLink() {
 
         HomePage.clickInfluencerLink();
@@ -43,7 +47,9 @@ var AddNewInfluencer = {
 
     AddDetails: function AddDetails() {
         //this.clickAddInfluencerBtn();
-        this.PageElements.txbx_FrstName.sendKeys(browser.params.NewInfluencerFirstName);
+
+
+        this.PageElements.txbx_FrstName.sendKeys(firstName + ' ' + browser.params.NewInfluencerFirstName);
         this.PageElements.txbx_LstName.sendKeys(browser.params.NewInfluencerSecondName);
         this.PageElements.txbx_Email.sendKeys(browser.params.NewInfluencerEmail);
         this.PageElements.btn_Save.click().then(function () {
@@ -62,7 +68,7 @@ var AddNewInfluencer = {
                 let firstName = browser.params.NewInfluencerFirstName;
                 let secondName = browser.params.NewInfluencerSecondName;
 
-                browser.logger.info("Influencer added successfully",firstName+secondName)
+                browser.logger.info("Influencer added successfully", firstName + secondName)
             }
             else {
                 browser.logger.error("Error occured")

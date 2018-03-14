@@ -1,6 +1,6 @@
 // An example configuration file.
 
-
+var __dirname = 'E:\\Unity'
 var log4js = require('log4js');
 var HTMLReporter = require('protractor-jasmine2-html-reporter');
 //var commonActions = require('../Common/CommonActions.js');
@@ -13,7 +13,7 @@ var fs = require('fs');
 var reporter = new HTMLReporter(
     {
 
-        savePath: 'C:\Users\Ankita Jangra\eclipse-workspace\Unity\Reports',
+        savePath: 'E:\\Unity\\Reports',
 
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true
@@ -40,19 +40,28 @@ exports.config = {
     // Spec patterns are relative to the current working directory when
     // protractor is called.
    // specs: ['../e2e/Admin/**/*.spec.js'],
-    specs: ['../e2e/Admin/MapInfluncer/*.spec.js'],
+    //specs: ['../e2e/Admin/MapInfluncer/*.spec.js'],
     suites: {
-<<<<<<< HEAD
-        AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js',
-        reg: '../testCases/MapInfluencerPageTest.js',
-        AdminRegression: '../testCases/AcceptCollaborationPageTest.js',
-=======
+
+        MySanitySuite:[
+
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\Home.spec.js',
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\Otp.spec.js',
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\UserDetails.spec.js',
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\UserDetailsPassword.spec.js',
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\Login.spec.js',
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\RegisterWithFacebook.spec.js',
+            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\RegisterWithGmail.spec.js'
+
+
+            ]
+
 
     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
      //   reg: ['../testCases/AdminLoginPageTest.js','../testCases/AdminHomePageTest.js']
        // AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
 
->>>>>>> 9ee5b08fb199ca7a3d975e69a629e249dbbe7fbb
+
 
 
     },
@@ -93,19 +102,12 @@ exports.config = {
 
 
             //For Url loading...
-<<<<<<< HEAD
-            browser.ignoreSynchronization = true;
-        browser.logger.info("Starting Test With Logs")
-        browser.driver.manage().window().maximize()
-        browser.logger.info("Url is loading....");
-        //  browser.get('https://staging.unityinfluence.com/home')
-=======
-           browser.ignoreSynchronization = true;
+  browser.ignoreSynchronization = true;
         browser.logger.info("Starting Test With Logs");
          browser.driver.manage().window().maximize();
          browser.logger.info("Url is loading....");
       //  browser.get('https://staging.unityinfluence.com/home')
->>>>>>> 9ee5b08fb199ca7a3d975e69a629e249dbbe7fbb
+
 
 
         //Initializing the reports
