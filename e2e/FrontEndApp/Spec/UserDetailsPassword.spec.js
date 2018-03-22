@@ -1,6 +1,5 @@
 let userDetailsPasswordPo = require('../../../e2e/FrontEndApp/PageObject/UserDetailsPassword.po')
 let commonActions = require('../../../Common/CommonActions');
-let clearData = require('../../../e2e/FrontEndApp/PageObject/ClearAutomationData')
 let fakeData = require('../../../Utils/FakeData.js');
 let adminLogin = require('../../Admin/PageObject/AdminLogin.po')
 
@@ -9,10 +8,7 @@ describe('Verify User Details Password Page', function () {
         expect(userDetailsPasswordPo.lbl_OfUserDetailPasswordPage().isDisplayed()).toBeTruthy();
         done();
     });
-    afterAll(function () {
-        clearData.ClearCurrentSessionData();
-        // clearData.DeleteUser("mailinator");
-    });
+
     it('Verify by filling the wrong formatted password in password field and trying to click on next button next.', () => {
         userDetailsPasswordPo.SetPassword("123456")
         expect(userDetailsPasswordPo.alert_WrongFormattedPassword().isDisplayed()).toBeTruthy();

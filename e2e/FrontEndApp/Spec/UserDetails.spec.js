@@ -17,7 +17,7 @@ describe('Verify User Details Page', function () {
 
     it('Verify without filling first name', () => {
 
-        console.log("data = "+fakeData.randomFirstName, fakeData.randomLastName, fakeData.randomPhoneNumber )
+        console.log("data = "+fakeData.randomFirstName, fakeData.randomLastName, fakeData.randomPhoneNumber)
 
         userDetailsPagePo.FillUserDetail("",fakeData.randomLastName,"9898562596")
         expect(userDetailsPagePo.btn_NextPassowrd().isDisabled).toBe(userDetailsPagePo.btn_NextPassowrd().isDisabled);

@@ -23,5 +23,9 @@
   "GmailAddress1": "vibhor.mathur@quovantis.com",
   "GmailPswd1": "mys@1307tery",
   "Allreadymappedinfluencer":"witlinger",
-  "ValidPasswordForCustomSignup":"Quovantis123"
+  "ValidPasswordForCustomSignup":"Quovantis123",
+  "BrandDescription":"Test Autmoation Brand Description",
+  "WebsiteURLForBrand":"www.BrandAutomation.com",
+  "AllreadyExistingBrand":"Automation Brand",
+  "AllreadyExistingCategory":"Automotive"
 }

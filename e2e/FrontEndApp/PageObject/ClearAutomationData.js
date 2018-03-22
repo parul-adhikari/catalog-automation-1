@@ -26,10 +26,30 @@ function ClearData() {
             if (result) {
                 adminLogin.doAdminLogin()
             }
+
         })
+        this.DeleteData(User);
+    }
+
+    this.DeleteBrand=function (Brand) {
+        this.AdminUrl("/brand/brand")
+        browser.isElementPresent(adminLogin.txbx_Email()).then(function (result) {
+            if (result) {
+                adminLogin.doAdminLogin()
+            }
+        })
+        this.DeleteData(Brand);
+    }
+
+    this.AdminUrl = function (RequiredPage) {
+        browser.navigate().to("https://api-staging.unityinfluence.com/admin" + RequiredPage)
+
+    }
+
+    this.DeleteData=function (DatatobeDeleted) {
         commonActions.waitElementToBeVisible(fld_Search)
         expect(fld_Search.isDisplayed()).toBeTruthy();
-        fld_Search.sendKeys(User)
+        fld_Search.sendKeys(DatatobeDeleted)
         commonActions.waitElementToBeVisible(btn_Search)
         expect(btn_Search.isDisplayed()).toBeTruthy();
         btn_Search.click();
@@ -45,10 +65,6 @@ function ClearData() {
         commonActions.waitElementToBeVisible(btn_GoAction)
         expect(btn_GoAction.isDisplayed()).toBeTruthy();
         btn_GoAction.click();
-    }
-
-    this.AdminUrl = function (RequiredPage) {
-        browser.navigate().to("https://api-staging.unityinfluence.com/admin" + RequiredPage)
 
     }
 }

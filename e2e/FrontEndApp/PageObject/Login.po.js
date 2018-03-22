@@ -7,12 +7,11 @@ function LoginPage() {
     //xpath locators
 
 
-
     var txt_PageHeading = element(by.xpath('//div[@class="bold text-center login-head"]'))
     var alert = element(by.xpath('/html/body/app-root/app-success-dialog/div/div[2]/div'))
 
     //css locators
-    var txbx_Email = $("input[formcontrolname*='email']")
+    var txbx_Email = $("div:nth-child(1) > div > input")
     var txbx_Pswd = $("input[formcontrolname*='password']")
     var btn_Login = $("button[type*='submit']")
     var mybrands_Btn = element(by.css('#secondaryMenuButton'))
@@ -52,6 +51,7 @@ function LoginPage() {
 
     this.doLogin = function (UserEmail, Password) {
         btn_UnityLogin.click()
+        commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/login')
         commonActions.waitElementToBeClickable(txbx_Email)
         txbx_Email.sendKeys(UserEmail);
         txbx_Pswd.sendKeys(Password);
@@ -68,7 +68,7 @@ function LoginPage() {
         mybrands_Btn.click();
         commonActions.browserWaitForElement(signout_optn);
         signout_optn.click().then(function () {
-            commonActions.waitForUrlToChange(browser.params.Url+'/')
+            commonActions.waitForUrlToChange(browser.params.Url + '/')
             browser.logger.info('Logout functionality verified')
         })
     }
@@ -94,8 +94,8 @@ function LoginPage() {
 
 
     }
-    
-    this.pageTitleAfterLogout =function () {
+
+    this.pageTitleAfterLogout = function () {
 
         return pageTitleAfterLogout;
     }

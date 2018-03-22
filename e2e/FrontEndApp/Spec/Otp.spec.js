@@ -19,7 +19,7 @@ describe('Verify OTP page', function () {
     })
 
     it('Verify mail get triggered on the email id and error dialog for wrong otp', () => {
-        otpPagePo.EmailVerifyForOtpAndCopyPasteOtp();
+        otpPagePo.EmailVerifyForOtpAndCopyPasteOtp(fakeData.randomFirstName);
         otpPagePo.lnk_clickHere().click();
         otpPagePo.btn_confirmAccount().click();
         expect(otpPagePo.err_dialog().isDisplayed()).toBeTruthy();
@@ -27,7 +27,7 @@ describe('Verify OTP page', function () {
     })
 
     it('Verify by filling the valid otp by using click here link', () => {
-        otpPagePo.EmailVerifyForOtpAndCopyPasteOtp();
+        otpPagePo.EmailVerifyForOtpAndCopyPasteOtp(fakeData.randomFirstName);
         otpPagePo.btn_confirmAccount().click();
     })
 

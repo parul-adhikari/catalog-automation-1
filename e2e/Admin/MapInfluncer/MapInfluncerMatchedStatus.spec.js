@@ -55,7 +55,7 @@ describe('Verify the Influencer mapping functionality', function () {
         MapInfluencerpage.selectNewInfluencerName();
         MapInfluencerpage.saveInfluencer();
         let statusDropDown = element(by.css('#id_campaigninfluencer_set-0-status'));
-        expect(statusDropDown.$('option:checked').getText()).toEqual('Matched');
+        expect(statusDropDown.$('option:checked').getText()).toEqual('Invited');
         expect(statusDropDown.isDisabled).toBe(statusDropDown.isDisabled);
 
         statusDropDown.$('option:checked').getText().then((value) => {
@@ -156,7 +156,7 @@ describe('Verify the Influencer mapping functionality', function () {
 
     });
 
-    it('Verify by clicking on upload content link form admin pannel.', () => {
+    it('Verify by clicking on upload content link form admin panel.', () => {
 
 
     SelectCamp.searchCampaign(browser.params.NotShippedCampaign);

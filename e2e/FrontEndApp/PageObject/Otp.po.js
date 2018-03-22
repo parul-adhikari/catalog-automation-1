@@ -11,9 +11,9 @@ function otpPage() {
     this.DisabledConfirmAccount = function () {
         expect(btn_confirmAccount.isDisabled).toBe(btn_confirmAccount.isDisabled);
     }
-    this.EmailVerifyForOtpAndCopyPasteOtp = function () {
+    this.EmailVerifyForOtpAndCopyPasteOtp = function (ExtendedUrl) {
 
-        let mailinator_URL = 'https://www.mailinator.com/v2/inbox.jsp?zone=public&query=' + fakeData.randomFirstName
+        let mailinator_URL = 'https://www.mailinator.com/v2/inbox.jsp?zone=public&query=' + ExtendedUrl
 
 
         browser.executeScript("return window.open(arguments[0], '_blank')", mailinator_URL);
@@ -21,10 +21,10 @@ function otpPage() {
         browser.getAllWindowHandles().then(function (handles) {
             browser.switchTo().window(handles[1]).then(function () {
                 browser.waitForAngular();
-                browser.sleep(3000)
+                browser.sleep(4000)
                 expect(mailinatorPagePo.our_Mail_locator.isDisplayed()).toBeTruthy();
                 mailinatorPagePo.our_Mail_locator.click()
-                browser.sleep(3000)
+                browser.sleep(4000)
                 browser.switchTo().frame('msg_body')
                 mailinatorPagePo.otp_Code_Loctor.getText().then((value) => {
                     browser.sleep(3000)

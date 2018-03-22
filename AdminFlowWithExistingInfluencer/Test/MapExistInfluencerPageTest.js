@@ -1,4 +1,4 @@
-//var addInfluencerPage = require('../Pages/MapExistingInfluencerWithCamp')
+var addInfluencerPage = require('../Pages/MapExistingInfluencerWithCamp')
 var commonActions = require('../../Common/CommonActions')
 //var gmail = require('../../AdminFlowWithExistingInfluencer/Test/GmailTest')
 
@@ -26,15 +26,15 @@ describe('Verify the addition of influencer', function () {
 
             addInfluencerPage.confirmSuccessfulNotificationMessage()
 
-        }),
-
-        it('Verify the gmail sign in', function () {
-          //  commonActions.gmailSignIn("ankita.jangra@quovantis.com", "ankita@123")
-
-            gmail.gmailSignIn(browser.params.GmailAddress,browser.params.GmailPswd)
-            gmail.verifyReceivedEmail()
-            gmail.verifyButtonInEmail()
         })
+
+        // it('Verify the gmail sign in', function () {
+        //   //  commonActions.gmailSignIn("ankita.jangra@quovantis.com", "ankita@123")
+        //
+        //     gmail.gmailSignIn(browser.params.GmailAddress,browser.params.GmailPswd)
+        //     gmail.verifyReceivedEmail()
+        //     gmail.verifyButtonInEmail()
+        // })
 
 
 })

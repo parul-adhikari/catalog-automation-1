@@ -41,7 +41,9 @@ describe('Verify the Unity home page with gmail button and registration with gma
         browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
         userDetailsPasswordPo.btn_BrandSetup().click();
         commonActions.waitForUrlToChange(browser.params.Url+'/brands')
-        expect(browser.getCurrentUrl()).toContain(browser.params.Url+'/brands')
+        browser.refresh();
+        expect(browser.getCurrentUrl()).toContain(browser.params.Url+'/brands')// check button enable with out phone number.
+
 
 
     })

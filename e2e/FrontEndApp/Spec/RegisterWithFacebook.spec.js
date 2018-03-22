@@ -30,6 +30,7 @@ describe('Verify the Unity home page with facebook button and registration with 
         fbPo.RegisterWithFacebook(browser.params.FacebookGmailAddress1);
         fbPo.PhoneNumberRequired();
         commonActions.waitForUrlToChange("https://staging.unityinfluence.com/brands")
+        browser.refresh();
         expect(browser.getCurrentUrl()).toContain('https://staging.unityinfluence.com/brands') // facebook only phone number scenario needs to be implemented.
     })
 

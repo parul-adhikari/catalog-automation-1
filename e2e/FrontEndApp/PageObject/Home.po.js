@@ -1,4 +1,4 @@
-let fakeData = require('../../../Utils/FakeData.js');
+
 let commonActions = require('../../../Common/CommonActions');
 
 function HomePage() {

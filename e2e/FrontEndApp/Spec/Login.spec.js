@@ -14,8 +14,8 @@ describe('Verify Login functionality', function () {
     afterAll(function (done) {
         //browser.manage().deleteAllCookies();
         clearData.ClearCurrentSessionData();
-        clearData.DeleteUser("mailinator");
-
+        clearData.DeleteBrand(fakeData.randomFirstName)
+        clearData.DeleteUser(fakeData.randomFirstName + '@mailinator.com');
         done()
     });
 
@@ -51,7 +51,7 @@ describe('Verify Login functionality', function () {
     it('Verify Logout Functionality', function () {
         browser.refresh();
         LoginPage.Logout();
-        expect(browser.getCurrentUrl()).toBe(browser.params.Url+'/')
+        expect(browser.getCurrentUrl()).toBe(browser.params.Url + '/')
         expect(browser.getTitle()).toBe(LoginPage.pageTitleAfterLogout());
     });
 
