@@ -14,21 +14,21 @@ describe('Verify OTP page', function () {
 
     it('Verify confirm account button is disabled', () => {
 
-        otpPagePo.DisabledConfirmAccount();
+        otpPagePo.disabledConfirmAccount();
         browser.logger.info('confirm account button is disabled')
     })
 
     it('Verify mail get triggered on the email id and error dialog for wrong otp', () => {
-        otpPagePo.EmailVerifyForOtpAndCopyPasteOtp(fakeData.randomFirstName);
-        otpPagePo.lnk_clickHere().click();
-        otpPagePo.btn_confirmAccount().click();
-        expect(otpPagePo.err_dialog().isDisplayed()).toBeTruthy();
+        otpPagePo.emailVerifyForOtpAndCopyPasteOtp(fakeData.randomFirstName);
+        otpPagePo.getClickHereLink().click();
+        otpPagePo.getConfirmAccountButton().click();
+        expect(otpPagePo.getErrorDialog().isDisplayed()).toBeTruthy();
         //expect(userDetailsPagePo.lbl_OfUserDetailPage.isDisplayed()).toBeTruthy();
     })
 
     it('Verify by filling the valid otp by using click here link', () => {
-        otpPagePo.EmailVerifyForOtpAndCopyPasteOtp(fakeData.randomFirstName);
-        otpPagePo.btn_confirmAccount().click();
+        otpPagePo.emailVerifyForOtpAndCopyPasteOtp(fakeData.randomFirstName);
+        otpPagePo.getConfirmAccountButton().click();
     })
 
 

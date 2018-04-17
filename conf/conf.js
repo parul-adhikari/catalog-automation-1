@@ -1,6 +1,6 @@
 // An example configuration file.
 
-var __dirname = 'E:/Unity/'
+var __dirname = process.env['FOLDER_PATH'];
 var log4js = require('log4js');
 var HTMLReporter = require('protractor-jasmine2-html-reporter');
 //var commonActions = require('../Common/CommonActions.js');
@@ -13,7 +13,7 @@ var fs = require('fs');
 var reporter = new HTMLReporter(
     {
 
-        savePath: 'E:/Unity/Reports',
+        savePath: __dirname+'/Reports',
 
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true,
@@ -82,8 +82,6 @@ exports.config = {
 
 
     beforeLaunch: function () {
-        console.log("path = " + process.env['FOLDER_PATH'])
-
         log4js.configure({
             appenders: {
                 cheeseLogs: {type: 'file', filename: 'cheese.log'},

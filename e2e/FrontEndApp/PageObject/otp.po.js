@@ -3,17 +3,17 @@ let mailinatorPagePo = require('./mailinator.po')
 let commonActions = require('../../../Common/CommonActions');
 
 function otpPage() {
-    var txbx_firstColumn = element(by.id('otp'))
-    var btn_confirmAccount = $("button[class*='next-button'][type='button']")
-    var lnk_clickHere = element(by.cssContainingText('.link-text', 'click here.'))
-    var err_dialog = $("div[class*='dialogue-bottom']")
+    var firstColumnTextBox = element(by.id('otp'))
+    var confirmAccountButton = $("button[class*='next-button'][type='button']")
+    var clickHereLink = element(by.cssContainingText('.link-text', 'click here.'))
+    var errorDialog = $("div[class*='dialogue-bottom']")
 
-    this.DisabledConfirmAccount = function () {
-        expect(btn_confirmAccount.isDisabled).toBe(btn_confirmAccount.isDisabled);
+    this.disabledConfirmAccount = function () {
+        expect(confirmAccountButton.isDisabled).toBe(confirmAccountButton.isDisabled);
     }
-    this.EmailVerifyForOtpAndCopyPasteOtp = function (ExtendedUrl) {
+    this.emailVerifyForOtpAndCopyPasteOtp = function (extendedUrl) {
 
-        let mailinator_URL = 'https://www.mailinator.com/v2/inbox.jsp?zone=public&query=' + ExtendedUrl
+        let mailinator_URL = 'https://www.mailinator.com/v2/inbox.jsp?zone=public&query=' + extendedUrl
 
 
         browser.executeScript("return window.open(arguments[0], '_blank')", mailinator_URL);
@@ -30,25 +30,25 @@ function otpPage() {
                     browser.sleep(3000)
                     browser.driver.close();
                     browser.switchTo().window(handles[0]);
-                    // txbx_firstColumn.clear();
+                    // firstColumnTextBox.clear();
 
                     browser.refresh();
-                    txbx_firstColumn.sendKeys(value)
+                    firstColumnTextBox.sendKeys(value)
                 })
             })
         })
     }
-    this.lnk_clickHere = function () {
-        commonActions.waitElementToBeVisible(lnk_clickHere)
-        return lnk_clickHere;
+    this.getClickHereLink = function () {
+        commonActions.waitElementToBeVisible(clickHereLink)
+        return clickHereLink;
     }
-    this.btn_confirmAccount = function () {
-        commonActions.waitElementToBeVisible(btn_confirmAccount)
-        return btn_confirmAccount;
+    this.getConfirmAccountButton = function () {
+        commonActions.waitElementToBeVisible(confirmAccountButton)
+        return confirmAccountButton;
     }
-    this.err_dialog = function () {
-        commonActions.waitElementToBeVisible(err_dialog)
-        return err_dialog;
+    this.getErrorDialog = function () {
+        commonActions.waitElementToBeVisible(errorDialog)
+        return errorDialog;
     }
 
 };

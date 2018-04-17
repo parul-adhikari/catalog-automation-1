@@ -19,18 +19,18 @@ describe('Verify Login functionality', function () {
         done();
    });
 
-    xit('Blank fields check', function () {
+    it('Blank fields check', function () {
         loginPage.blankLoginCheck();
         expect(loginPage.getLoginButton().isDisabled).toBe(loginPage.getLoginButton().isDisabled);
     });
 
-    xit('Wrong credentials check', function () {
+    it('Wrong credentials check', function () {
         loginPage.wrongCredentials();
         expect(loginPage.getErrorMessage().getText()).toContain(loginPage.getAlertMessage());
 
     });
 
-    xit('Verify Login with Google', function () {
+   xit('Verify Login with Google', function () {
 
         loginPage.loginWithGmail();
         expect(browser.getTitle()).toEqual(loginPage.getPageTitleAfterLogin())
@@ -43,14 +43,14 @@ describe('Verify Login functionality', function () {
         expect(browser.getCurrentUrl()).toBe(browser.params.Url + '/brands')
     });
 
-    xit('Verify logOut Functionality', function () {
+    it('Verify logOut Functionality', function () {
         browser.refresh();
         loginPage.logOut();
         expect(browser.getCurrentUrl()).toBe(browser.params.Url + '/')
         expect(browser.getTitle()).toBe(loginPage.getPageTitleAfterLogout());
     });
 
-    xit('Verify the after login Url', function () {
+    it('Verify the after login Url', function () {
         loginPage.getUrlToBeChanged();
     })
 
