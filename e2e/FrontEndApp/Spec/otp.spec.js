@@ -1,8 +1,8 @@
-let mailinatorPagePo = require('../../../e2e/FrontEndApp/PageObject/Mailinator.po')
-let otpPagePo = require('../../../e2e/FrontEndApp/PageObject/Otp.po')
+let mailinatorPagePo = require('../PageObject/mailinator.po')
+let otpPagePo = require('../PageObject/otp.po')
 let fakeData = require('../../../Utils/FakeData.js');
 let commonActions = require('../../../Common/CommonActions');
-let userDetailsPagePo = require('../../../e2e/FrontEndApp/PageObject/UserDetails.po')
+let userDetailsPagePo = require('../PageObject/userDetails.po')
 
 describe('Verify OTP page', function () {
 

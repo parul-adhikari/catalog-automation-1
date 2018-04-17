@@ -16,7 +16,7 @@ describe('Verify the Influencer mapping functionality', function () {
 
     beforeAll((done) => {
 
-        browser.get(browser.params.AdminUrl);
+        browser.get(browser.params.adminUrl);
         Login.doAdminLogin();
         done();
     });

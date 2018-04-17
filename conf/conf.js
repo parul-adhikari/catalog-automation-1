@@ -16,7 +16,7 @@ var reporter = new HTMLReporter(
         savePath: 'E:/Unity/Reports',
 
         takeScreenshots: true,
-        takeScreenshotsOnlyOnFailures: true
+        takeScreenshotsOnlyOnFailures: true,
 
     })
 
@@ -31,6 +31,7 @@ exports.config = {
 
     // Capabilities to be passed to the webdriver instance.
     capabilities: {
+
         'browserName': 'chrome'
     },
 
@@ -40,19 +41,22 @@ exports.config = {
     // Spec patterns are relative to the current working directory when
     // protractor is called.
     //specs: ['../e2e/FrontEndApp/**/*.spec.js'],
-    //specs: ['../e2e/FrontEndApp/Spec/RegisterWithGmail.spec.js'],
+    //specs: ['../e2e/FrontEndApp/Spec/registerWithGmail.spec.js'],
     suites: {
 
         SanitySuite: [
-            // __dirname + '/e2e/FrontEndApp/Spec/RegisterWithGmail.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/RegisterWithFacebook.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/Home.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/Otp.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/UserDetails.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/UserDetailsPassword.spec.js',
-            __dirname + '/e2e/FrontEndApp/Spec/CreateBrand.spec.js',
-            'E:\\Unity\\e2e\\FrontEndApp\\Spec\\CreateBrandCategory.spec.js'
-            // __dirname + '/e2e/FrontEndApp/Spec/Login.spec.js'
+            __dirname + '/e2e/FrontEndApp/Spec/registerWithGmail.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/registerWithFacebook.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/home.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/otp.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/userDetails.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/userDetailsPassword.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/createBrand.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/createBrandCategory.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/campaignDetails.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/campaignProductTypeSelection.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
+
 
             // 'E:\\Unity\\e2e\\Admin\\MapInfluncer\\MapInfluncerMatchedStatus.spec.js'
 
@@ -73,7 +77,7 @@ exports.config = {
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
         // allScriptsTimeout : 90000
-        defaultTimeoutInterval: 900000
+        defaultTimeoutInterval: 90000
     },
 
 

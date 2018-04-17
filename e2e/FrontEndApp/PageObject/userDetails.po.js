@@ -1,6 +1,6 @@
-let userDetailsPasswordPo = require('../../../e2e/FrontEndApp/PageObject/UserDetailsPassword.po')
+let userDetailsPasswordPo = require('./userDetailsPassword.po')
 let commonActions = require('../../../Common/CommonActions');
-let userDetailsPagePo = require('../../../e2e/FrontEndApp/PageObject/UserDetails.po')
+let userDetailsPagePo = require('../../../e2e/FrontEndApp/PageObject/userDetails.po')
 
 
 function userDetailsPage() {

@@ -1,4 +1,4 @@
-let userDetailsPasswordPo = require('../../../e2e/FrontEndApp/PageObject/UserDetailsPassword.po')
+let userDetailsPasswordPo = require('../PageObject/userDetailsPassword.po')
 let commonActions = require('../../../Common/CommonActions');
 let fakeData = require('../../../Utils/FakeData.js');
 let adminLogin = require('../../Admin/PageObject/AdminLogin.po')

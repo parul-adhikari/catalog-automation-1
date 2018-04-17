@@ -6,8 +6,8 @@ function HomePage() {
     var btn_Login = $('.btn.btn-primary.home-screen-mod.def-button.nav-link')
     var btn_Register = $('button[type="submit"]')
     var txbx_RegEmail = $('input[formcontrolname="email"]')
-    var facebookButton = $("button[class*='facebook-btn']")
-    var gmailButton = $('button[class*="google-btn"]')
+    var facebookButton = $("[class*='facebook']")
+    var gmailButton = $('[class*="google"]')
 
     //text to be matched
     var urlToBeChanged = 'https://staging.unityinfluence.com/home'

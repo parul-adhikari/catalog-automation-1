@@ -1,20 +1,20 @@
 let commonActions = require('../../../Common/CommonActions');
-let userDetailsPasswordPo = require('../../../e2e/FrontEndApp/PageObject/UserDetailsPassword.po')
-let userDetailsPo = require('../../../e2e/FrontEndApp/PageObject/UserDetails.po')
-let homePagePo = require('../../../e2e/FrontEndApp/PageObject/Home.po')
+let userDetailsPasswordPo = require('./userDetailsPassword.po')
+let userDetailsPo = require('./userDetails.po')
+let homePagePo = require('./home.po')
 
 
-function fbPopup() {
+function facebookWindow() {
 
-    var txt_FbEmail = $('#email')
-    var txt_FbPassword = $('#pass')
-    var btn_FbLogin = $('#u_0_0')
-    var btn_CancelPermission = element(by.name('__CANCEL__'))
-    var btn_Continue = element(by.name('__CONFIRM__'))
-    var drp_SwitchUser = $('#u_0_3')
-    var drpopt_switchUser = $('.__MenuItem')
+    var textBoxFacebookEmail = $('#email')
+    var textBoxFacebookPassword = $('#pass')
+    var buttonFacebookLogin = $('#u_0_0')
+    var buttonCancelPermission = element(by.name('__CANCEL__'))
+    var buttonContinue = element(by.name('__CONFIRM__'))
+    var dropdownSwitchUser = $('#u_0_3')
+    var dropdownOptionSwitchUser = $('.__MenuItem')
 
-    this.PresenceOfFacebookButton = function () {
+    this.presenceOfFacebookButton = function () {
         homePagePo.facebookButton().click();
         browser.getAllWindowHandles().then(function (handles) {
             browser.switchTo().window(handles[1]).then(function () {
@@ -28,14 +28,14 @@ function fbPopup() {
         })
     }
 
-    this.RegisterWithFacebook = function (FacebookEmailId) {
+    this.registerWithFacebook = function (FacebookEmailId) {
         homePagePo.facebookButton().click();
         browser.getAllWindowHandles().then(function (handles) {
             browser.switchTo().window(handles[1]).then(function () {
                 browser.waitForAngular();
-                txt_FbEmail.sendKeys(FacebookEmailId)
-                txt_FbPassword.sendKeys(browser.params.FacebookGmailPswd)
-                btn_FbLogin.click()
+                textBoxFacebookEmail.sendKeys(FacebookEmailId)
+                textBoxFacebookPassword.sendKeys(browser.params.FacebookGmailPswd)
+                buttonFacebookLogin.click()
                 browser.switchTo().window(handles[0])
 
 
@@ -43,7 +43,7 @@ function fbPopup() {
         })
 
     }
-    this.PhoneNumberRequired = function () {
+    this.phoneNumberRequired = function () {
         commonActions.waitElementToBeVisible(userDetailsPo.txt_PhoneNumber())
         userDetailsPo.txt_PhoneNumber().sendKeys("9896585252")
         expect(userDetailsPasswordPo.chk_TermsAndCondition().isPresent()).toBe(userDetailsPasswordPo.chk_TermsAndCondition().isPresent());
@@ -53,7 +53,7 @@ function fbPopup() {
 
     }
 
-    this.PhoneAndEmailRequierd = function () {
+    this.phoneAndEmailRequierd = function () {
         userDetailsPo.txt_Email().sendKeys(browser.params.FacebookGmailAddress2)
         userDetailsPo.txt_PhoneNumber().sendKeys("9896585252")
         browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
@@ -64,4 +64,4 @@ function fbPopup() {
 
 }
 
-module.exports = new fbPopup();
+module.exports = new facebookWindow();

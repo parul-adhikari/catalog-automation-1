@@ -1,5 +1,5 @@
 let fakeData = require('../../../Utils/FakeData.js');
-let mailinatorPagePo = require('../../../e2e/FrontEndApp/PageObject/Mailinator.po')
+let mailinatorPagePo = require('./mailinator.po')
 let commonActions = require('../../../Common/CommonActions');
 
 function otpPage() {
@@ -21,7 +21,7 @@ function otpPage() {
         browser.getAllWindowHandles().then(function (handles) {
             browser.switchTo().window(handles[1]).then(function () {
                 browser.waitForAngular();
-                browser.sleep(4000)
+                browser.sleep(5000)
                 expect(mailinatorPagePo.our_Mail_locator.isDisplayed()).toBeTruthy();
                 mailinatorPagePo.our_Mail_locator.click()
                 browser.sleep(4000)

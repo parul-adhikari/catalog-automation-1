@@ -73,12 +73,12 @@ var loginPage = {
         this.PageElements.signout_optn.click();
         expect(browser.getTitle()).toBe(pageTitleAfterLogout);
 
-        browser.logger.info('Logout functionality verified')
+        browser.logger.info('logOut functionality verified')
 
 
     },
 
-    loginwithGmail: function loginwithGmail() {
+    loginWithGmail: function loginwithGmail() {
 
         welcome_Page.PageElements.lnk_Login.click();
         this.PageElements.google_Login_Btn.click();

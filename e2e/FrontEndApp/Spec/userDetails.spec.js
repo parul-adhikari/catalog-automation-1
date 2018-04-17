@@ -1,8 +1,8 @@
-let userDetailsPasswordPo = require('../../../e2e/FrontEndApp/PageObject/UserDetailsPassword.po')
+let userDetailsPasswordPo = require('../PageObject/userDetailsPassword.po')
 let fakeData = require('../../../Utils/FakeData.js');
 let commonActions = require('../../../Common/CommonActions');
 
-let userDetailsPagePo = require('../../../e2e/FrontEndApp/PageObject/UserDetails.po')
+let userDetailsPagePo = require('../PageObject/userDetails.po')
 
 
 describe('Verify User Details Page', function () {

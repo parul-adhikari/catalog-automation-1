@@ -1,7 +1,7 @@
 let commonActions = require('../../../Common/CommonActions');
-let homePagePo = require('../../../e2e/FrontEndApp/PageObject/Home.po')
-let fbPo = require('../../../e2e/FrontEndApp/PageObject/Fb.po')
-let clearData = require('../../../e2e/FrontEndApp/PageObject/ClearAutomationData')
+let homePagePo = require('../PageObject/home.po')
+let fbPo = require('../PageObject/facebook.po')
+let clearData = require('../PageObject/clearAutomationData')
 let adminLogin = require('../../Admin/PageObject/AdminLogin.po')
 
 describe('Verify the Unity home page with facebook button and registration with facebook', function () {
@@ -16,19 +16,19 @@ describe('Verify the Unity home page with facebook button and registration with 
         browser.waitForAngular()
     });
     afterAll(function () {
-        clearData.ClearCurrentSessionData();
-        clearData.DeleteUser(browser.params.FacebookGmailAddress1);
+        clearData.currentSessionDataClear();
+        clearData.deleteUser(browser.params.FacebookGmailAddress1);
     });
     it('Verify the presence of facebook button on home page.', () => {
         expect(homePagePo.facebookButton().isEnabled()).toBe(homePagePo.facebookButton().isEnabled());
     });
     it('Verify by clicking on facebook button on home page new facebook login window should get open', () => {
-        fbPo.PresenceOfFacebookButton();
+        fbPo.presenceOfFacebookButton();
     });
     it('Verify registration process through facebook without phone number.', () => {
 
-        fbPo.RegisterWithFacebook(browser.params.FacebookGmailAddress1);
-        fbPo.PhoneNumberRequired();
+        fbPo.registerWithFacebook(browser.params.FacebookGmailAddress1);
+        fbPo.phoneNumberRequired();
         commonActions.waitForUrlToChange("https://staging.unityinfluence.com/brands")
         browser.refresh();
         expect(browser.getCurrentUrl()).toContain('https://staging.unityinfluence.com/brands') // facebook only phone number scenario needs to be implemented.

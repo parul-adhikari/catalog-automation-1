@@ -5,7 +5,7 @@ describe('Verify Unity Admin Login', function () {
     beforeAll(function (done) {
 
         //Admin Url to load
-        browser.get(browser.params.AdminUrl).then(function () {
+        browser.get(browser.params.adminUrl).then(function () {
             browser.logger.info('Launching Unity Admin Page...')
 
         });

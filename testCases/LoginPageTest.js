@@ -20,12 +20,12 @@ describe('Verify Login functionality', function () {
 
     it('Verify Login with Google', function () {
 
-        loginPage.loginwithGmail()
+        loginPage.loginWithGmail()
     })
 
-    it('Verify Logout Functionality', function () {
+    it('Verify logOut Functionality', function () {
 
-        loginPage.Logout()
+        loginPage.logOut()
     })
 
     it('Verify successful login', function () {

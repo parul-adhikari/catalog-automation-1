@@ -1,8 +1,8 @@
-let homePagePo = require('../../../e2e/FrontEndApp/PageObject/Home.po')
+let homePagePo = require('./home.po')
 let commonActions = require('../../../Common/CommonActions.js');
-let userDetailsPagePo = require('../../../e2e/FrontEndApp/PageObject/UserDetails.po')
+let userDetailsPagePo = require('./userDetails.po')
 
-function GmailPo() {
+function gmailPo() {
 
     var txbx_Email = $('input[type="email"]')
     var btn_Next = $('#identifierNext')
@@ -33,4 +33,4 @@ function GmailPo() {
 
 }
 
-module.exports = new GmailPo();
+module.exports = new gmailPo();

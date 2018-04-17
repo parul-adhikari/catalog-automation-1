@@ -27,5 +27,7 @@
   "BrandDescription":"Test Autmoation Brand Description",
   "WebsiteURLForBrand":"www.BrandAutomation.com",
   "AllreadyExistingBrand":"Automation Brand",
-  "AllreadyExistingCategory":"Automotive"
+  "AllreadyExistingCategory":"Automotive",
+  "CampaignLaunchDate": "23",
+  "stringForExistingCampaignName":"Automation Campaign"
 }

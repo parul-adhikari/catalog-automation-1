@@ -1,5 +1,5 @@
 var CommonActions = require('../../../Common/CommonActions');
-var LoginPage = require('../../FrontEndApp/PageObject/Login.po');
+var LoginPage = require('../../FrontEndApp/PageObject/login.po');
 var fakeData = require('../../../Utils/FakeData.js');
 
 

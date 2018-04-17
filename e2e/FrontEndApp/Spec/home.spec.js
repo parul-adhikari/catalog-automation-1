@@ -1,4 +1,4 @@
-let homePagePo = require('../../../e2e/FrontEndApp/PageObject/Home.po.js');
+let homePagePo = require('../PageObject/home.po.js');
 let commonActions = require('../../../Common/CommonActions');
 let changedUrl = browser.params.Url + "/auth/sign-up?email="
 let fakeData = require('../../../Utils/FakeData.js');

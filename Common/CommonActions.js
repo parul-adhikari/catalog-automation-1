@@ -8,7 +8,7 @@ var commonActions = {
 
 
         const EC = protractor.ExpectedConditions;
-        browser.wait(EC.urlContains(expectedUrl), 10000);
+        browser.wait(EC.urlContains(expectedUrl), 20000);
         browser.logger.info("Landing on: " + expectedUrl + " Url...")
 
     },
@@ -30,7 +30,7 @@ scrollToElement: function scrollToElement(element) {
 
         const EC = protractor.ExpectedConditions;
         browser.wait(EC.presenceOf(element), 10000);
-        expect(element.isPresent()).toBeTruthy();
+       // expect(element.isPresent()).toBeTruthy();
     },
 
     waitElementToBeVisible: function waitElementToBeVisible(element) {
@@ -166,6 +166,8 @@ scrollToElement: function scrollToElement(element) {
         })
 
     }
+
+
 
 
 }

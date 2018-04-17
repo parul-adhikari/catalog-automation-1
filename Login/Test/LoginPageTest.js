@@ -20,13 +20,13 @@ describe('Verify Login functionality', function () {
     it('Verify the after login Url', function () {
         commonActions.waitForUrlToChange(loginPage.PageElements.urlToBeChanged)
     })
-    it('Verify Logout Functionality', function () {
+    it('Verify logOut Functionality', function () {
 
-        loginPage.Logout()
+        loginPage.logOut()
     })
     it('Verify Login with Google', function () {
 
-        loginPage.loginwithGmail()
+        loginPage.loginWithGmail()
     })
 
 

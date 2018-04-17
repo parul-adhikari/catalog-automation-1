@@ -1,8 +1,8 @@
-let gmailPo = require('../../../e2e/FrontEndApp/PageObject/Gmail.po')
-let userDetailsPagePo = require('../../../e2e/FrontEndApp/PageObject/UserDetails.po')
-let userDetailsPasswordPo = require('../../../e2e/FrontEndApp/PageObject/UserDetailsPassword.po')
+let gmailPo = require('../PageObject/gmail.po')
+let userDetailsPagePo = require('../PageObject/userDetails.po')
+let userDetailsPasswordPo = require('../PageObject/userDetailsPassword.po')
 let commonActions = require('../../../Common/CommonActions');
-let clearData = require('../../../e2e/FrontEndApp/PageObject/ClearAutomationData')
+let clearData = require('../PageObject/clearAutomationData')
 
 
 describe('Verify the Unity home page with gmail button and registration with gmail', function () {
@@ -11,18 +11,17 @@ describe('Verify the Unity home page with gmail button and registration with gma
         done();
     });
     beforeEach(function () {
-
         browser.get(browser.params.Url);
         browser.waitForAngular()
 
-    })
+    });
 
-    afterAll(function(){
+    afterAll(function () {
 
-        clearData.ClearCurrentSessionData();
-        clearData.DeleteUser(browser.params.FacebookGmailAddress1);
+        clearData.currentSessionDataClear();
+        clearData.deleteUser(browser.params.FacebookGmailAddress1);
 
-    })
+    });
 
 
     it('Verify the presence of gmail button on home page.', () => {
@@ -36,17 +35,16 @@ describe('Verify the Unity home page with gmail button and registration with gma
     })
     it('Verify by registering a user using gmail', () => {
         gmailPo.RegisterWithGmail(browser.params.FacebookGmailAddress1);
-        expect(browser.getCurrentUrl()).toContain(browser.params.Url+'/auth/sign-up/form;access_token')
+        expect(browser.getCurrentUrl()).toContain(browser.params.Url + '/auth/sign-up/form;access_token')
         userDetailsPagePo.txt_PhoneNumber().sendKeys('7895912123')
         browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
         userDetailsPasswordPo.btn_BrandSetup().click();
-        commonActions.waitForUrlToChange(browser.params.Url+'/brands')
+        commonActions.waitForUrlToChange(browser.params.Url + '/brands')
         browser.refresh();
-        expect(browser.getCurrentUrl()).toContain(browser.params.Url+'/brands')// check button enable with out phone number.
+        expect(browser.getCurrentUrl()).toContain(browser.params.Url + '/brands')// check button enable with out phone number.
 
 
-
-    })
+    });
 
 
 });

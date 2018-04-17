@@ -75,18 +75,18 @@ var loginPage = {
         this.PageElements.mybrands_Btn.click();
         commonActions.browserWaitForElement(this.PageElements.signout_optn);
         this.PageElements.signout_optn.click();
-        //  commonActions.browserWaitForElement(browser.getTitle()).toBe(pageTitleAfterLogout)
+        //  commonActions.browserWaitForElement(browser.getTitle()).toBe(getPageTitleAfterLogout)
         // browser.sleep(6000)
         commonActions.waitForUrlToChange('https://staging.unityinfluence.com/')
         browser.ignoreSynchronization = false;
         browser.waitForAngular()
         expect(browser.getTitle()).toBe(pageTitleAfterLogout);
-        browser.logger.info('Logout functionality verified')
+        browser.logger.info('logOut functionality verified')
 
 
     },
 
-    loginwithGmail: function loginwithGmail() {
+    loginWithGmail: function loginwithGmail() {
         commonActions.browserWaitForElement(this.PageElements.google_Login_Btn)
         this.PageElements.google_Login_Btn.click()
         commonActions.browserWaitForElement(element(by.css('input[type="email"]')))
