@@ -28,6 +28,11 @@
   "WebsiteURLForBrand":"www.BrandAutomation.com",
   "AllreadyExistingBrand":"Automation Brand",
   "AllreadyExistingCategory":"Automotive",
-  "CampaignLaunchDate": "23",
-  "stringForExistingCampaignName":"Automation Campaign"
+  "productTypeSelectionScreenHeading":"Select the type of product to promote",
+  "productTypeSelectionScreenSubHeading":"Choose the type of product you want to promote in this campaign. You will be gifting a sample to the influencer(s) to create content for the campaign.",
+  "physicalProductName":"Test Physical Product:: Nike",
+  "physicalProductValue":"10",
+  "physicalProductDescription":"This is some dummy description for physical product",
+  "websiteUrlForPhysicalProduct":"www.nike.com",
+  "alreadyExistingPhysicalProduct":"Phy"
 }

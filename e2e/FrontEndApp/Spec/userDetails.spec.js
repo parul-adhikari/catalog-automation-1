@@ -8,23 +8,23 @@ let userDetailsPagePo = require('../PageObject/userDetails.po')
 describe('Verify User Details Page', function () {
 
     beforeAll(function (done) {
-        expect(userDetailsPagePo.lbl_OfUserDetailPage().isDisplayed()).toBeTruthy();
+        expect(userDetailsPagePo.getUserDetailPageLabel().isDisplayed()).toBeTruthy();
         done();
     });
     it('Verify without filling any value in any field next button should be disabled', () => {
-        expect(userDetailsPagePo.btn_NextPassowrd().isDisabled).toBe(userDetailsPagePo.btn_NextPassowrd().isDisabled);
+        expect(userDetailsPagePo.getNextPasswordButton().isDisabled).toBe(userDetailsPagePo.getNextPasswordButton().isDisabled);
     })
 
     it('Verify without filling first name', () => {
 
         console.log("data = "+fakeData.randomFirstName, fakeData.randomLastName, fakeData.randomPhoneNumber)
 
-        userDetailsPagePo.FillUserDetail("",fakeData.randomLastName,"9898562596")
-        expect(userDetailsPagePo.btn_NextPassowrd().isDisabled).toBe(userDetailsPagePo.btn_NextPassowrd().isDisabled);
+        userDetailsPagePo.fillUserDetail("",fakeData.randomLastName,"9898562596")
+        expect(userDetailsPagePo.getNextPasswordButton().isDisabled).toBe(userDetailsPagePo.getNextPasswordButton().isDisabled);
     })
 
     it('Verify with providing all required details', () => {
-       userDetailsPagePo.FillUserDetail(fakeData.randomFirstName, fakeData.randomLastName, "7572011110")
+       userDetailsPagePo.fillUserDetail(fakeData.randomFirstName, fakeData.randomLastName, "7572011110")
         commonActions.waitElementToBeVisible(userDetailsPasswordPo.lbl_OfUserDetailPasswordPage())
         expect(userDetailsPasswordPo.lbl_OfUserDetailPasswordPage().isDisplayed()).toBeTruthy();
 

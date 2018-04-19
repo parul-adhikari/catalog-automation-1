@@ -23,7 +23,7 @@ describe('Verify OTP page', function () {
         otpPagePo.getClickHereLink().click();
         otpPagePo.getConfirmAccountButton().click();
         expect(otpPagePo.getErrorDialog().isDisplayed()).toBeTruthy();
-        //expect(userDetailsPagePo.lbl_OfUserDetailPage.isDisplayed()).toBeTruthy();
+        //expect(userDetailsPagePo.getUserDetailPageLabel.isDisplayed()).toBeTruthy();
     })
 
     it('Verify by filling the valid otp by using click here link', () => {

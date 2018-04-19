@@ -8,55 +8,84 @@ function physicalProductPage() {
     var productValueTextBox = $('#poduct_value');
     var shortDescriptionTextBox = $('#short_description');
     var userActionDropDown = $("[formcontrolname*='user_action']");
+    var userActionDropDownOption = $('select-dropdown > div > div > ul > li');
     var websiteTextBox = $("#Website");
     var competitiveProductOrBrandTextBox = $("#competitive_products");
     var nextAudienceButton = $("[type*='submit']");
     var closeButton = $("[class*='close-link']");
+    var errorDialog = $("div[class*='error-dialog']");
 
     this.getPageHeading = function () {
-        commonActions.waitForElement(pageHeading)
+        commonActions.waitForElement(pageHeading);
         return pageHeading;
     };
     this.getPageSubHeading = function () {
-        commonActions.waitForElement(pageSubHeading)
+        commonActions.waitForElement(pageSubHeading);
         return pageSubHeading;
     };
     this.getProductNameTextBox = function () {
-        commonActions.waitForElement(productNameTextBox)
+        commonActions.waitForElement(productNameTextBox);
         return productNameTextBox;
     };
     this.getProductValueTextBox = function () {
-        commonActions.waitForElement(productValueTextBox)
+        commonActions.waitForElement(productValueTextBox);
         return productValueTextBox;
     };
     this.getShortDescriptionTextBox = function () {
-        commonActions.waitForElement(shortDescriptionTextBox)
+        commonActions.waitForElement(shortDescriptionTextBox);
         return shortDescriptionTextBox;
     };
     this.getUserActionDropDown = function () {
-        commonActions.waitForElement(userActionDropDown)
+        commonActions.waitForElement(userActionDropDown);
         return userActionDropDown;
     };
+
+    this.getUserActionDropDownOption = function () {
+        commonActions.waitForElement(userActionDropDownOption);
+        return userActionDropDownOption;
+    }
     this.getWebsiteTextBox = function () {
-        commonActions.waitForElement(websiteTextBox)
+        commonActions.waitForElement(websiteTextBox);
         return websiteTextBox;
     };
 
     this.getCompetitiveProductOrBrandTextBox = function () {
-        commonActions.waitForElement(competitiveProductOrBrandTextBox)
+        commonActions.waitForElement(competitiveProductOrBrandTextBox);
         return competitiveProductOrBrandTextBox;
     };
 
     this.getNextAudienceButton = function () {
-        commonActions.waitForElement(nextAudienceButton)
+        commonActions.waitForElement(nextAudienceButton);
         return nextAudienceButton;
     };
 
     this.getCloseButton = function () {
-        commonActions.waitForElement(closeButton)
+        commonActions.waitForElement(closeButton);
         return closeButton;
     };
-}
 
+    this.getErrorDialog = function () {
+        commonActions.waitElementToBeVisible(errorDialog);
+        return errorDialog;
 
+    };
 
+    this.fillPhysicalProductDetails = function (productName, productValue, productDescription, url) {
+        this.getProductNameTextBox().clear();
+
+        this.getProductNameTextBox().sendKeys(productName);
+
+        this.getProductValueTextBox().clear();
+        this.getProductValueTextBox().sendKeys(productValue);
+        this.getShortDescriptionTextBox().clear();
+        this.getShortDescriptionTextBox().sendKeys(productDescription);
+        this.getUserActionDropDown().click();
+        this.getUserActionDropDownOption().click();
+        this.getWebsiteTextBox().clear();
+        this.getWebsiteTextBox().sendKeys(url);
+        this.getNextAudienceButton().click();
+    };
+
+};
+
+module.exports = new physicalProductPage();

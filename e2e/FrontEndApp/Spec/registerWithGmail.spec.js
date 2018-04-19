@@ -36,7 +36,7 @@ describe('Verify the Unity home page with gmail button and registration with gma
     it('Verify by registering a user using gmail', () => {
         gmailPo.RegisterWithGmail(browser.params.FacebookGmailAddress1);
         expect(browser.getCurrentUrl()).toContain(browser.params.Url + '/auth/sign-up/form;access_token')
-        userDetailsPagePo.txt_PhoneNumber().sendKeys('7895912123')
+        userDetailsPagePo.getPhoneNumberTextBox().sendKeys('7895912123')
         browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
         userDetailsPasswordPo.btn_BrandSetup().click();
         commonActions.waitForUrlToChange(browser.params.Url + '/brands')

@@ -55,11 +55,9 @@ exports.config = {
             __dirname + 'e2e/FrontEndApp/Spec/createBrandCategory.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/campaignDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/campaignProductTypeSelection.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/physicalProduct.spec.js',
             __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
-
-
             // 'E:\\Unity\\e2e\\Admin\\MapInfluncer\\MapInfluncerMatchedStatus.spec.js'
-
         ]
         //
         //     AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js',

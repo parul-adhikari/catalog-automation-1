@@ -21,7 +21,7 @@ function createBrandPage() {
             }
         })
         commonActions.waitElementToBeVisible(brandNameTextBox)
-        brandNameTextBox.clear()
+        brandNameTextBox.clear();
         brandNameTextBox.sendKeys(BrandName)
         commonActions.waitElementToBeVisible(websiteUrlTextBox)
         websiteUrlTextBox.clear()

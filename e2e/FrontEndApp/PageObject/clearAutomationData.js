@@ -2,7 +2,7 @@ let adminLogin = require('../../Admin/PageObject/AdminLogin.po')
 let commonActions = require('../../../Common/CommonActions');
 
 
-function ClearData() {
+function clearData() {
 
     var searchField = $("#searchbar")
     var searchButton = $("input[type=\"submit\"]:nth-child(3)")
@@ -69,4 +69,4 @@ function ClearData() {
     }
 }
 
-module.exports = new ClearData();
+module.exports = new clearData();
