@@ -56,8 +56,8 @@ function campaignDetailsPage() {
             if (result) {
                 commonActions.waitElementToBeVisible(campaignDashboard.getAddCampaignBox());
                 campaignDashboard.getAddCampaignBox().click();
-            }
-        })
+            };
+        });
 
         this.getCampaignNameTextBox().sendKeys(campaignName);
         this.getCampaignLaunchOnDatePicker().click();

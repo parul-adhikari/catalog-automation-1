@@ -1,4 +1,6 @@
 let commonActions = require('../../../Common/CommonActions');
+let productListing = require('../../../e2e/FrontEndApp/PageObject/productListing.po');
+let typeOfProduct = require('../PageObject/campaignProductTypeSelection.po');
 
 
 function physicalProductPage() {
@@ -69,12 +71,20 @@ function physicalProductPage() {
         return errorDialog;
 
     };
-
     this.fillPhysicalProductDetails = function (productName, productValue, productDescription, url) {
+        browser.sleep(5000);
+        browser.ignoreSynchronization=true;
+        productListing.getAddNewProductButton().isPresent().then(function (result) {
+            if (result) {
+                productListing.getAddNewProductButton().click();
+                typeOfProduct.getPhysicalProductTypeSelectionBox().click();
+            }
+            ;
+        });
+
+
         this.getProductNameTextBox().clear();
-
         this.getProductNameTextBox().sendKeys(productName);
-
         this.getProductValueTextBox().clear();
         this.getProductValueTextBox().sendKeys(productValue);
         this.getShortDescriptionTextBox().clear();
@@ -85,6 +95,15 @@ function physicalProductPage() {
         this.getWebsiteTextBox().sendKeys(url);
         this.getNextAudienceButton().click();
     };
+    // this.makePromiseResolve = function (element) {
+    //     element.isPresent().then(function (result) {
+    //         expect(result).toBe(true);
+    //         //return result;
+    //     });
+
+
+    //};
+
 
 };
 

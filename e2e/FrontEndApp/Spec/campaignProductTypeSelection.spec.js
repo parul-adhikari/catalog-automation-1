@@ -1,5 +1,5 @@
 let campaignProductTypeSelectionPo = require('../PageObject/campaignProductTypeSelection.po');
-let clearData =require('../PageObject/clearAutomationData')
+let clearData =require('../PageObject/clearAutomationData');
 
 describe('Verify physical product type selection', function () {
 

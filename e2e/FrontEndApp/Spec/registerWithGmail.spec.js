@@ -37,8 +37,8 @@ describe('Verify the Unity home page with gmail button and registration with gma
         gmailPo.RegisterWithGmail(browser.params.FacebookGmailAddress1);
         expect(browser.getCurrentUrl()).toContain(browser.params.Url + '/auth/sign-up/form;access_token')
         userDetailsPagePo.getPhoneNumberTextBox().sendKeys('7895912123')
-        browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
-        userDetailsPasswordPo.btn_BrandSetup().click();
+        browser.actions().mouseMove(userDetailsPasswordPo.getTermsAndConditionCheckBox()).doubleClick().perform()
+        userDetailsPasswordPo.getBrandSetupButton().click();
         commonActions.waitForUrlToChange(browser.params.Url + '/brands')
         browser.refresh();
         expect(browser.getCurrentUrl()).toContain(browser.params.Url + '/brands')// check button enable with out phone number.

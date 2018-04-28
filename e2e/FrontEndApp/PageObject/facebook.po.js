@@ -46,9 +46,9 @@ function facebookWindow() {
     this.phoneNumberRequired = function () {
         commonActions.waitElementToBeVisible(userDetailsPo.getPhoneNumberTextBox())
         userDetailsPo.getPhoneNumberTextBox().sendKeys("9896585252")
-        expect(userDetailsPasswordPo.chk_TermsAndCondition().isPresent()).toBe(userDetailsPasswordPo.chk_TermsAndCondition().isPresent());
-        browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
-        userDetailsPasswordPo.btn_BrandSetup().click()
+        expect(userDetailsPasswordPo.getTermsAndConditionCheckBox().isPresent()).toBe(userDetailsPasswordPo.getTermsAndConditionCheckBox().isPresent());
+        browser.actions().mouseMove(userDetailsPasswordPo.getTermsAndConditionCheckBox()).doubleClick().perform()
+        userDetailsPasswordPo.getBrandSetupButton().click()
         browser.sleep(5000)
 
     }
@@ -56,8 +56,8 @@ function facebookWindow() {
     this.phoneAndEmailRequierd = function () {
         userDetailsPo.getEmailTextBox().sendKeys(browser.params.FacebookGmailAddress2)
         userDetailsPo.getPhoneNumberTextBox().sendKeys("9896585252")
-        browser.actions().mouseMove(userDetailsPasswordPo.chk_TermsAndCondition()).doubleClick().perform()
-        userDetailsPasswordPo.btn_ConfirmEmail().click()
+        browser.actions().mouseMove(userDetailsPasswordPo.getTermsAndConditionCheckBox()).doubleClick().perform()
+        userDetailsPasswordPo.getConfirmEmailButton().click()
         browser.sleep(5000)
     }
 

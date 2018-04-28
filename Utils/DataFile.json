@@ -34,5 +34,8 @@
   "physicalProductValue":"10",
   "physicalProductDescription":"This is some dummy description for physical product",
   "websiteUrlForPhysicalProduct":"www.nike.com",
-  "alreadyExistingPhysicalProduct":"Phy"
+  "alreadyExistingPhysicalProduct":"Phy",
+  "socialHandles":"TestSocialHandles",
+  "relevantHashTags":"testhashtags",
+  "socialPostSuggestionText":"Give influencers suggestions about the product that you think will resonate with your customers. They will take them into consideration for their post captions."
 }

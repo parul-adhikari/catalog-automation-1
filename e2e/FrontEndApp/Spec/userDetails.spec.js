@@ -25,8 +25,8 @@ describe('Verify User Details Page', function () {
 
     it('Verify with providing all required details', () => {
        userDetailsPagePo.fillUserDetail(fakeData.randomFirstName, fakeData.randomLastName, "7572011110")
-        commonActions.waitElementToBeVisible(userDetailsPasswordPo.lbl_OfUserDetailPasswordPage())
-        expect(userDetailsPasswordPo.lbl_OfUserDetailPasswordPage().isDisplayed()).toBeTruthy();
+        commonActions.waitElementToBeVisible(userDetailsPasswordPo.getUserDetailPasswordPageLabel())
+        expect(userDetailsPasswordPo.getUserDetailPasswordPageLabel().isDisplayed()).toBeTruthy();
 
     })
 

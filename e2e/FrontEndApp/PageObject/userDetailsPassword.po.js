@@ -7,39 +7,39 @@ function userDetailsPassword() {
     var termsAndConditionCheckBox = element(by.className('custom-control-indicator'))
     var brandSetupButton = element(by.cssContainingText('.custom-submit', 'Next: Brand setup'))
     var wrongFormattedPassword = element(by.cssContainingText('.error-dialogue', 'Woops! Please make sure you follow the guidelines.'))
-    var btn_ConfirmEmail = $('button[class*="next-button"]')
+    var confirmEmailButton = $('button[class*="next-button"]')
 
-    this.SetPassword = function (Password) {
+    this.setPassword = function (Password) {
         passwordTextBox.sendKeys(Password)
         browser.waitForAngular();
-        browser.actions().mouseMove(termsAndConditionCheckBox).doubleClick().perform()
+        browser.actions().mouseMove(termsAndConditionCheckBox).doubleClick().perform();
         brandSetupButton.click()
     }
-    this.alert_WrongFormattedPassword=function () {
+    this.getWrongFormattedPasswordAlert=function () {
         commonActions.waitElementToBeVisible(wrongFormattedPassword)
         return wrongFormattedPassword;
     }
 
 
-    this.chk_TermsAndCondition = function () {
+    this.getTermsAndConditionCheckBox = function () {
         commonActions.waitElementToBeVisible(termsAndConditionCheckBox)
         return termsAndConditionCheckBox;
     }
 
-    this.btn_BrandSetup = function () {
+    this.getBrandSetupButton = function () {
         commonActions.waitElementToBeVisible(brandSetupButton)
         return brandSetupButton;
     }
-    this.lbl_OfUserDetailPasswordPage = function () {
+    this.getUserDetailPasswordPageLabel = function () {
         commonActions.waitElementToBeVisible(userDetailPasswordPage)
         return userDetailPasswordPage;
     }
-    this.btn_ConfirmEmail=function () {
-        commonActions.waitElementToBeVisible(btn_ConfirmEmail)
-        return btn_ConfirmEmail;
+    this.getConfirmEmailButton=function () {
+        commonActions.waitElementToBeVisible(confirmEmailButton)
+        return confirmEmailButton;
 
     }
-    this.txt_Password=function () {
+    this.getPasswordTextBox=function () {
         commonActions.waitElementToBeVisible(passwordTextBox)
         return passwordTextBox;
 
