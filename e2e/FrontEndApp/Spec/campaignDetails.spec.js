@@ -24,5 +24,5 @@ describe('Verify Campaign Details', function () {
     });
 
 
-})
+});
 
