@@ -22,7 +22,7 @@ function loginPage() {
 
 
     //text to be matched
-    var alertMessage = 'Sorry! The login credentials are not valid.'
+    var stringOfAlertMessageInCaseOfWrongCredentials = 'Sorry! The login credentials are not valid.'
     var pageTitleAfterLogout = 'Influencer Advertising Simplified'
     var pageTitleAfterLogin = 'Unity Influence'
     var expectedPageHeadingText = 'Log in to your Unity account'
@@ -38,26 +38,27 @@ function loginPage() {
         browser.logger.info('Blank check verified tried clicking on Login button without filling any value in username and password')
     },
 
-        this.wrongCredentials = function () {
-            unityLoginButton.click();
+        this.wrongCredentials = function (email, password) {
+            //unityLoginButton.click();
             commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/login');
             emailTextBox.clear();
             passwordTextBox.clear();
-            emailTextBox.sendKeys(browser.params.WrongEmail);
-            passwordTextBox.sendKeys(browser.params.Password);
+            emailTextBox.sendKeys(email);
+            passwordTextBox.sendKeys(password);
             loginButton.click().then(function () {
-
                 commonActions.waitElementToBeVisible(element(by.css('.msg.fixed.row.align-items-center.error')));
-                browser.logger.info('Wrong credentials check verified using following +"\n"' + browser.params.WrongEmail + '"\n"' + '"Password:"' + browser.params.Password)
-            })
-        }
+                browser.logger.info('Wrong credentials check verified using following +"\n"' + email + '"\n"' + '"Password:"' + password);
+            });
+        };
 
 
     this.doLogin = function (UserEmail, Password) {
         unityLoginButton.click();
         commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/login');
         commonActions.waitElementToBeClickable(emailTextBox);
+        emailTextBox.clear();
         emailTextBox.sendKeys(UserEmail);
+        passwordTextBox.clear();
         passwordTextBox.sendKeys(Password);
         expect(loginButton.isEnabled).toBe(loginButton.isEnabled);
         loginButton.click();
@@ -72,7 +73,7 @@ function loginPage() {
         myBrandsButton.click();
         commonActions.browserWaitForElement(signOutOption);
         signOutOption.click().then(function () {
-            commonActions.waitForUrlToChange(browser.params.Url + '/')
+            commonActions.waitForUrlToChange(browser.params.Url)
             browser.logger.info('logOut functionality verified')
         })
     }
@@ -100,9 +101,6 @@ function loginPage() {
     }
 
     this.getPageTitleAfterLogout = function () {
-
-        commonActions.waitForElement(pageTitleAfterLogout);
-
         return pageTitleAfterLogout;
     }
 
@@ -110,10 +108,9 @@ function loginPage() {
         commonActions.waitForElement(loginButton);
         return loginButton;
     }
-    this.getAlertMessage = function () {
-        commonActions.waitForElement(alertMessage);
-        return alertMessage;
-    }
+    this.getStringOfAlertMessageInCaseOfWrongCredentials = function () {
+        return stringOfAlertMessageInCaseOfWrongCredentials;
+    };
 
     this.getUrlToBeChanged = function () {
         commonActions.waitForUrlToChange(urlToBeChanged);
@@ -126,7 +123,7 @@ function loginPage() {
         return pageTitleAfterLogin;
 
     }
-    this.getErrorMessage= function () {
+    this.getErrorMessage = function () {
         commonActions.waitForElement(errorMessage);
         return errorMessage;
 

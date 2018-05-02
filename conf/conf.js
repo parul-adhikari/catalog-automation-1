@@ -44,21 +44,21 @@ exports.config = {
     suites: {
 
         SanitySuite: [
-            // __dirname + '/e2e/FrontEndApp/Spec/registerWithGmail.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/registerWithFacebook.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/home.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/otp.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/userDetails.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/userDetailsPassword.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/createBrand.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/createBrandCategory.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/campaignDetails.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/campaignProductTypeSelection.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/physicalProduct.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
-            // __dirname + 'e2e/FrontEndApp/Spec/planSelection.spec.js',
-            __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/registerWithGmail.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/registerWithFacebook.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/home.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/otp.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/userDetails.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/userDetailsPassword.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/createBrand.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/createBrandCategory.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/campaignDetails.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/campaignProductTypeSelection.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/physicalProduct.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/planSelection.spec.js',
+           __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
 
         ]
         //
