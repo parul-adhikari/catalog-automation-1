@@ -1,5 +1,5 @@
 {
-  "Url": "https://staging.unityinfluence.com",
+  "Url": "https://staging.unityinfluence.com/",
   "AdminUrl" : "https://api-staging.unityinfluence.com/admin/login/?next=/admin/",
   "WrongEmail": "tes.user.com",
   "Email": "testuser@gmail.com",

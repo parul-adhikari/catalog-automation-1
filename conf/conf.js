@@ -12,7 +12,7 @@ var fs = require('fs');
 var reporter = new HTMLReporter(
     {
 
-        savePath: __dirname+'/Reports',
+        savePath: __dirname + '/Reports',
 
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true,
@@ -52,13 +52,14 @@ exports.config = {
             // __dirname + '/e2e/FrontEndApp/Spec/userDetailsPassword.spec.js',
             // __dirname + '/e2e/FrontEndApp/Spec/createBrand.spec.js',
             // __dirname + 'e2e/FrontEndApp/Spec/createBrandCategory.spec.js',
-            __dirname + 'e2e/FrontEndApp/Spec/campaignDetails.spec.js',
-            __dirname + 'e2e/FrontEndApp/Spec/campaignProductTypeSelection.spec.js',
-            __dirname + 'e2e/FrontEndApp/Spec/physicalProduct.spec.js',
-            __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
-            __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
-            // __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
-            // 'E:\\Unity\\e2e\\Admin\\MapInfluncer\\MapInfluncerMatchedStatus.spec.js'
+            // __dirname + 'e2e/FrontEndApp/Spec/campaignDetails.spec.js',
+            // __dirname + 'e2e/FrontEndApp/Spec/campaignProductTypeSelection.spec.js',
+            // __dirname + 'e2e/FrontEndApp/Spec/physicalProduct.spec.js',
+            // __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
+            // __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
+            // __dirname + 'e2e/FrontEndApp/Spec/planSelection.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
+
         ]
         //
         //     AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js',

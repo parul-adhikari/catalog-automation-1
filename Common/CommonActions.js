@@ -8,7 +8,7 @@ var commonActions = {
 
 
         const EC = protractor.ExpectedConditions;
-        browser.wait(EC.urlContains(expectedUrl), 20000);
+        browser.wait(EC.urlContains(expectedUrl), 30000);
         browser.logger.info("Landing on: " + expectedUrl + " Url...")
 
     },

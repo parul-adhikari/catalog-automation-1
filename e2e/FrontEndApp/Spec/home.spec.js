@@ -1,6 +1,6 @@
 let homePagePo = require('../PageObject/home.po.js');
 let commonActions = require('../../../Common/CommonActions');
-let changedUrl = browser.params.Url + "/auth/sign-up?email="
+let changedUrl = browser.params.Url + "auth/sign-up?email="
 let fakeData = require('../../../Utils/FakeData.js');
 
 
@@ -15,7 +15,7 @@ describe('Verify Unity Home page', function () {
 
     it('Verify the successful launching of application', () => {
 
-        homePagePo.CheckUrl(browser.params.Url + '/');
+        homePagePo.CheckUrl(browser.params.Url);
     });
 
     it('Verify the page title', () => {

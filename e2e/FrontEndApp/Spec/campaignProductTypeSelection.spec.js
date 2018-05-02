@@ -1,14 +1,7 @@
 let campaignProductTypeSelectionPo = require('../PageObject/campaignProductTypeSelection.po');
-let clearData =require('../PageObject/clearAutomationData');
+
 
 describe('Verify physical product type selection', function () {
-
-
-
-    // afterAll(function () {
-    //     clearData.currentSessionDataClear();
-    // });
-
 
 
     it('Verify Product selection screen heading', () => {
