@@ -1,7 +1,7 @@
 let brandCategoryListingPagePo = require('../PageObject/brandCategoryListing.po');
 let createBrandCategoryPagePo = require('../PageObject/createBrandCategory.po');
 let fakeData = require('../../../Utils/FakeData.js');
-let clearData = require('../PageObject/clearAutomationData');
+let clearData = require('../../ClearData/clearAutomationData');
 describe('Verify Brand Category Creation', function () {
 
     beforeAll(function (done) {

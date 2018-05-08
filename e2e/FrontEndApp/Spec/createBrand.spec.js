@@ -3,7 +3,7 @@ let commonActions = require('../../../Common/CommonActions');
 let createBrandPagePo = require('../PageObject/createBrand.po');
 let loginPagepo = require('../PageObject/login.po');
 let brandListingPagePo = require('../PageObject/brandListing.po');
-let clearData = require('../PageObject/clearAutomationData');
+let clearData = require('../../ClearData/clearAutomationData');
 let brandCategoryListingPage = require('../PageObject/brandCategoryListing.po');
 let testPagePo = require('../PageObject/createBrandCategory.po');
 

@@ -26,5 +26,8 @@
     "selenium-webdriver": "^2.45.0",
     "sg-protractor-tools": "^1.0.4",
     "xlsx": "^0.11.8"
+  },
+  "devDependencies": {
+    "protractor-beautiful-reporter": "^1.2.1"
   }
 }

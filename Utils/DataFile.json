@@ -1,6 +1,7 @@
 {
   "Url": "https://staging.unityinfluence.com/",
   "AdminUrl" : "https://api-staging.unityinfluence.com/admin/login/?next=/admin/",
+  "adminUrlForCampaignListing": "https://api-staging.unityinfluence.com/admin/campaign/campaign/",
   "WrongEmail": "tes.user.com",
   "Email": "testuser@gmail.com",
   "Password": "Test@1234",

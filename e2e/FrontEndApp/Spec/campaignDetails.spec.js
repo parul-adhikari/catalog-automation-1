@@ -1,9 +1,9 @@
 let campaignDetails = require('../../../e2e/FrontEndApp/PageObject/campaignDetails.po');
 let campaignProductTypeSelectionPage = require('../PageObject/campaignProductTypeSelection.po')
-let faker = require('faker');
+let fakeDataForCampaign = require('../../../e2e/Data/dataForCampaign');
 let loginPage = require('../PageObject/login.po');
 let brandListingPage = require('../PageObject/brandListing.po');
-let campaignName = this.randomFirstName = faker.Name.firstName() + 'automated campaign';
+//let campaignName = this.randomFirstName = faker.Name.firstName() + 'automated campaign';
 
 
 describe('Verify Campaign Details', function () {
@@ -18,8 +18,8 @@ describe('Verify Campaign Details', function () {
     });
     it('Verify campaign creation.', function () {
         browser.refresh();
-        campaignDetails.fillCampaignDetails(campaignName);
-        console.log('random name' + campaignName);
+        campaignDetails.fillCampaignDetails(fakeDataForCampaign.randomFirstName);
+        console.log('random name' + fakeDataForCampaign.randomFirstName);
         expect(campaignProductTypeSelectionPage.getProductSelectionTypeHeading().isDisplayed()).toBeTruthy();
     });
 

@@ -51,7 +51,7 @@ var AddNewInfluencer = {
 
         this.PageElements.txbx_FrstName.sendKeys(firstName + ' ' + browser.params.NewInfluencerFirstName);
         this.PageElements.txbx_LstName.sendKeys(browser.params.NewInfluencerSecondName);
-        this.PageElements.txbx_Email.sendKeys(browser.params.NewInfluencerEmail);
+        this.PageElements.getEmailTextBox.sendKeys(browser.params.NewInfluencerEmail);
         this.PageElements.btn_Save.click().then(function () {
             browser.logger.info('Save button clicked..')
         })

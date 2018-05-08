@@ -26,8 +26,8 @@ var loginPage = {
 
     },
     blankLoginCheck: function blankLoginCheck() {
-        commonActions.browserWaitForElement(this.PageElements.txbx_Email)
-        this.PageElements.txbx_Email.clear();
+        commonActions.browserWaitForElement(this.PageElements.getEmailTextBox)
+        this.PageElements.getEmailTextBox.clear();
         this.PageElements.txbx_Pswd.clear();
         expect(this.PageElements.btn_Login.isDisabled).toBe(this.PageElements.btn_Login.isDisabled);
         browser.logger.info('Blank check verified tried clicking on Login button without filling any value in username and password')
@@ -36,9 +36,9 @@ var loginPage = {
 
     wrongCredentials: function wrongCredentials() {
 
-        this.PageElements.txbx_Email.clear();
+        this.PageElements.getEmailTextBox.clear();
         this.PageElements.txbx_Pswd.clear();
-        this.PageElements.txbx_Email.sendKeys(browser.params.WrongEmail);
+        this.PageElements.getEmailTextBox.sendKeys(browser.params.WrongEmail);
         this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
         this.PageElements.btn_Login.click().then(function () {
 
@@ -56,8 +56,8 @@ var loginPage = {
 
     doLogin: function doLogin() {
         this.PageElements.btn_UnityLogin.click()
-        commonActions.browserWaitForElement(this.PageElements.txbx_Email)
-        this.PageElements.txbx_Email.sendKeys(browser.params.Email);
+        commonActions.browserWaitForElement(this.PageElements.getEmailTextBox)
+        this.PageElements.getEmailTextBox.sendKeys(browser.params.Email);
         this.PageElements.txbx_Pswd.sendKeys(browser.params.Password);
         this.PageElements.btn_Login.click().then(function () {
             commonActions.waitForUrlToChange('https://staging.unityinfluence.com/brands')

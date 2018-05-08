@@ -1,5 +1,5 @@
 let physicalProductPagePo = require('../PageObject/physicalProduct.po');
-let clearData = require('../PageObject/clearAutomationData');
+let clearData = require('../../ClearData/clearAutomationData');
 let faker = require('faker');
 var productName = faker.Name.firstName();
 

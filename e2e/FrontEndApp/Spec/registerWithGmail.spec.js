@@ -2,7 +2,7 @@ let gmailPo = require('../PageObject/gmail.po')
 let userDetailsPagePo = require('../PageObject/userDetails.po')
 let userDetailsPasswordPo = require('../PageObject/userDetailsPassword.po')
 let commonActions = require('../../../Common/CommonActions');
-let clearData = require('../PageObject/clearAutomationData')
+let clearData = require('../../ClearData/clearAutomationData')
 
 
 describe('Verify the Unity home page with gmail button and registration with gmail', function () {
@@ -19,7 +19,7 @@ describe('Verify the Unity home page with gmail button and registration with gma
     afterAll(function () {
 
         clearData.currentSessionDataClear();
-        clearData.deleteUser(browser.params.FacebookGmailAddress1);
+
 
     });
 

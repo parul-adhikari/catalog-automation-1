@@ -1,5 +1,5 @@
 let planeSelection = require('../PageObject/planSelection.po');
-let clearData = require('../PageObject/clearAutomationData');
+let clearData = require('../../ClearData/clearAutomationData');
 
 
 describe('Verify Plan Selection', function () {

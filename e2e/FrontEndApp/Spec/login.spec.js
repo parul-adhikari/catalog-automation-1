@@ -1,7 +1,7 @@
 let loginPage = require('../PageObject/login.po');
 let commonActions = require('../../../Common/CommonActions');
 let fakeData = require('../../../Utils/FakeData.js');
-let clearData = require('../PageObject/clearAutomationData');
+let clearData = require('../../ClearData/clearAutomationData');
 
 describe('Verify Login functionality', function () {
 
@@ -12,10 +12,11 @@ describe('Verify Login functionality', function () {
     });
 
     afterAll(function (done) {
-        //browser.manage().deleteAllCookies();
+        browser.manage().deleteAllCookies();
         clearData.currentSessionDataClear();
-        clearData.deleteBrand(fakeData.randomFirstName)
+        clearData.deleteBrand(fakeData.randomFirstName);
         clearData.deleteUser(fakeData.randomFirstName + '@mailinator.com');
+
         done();
     });
 

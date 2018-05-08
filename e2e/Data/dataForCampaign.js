@@ -1,10 +1,10 @@
 var faker = require('faker');
 
 var fakeData =function (){
-
-    this.randomFirstName = faker.Name.firstName();
-    this.randomLastName= faker.Name.lastName();
-    this.randomPhoneNumber= faker.PhoneNumber.phoneNumber();
+    this.randomFirstName = faker.Name.firstName() + 'automated campaign';
+    // this.randomFirstName = faker.Name.firstName();
+    // this.randomLastName= faker.Name.lastName();
+    // this.randomPhoneNumber= faker.PhoneNumber.phoneNumber();
 };
 
-module.exports = fakeData();
+module.exports = new fakeData();

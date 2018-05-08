@@ -1,5 +1,3 @@
-// An example configuration file.
-
 var __dirname = process.env['FOLDER_PATH'];
 var log4js = require('log4js');
 var HTMLReporter = require('protractor-jasmine2-html-reporter');
@@ -17,7 +15,7 @@ var reporter = new HTMLReporter(
         takeScreenshots: true,
         takeScreenshotsOnlyOnFailures: true,
 
-    })
+    });
 
 exports.config = {
 
@@ -58,7 +56,8 @@ exports.config = {
             __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/planSelection.spec.js',
-           __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
+            __dirname + 'e2e/Admin/Spec/selectAndSearchCampaign.spec.js',
+            __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
 
         ]
         //
@@ -118,7 +117,7 @@ exports.config = {
         //Initializing the reports
         jasmine.getEnv().addReporter(
             reporter
-        )
+        );
 
 
     },
@@ -154,13 +153,14 @@ exports.config = {
 
                 var template = handlebars.compile(html);
                 var replacements = {
-                    username: "vibhu mathur"
+                    username: "Vibhor Mathur",
+                    password: "passionate",
                 };
 
                 var htmlToSend = template(replacements);
                 var mailOptions = {
                     from: '"Vibhor Mathur" <unitytestuser01@gmail.com>',
-                    to: 'unitytestuser01@gmail.com',
+                    to: 'vibhor.mathur@quovantis.com',
                     subject: 'Automation Test Report||UNITY',
                     html: htmlToSend
                 };

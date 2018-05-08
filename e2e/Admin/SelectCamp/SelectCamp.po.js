@@ -1,40 +1,39 @@
-var CommonActions = require('../../../Common/CommonActions');
+var commonActions = require('../../../Common/CommonActions');
 
 
-var SelectCamp = {
-
-    PageElements: {
-
-        //id locators
-        txtbx_Search: element(by.id('searchbar')),
-
-        //xpath locators
-        btn_Search: element(by.xpath('//*[@value="Search"]')),
-        lnk_expectFirstCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="' + browser.params.FirstCampName + '"]')),
-        lnk_expectedCamp: element(by.xpath('//*[@class=\'field-name\']//*[text()="' + browser.params.Campaign_Name + '"]')),
+function SelectCampaign() {
 
 
-        //Text to be Matched
-        expectedUrl_SecondCamp: 'https://api-staging.unityinfluence.com/admin/campaign/campaign/517/change/',
-        expectedUrl_FirstCamp: 'https://api-staging.unityinfluence.com/admin/campaign/campaign/544/change/'
 
-    },
-
-    searchCampaign: function searchCampaign(CampName) {
-        browser.logger.info('Searching for the expected active campaign...');
-        CommonActions.waitElementToBeClickable(this.PageElements.txtbx_Search);
-        this.PageElements.txtbx_Search.sendKeys(CampName);
-        console.log("hello i am here");
-        this.PageElements.btn_Search.click();
-        CommonActions.waitElementToBeVisible(element(by.xpath('//*[@class=\'field-name\']//*[text()="' + CampName + '"]')));
-        element(by.xpath('//*[@class=\'field-name\']//*[text()="' + CampName + '"]')).click();
-        browser.logger.info('Campaign' + '\n' + CampName + '\n' + 'is clicked from search result')
+    //id locators
+    let searchTextBox = $('#searchbar');
+    //xpath locators
+    let searchButton = $('#changelist-search > div > input[type="submit"]:nth-child(3)');
+    let firstCampaignLink = $('#result_list > tbody > tr:nth-child(1) > td.field-name > a');
 
 
-    }
+    this.getSearchTextBox = function () {
 
+        commonActions.waitForElement(searchTextBox);
+        return searchTextBox;
+    };
+    this.getSearchButton = function () {
+        commonActions.waitForElement(searchButton);
+        return searchButton;
+    };
+    this.getFirstCampaignLink = function () {
+        commonActions.waitForElement(firstCampaignLink);
+        return firstCampaignLink;
+
+    };
+    this.searchForCampaignAndClick = function (campaignName) {
+        this.getSearchTextBox().sendKeys(campaignName);
+        this.getSearchButton().click();
+        this.getFirstCampaignLink().click();
+
+    };
 
 };
 
 
-module.exports = SelectCamp;
+module.exports = new SelectCampaign();

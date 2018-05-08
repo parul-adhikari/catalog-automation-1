@@ -16,7 +16,7 @@ var addNewInfluencerDetails = {
 
         this.PageElements.txbx_FrstName.sendKeys(browser.params.NewInfluencerFirstName)
         this.PageElements.txbx_LstName.sendKeys(browser.params.NewInfluencerSecondName)
-        this.PageElements.txbx_Email.sendKeys(browser.params.NewInfluencerEmail)
+        this.PageElements.getEmailTextBox.sendKeys(browser.params.NewInfluencerEmail)
         var imagePath = 'http://placehold.it/120x120&text=image1';
         element(by.id('fileUpload')).sendKeys(imagePath);
 

@@ -1,19 +1,19 @@
-function AdminloginPage() {
-    var txbx_Email= element(by.id('id_username'))
-    var txbx_Pswd= element(by.id('id_password'))
-    var btn_Login= element(by.xpath('.//*[@type=\'submit\']'))
-    // urlToBeChanged: 'http://localhost:8000/admin/'
-    var urlToBeChanged= 'https://api-staging.unityinfluence.com/admin/'
+function adminLoginPage() {
+    let emailTextBox= element(by.id('id_username'))
+    let passwordTextBox= element(by.id('id_password'))
+    let loginButton= element(by.xpath('.//*[@type=\'submit\']'))
+
+    let urlToBeChanged= 'https://api-staging.unityinfluence.com/admin/'
 
     this.doAdminLogin = function () {
-        txbx_Email.sendKeys(browser.params.AdminEmail)
-        txbx_Pswd.sendKeys(browser.params.AdminPassword)
-        btn_Login.click()
+        emailTextBox.sendKeys(browser.params.AdminEmail)
+        passwordTextBox.sendKeys(browser.params.AdminPassword)
+        loginButton.click()
         browser.logger.info('Admin is going to login with credentials as:' +browser.params.AdminEmail +'"\n"' +browser.params.AdminPassword)
     }
-    this.txbx_Email=function () {
+    this.getEmailTextBox=function () {
 
-        return txbx_Email;
+        return emailTextBox;
 
     }
 
@@ -28,4 +28,4 @@ function AdminloginPage() {
 
 
 
-module.exports = new AdminloginPage();
+module.exports = new adminLoginPage();

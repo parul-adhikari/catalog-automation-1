@@ -1,15 +1,15 @@
-let adminLogin = require('../../Admin/PageObject/AdminLogin.po')
-let commonActions = require('../../../Common/CommonActions');
+let adminLogin = require('../Admin/PageObject/AdminLogin.po');
+let commonActions = require('../../Common/CommonActions');
 
 
 function clearData() {
 
-    var searchField = $("#searchbar")
-    var searchButton = $("input[type=\"submit\"]:nth-child(3)")
-    var actionCheckBox = $("#action-toggle")
-    var actionDropDown = $("select[name*='action']")
-    var actionElementInDropDown = $("option:nth-child(2)")
-    var goActionButton = $("button[title*=\"Run the selected action\"]")
+    let searchField = $("#searchbar")
+    let searchButton = $("input[type=\"submit\"]:nth-child(3)")
+    let actionCheckBox = $("#action-toggle")
+    let actionDropDown = $("select[name*='action']")
+    let actionElementInDropDown = $("option:nth-child(2)")
+    let goActionButton = $("button[title*=\"Run the selected action\"]")
 
 
     this.currentSessionDataClear = function () {
@@ -22,20 +22,20 @@ function clearData() {
     this.deleteUser = function (User) {
         this.adminUrl("/user/user/")
 
-        browser.isElementPresent(adminLogin.txbx_Email()).then(function (result) {
+        browser.isElementPresent(adminLogin.getEmailTextBox()).then(function (result) {
             if (result) {
                 adminLogin.doAdminLogin()
             }
 
-        })
+        });
         this.deleteData(User);
     }
 
     this.deleteBrand=function (Brand) {
         this.adminUrl("/brand/brand")
-        browser.isElementPresent(adminLogin.txbx_Email()).then(function (result) {
+        browser.isElementPresent(adminLogin.getEmailTextBox()).then(function (result) {
             if (result) {
-                adminLogin.doAdminLogin()
+                adminLogin.doAdminLogin();
             }
         })
         this.deleteData(Brand);

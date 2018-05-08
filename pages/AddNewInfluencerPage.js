@@ -26,7 +26,7 @@ var addNewInfluencerDetails = {
         inlfuencerListingPage.clickAddInfluencerBtn()
         this.PageElements.txbx_FrstName.sendKeys(browser.params.NewInfluencerFirstName)
         this.PageElements.txbx_LstName.sendKeys(browser.params.NewInfluencerSecondName)
-        this.PageElements.txbx_Email.sendKeys(browser.params.NewInfluencerEmail)
+        this.PageElements.getEmailTextBox.sendKeys(browser.params.NewInfluencerEmail)
         this.PageElements.btn_Save.click()
 
 
