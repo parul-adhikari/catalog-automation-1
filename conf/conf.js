@@ -56,8 +56,10 @@ exports.config = {
             __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/planSelection.spec.js',
-            __dirname + 'e2e/Admin/Spec/selectAndSearchCampaign.spec.js',
-            __dirname + '/e2e/FrontEndApp/Spec/login.spec.js',
+            __dirname + 'e2e/Admin/Spec/adminCampaignListing.spec.js',
+            __dirname + 'e2e/Admin/Spec/adminCampaignProfile.spec.js',
+            __dirname + 'e2e/FrontEndApp/Spec/login.spec.js',
+
 
         ]
         //
