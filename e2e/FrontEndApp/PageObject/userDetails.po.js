@@ -2,11 +2,11 @@ let commonActions = require('../../../Common/CommonActions');
 function userDetailsPage() {
 
 
-    var nextPasswordButton = $('button[type*="submit"]')
-    var firstNameTextBox = $('#first_name')
-    var lastNameTextBox = $('#last_name')
-    var phoneNumberTextBox = $('#phone_number')
-    var toUploadPictureLink = element(by.cssContainingText('.link-button', 'Upload a profile picture'))
+    var nextPasswordButton = $('button[type*="submit"]');
+    var firstNameTextBox = $('#first_name');
+    var lastNameTextBox = $('#last_name');
+    var phoneNumberTextBox = $('#phone_number');
+    var toUploadPictureLink = element(by.cssContainingText('.link-button', 'Upload a profile picture'));
     var userDetailPageLabel = element(by.cssContainingText('.sub-info-text', 'Thank you for confirming your account with Unity. Just a few details and you’re ready to go.'))
     var emailTextBox = $("#email")
 

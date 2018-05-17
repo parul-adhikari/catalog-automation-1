@@ -15,8 +15,9 @@ describe('Verify physical product type selection', function () {
     });
 
     it('Verify Physical Product Selection', () => {
-
+        browser.sleep(2000);
         campaignProductTypeSelectionPo.getPhysicalProductTypeSelectionBox().click();
+
 
     });
 

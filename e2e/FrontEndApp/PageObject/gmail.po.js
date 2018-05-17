@@ -24,7 +24,7 @@ function gmailPo() {
         commonActions.waitElementToBeVisible(txbx_Password);
         txbx_Password.sendKeys(browser.params.FacebookGmailPswd);
         btn_PasswordNext.click();
-        commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/sign-up/form;access_token')
+        commonActions.waitForUrlToChange(browser.params.Url + 'auth/sign-up/form;access_token')
 
 
     }

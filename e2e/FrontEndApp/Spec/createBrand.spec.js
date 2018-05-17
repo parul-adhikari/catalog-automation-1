@@ -32,18 +32,18 @@ describe('Verify Brand Creation', function () {
         expect(createBrandPagePo.getErrorDialog().isDisplayed()).toBeTruthy();
         browser.logger.info('Alert present in case of wrong formatted website URL');
 
-    })
+    });
 
     it('Verify Brand creation', () => {
-        createBrandPagePo.brandSetup(fakeData.randomFirstName + " Automation Brand", browser.params.WebsiteURLForBrand, browser.params.BrandDescription)
-        browser.navigate().to('https://staging.unityinfluence.com/brands')
+        createBrandPagePo.brandSetup(fakeData.randomFirstName + " Automation Brand", browser.params.WebsiteURLForBrand, browser.params.BrandDescription);
+        browser.navigate().to(browser.params.Url+'brands');
         commonActions.waitElementToBeVisible(brandListingPagePo.getExistingBrandBox(fakeData.randomFirstName + " Automation Brand"));
         expect(brandListingPagePo.getExistingBrandBox(fakeData.randomFirstName + " Automation Brand").isDisplayed()).toBeTruthy();
         brandListingPagePo.getExistingBrandBox(fakeData.randomFirstName + " Automation Brand").click();
         browser.logger.info('Brand got created with the name ' + fakeData.randomFirstName + " Automation Brand");
 
 
-    })
+    });
 
 
 })

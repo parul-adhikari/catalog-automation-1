@@ -34,10 +34,10 @@ describe('Verify Unity Home page', function () {
 
     it('Verify with valid email address and then click on register button user should get redirected to OTP screen.', () => {
         homePagePo.ValidEmailRegister(fakeData.randomFirstName + '@mailinator.com');
-        commonActions.waitForUrlToChange(changedUrl)
-        expect(browser.getCurrentUrl()).toContain(changedUrl)
-        browser.logger.info('User is on the otp screen.')
-    })
+        commonActions.waitForUrlToChange(changedUrl);
+        expect(browser.getCurrentUrl()).toContain(changedUrl);
+        browser.logger.info('User is on the otp screen.');
+    });
 
 
 });

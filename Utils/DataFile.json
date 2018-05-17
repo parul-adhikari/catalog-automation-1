@@ -1,6 +1,6 @@
 {
   "Url": "https://staging.unityinfluence.com/",
-  "AdminUrl" : "https://api-staging.unityinfluence.com/admin/login/?next=/admin/",
+  "AdminUrl" : "https://api-staging.unityinfluence.com/admin/",
   "adminUrlForCampaignListing": "https://api-staging.unityinfluence.com/admin/campaign/campaign/",
   "WrongEmail": "tes.user.com",
   "Email": "testuser@gmail.com",
@@ -27,7 +27,7 @@
   "ValidPasswordForCustomSignup":"Quovantis123",
   "BrandDescription":"Test Autmoation Brand Description",
   "WebsiteURLForBrand":"www.BrandAutomation.com",
-  "AllreadyExistingBrand":"Automation Brand",
+  "AllreadyExistingBrand":"Quovantis Testing Automation Brand",
   "AllreadyExistingCategory":"Automotive",
   "productTypeSelectionScreenHeading":"Select the type of product to promote",
   "productTypeSelectionScreenSubHeading":"Choose the type of product you want to promote in this campaign. You will be gifting a sample to the influencer(s) to create content for the campaign.",

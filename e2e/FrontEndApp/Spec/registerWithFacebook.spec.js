@@ -17,7 +17,7 @@ describe('Verify the Unity home page with facebook button and registration with 
     });
     afterAll(function () {
         clearData.currentSessionDataClear();
-        clearData.deleteUser(browser.params.FacebookGmailAddress1);
+
         clearData.deleteUser(browser.params.FacebookGmailAddress2);
     });
     it('Verify the presence of facebook button on home page.', () => {
@@ -30,9 +30,9 @@ describe('Verify the Unity home page with facebook button and registration with 
 
         fbPo.registerWithFacebook(browser.params.FacebookGmailAddress2);
         fbPo.phoneNumberRequired();
-        commonActions.waitForUrlToChange("https://staging.unityinfluence.com/brands")
+        commonActions.waitForUrlToChange(browser.params.Url + "brands");
         browser.refresh();
-        expect(browser.getCurrentUrl()).toContain('https://staging.unityinfluence.com/brands') // facebook only phone number scenario needs to be implemented.
+        expect(browser.getCurrentUrl()).toContain(browser.params.Url + 'brands') // facebook only phone number scenario needs to be implemented.
     })
 
 })

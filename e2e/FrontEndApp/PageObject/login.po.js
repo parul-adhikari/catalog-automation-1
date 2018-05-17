@@ -22,16 +22,16 @@ function loginPage() {
 
 
     //text to be matched
-    var stringOfAlertMessageInCaseOfWrongCredentials = 'Sorry! The login credentials are not valid.'
-    var pageTitleAfterLogout = 'Influencer Advertising Simplified'
-    var pageTitleAfterLogin = 'Unity Influence'
-    var expectedPageHeadingText = 'Log in to your Unity account'
-    var urlToBeChanged = 'https://staging.unityinfluence.com/brands'
+    var stringOfAlertMessageInCaseOfWrongCredentials = 'Sorry! The login credentials are not valid.';
+    var pageTitleAfterLogout = 'Influencer Advertising Simplified';
+    var pageTitleAfterLogin = 'Unity Influence';
+    var expectedPageHeadingText = 'Log in to your Unity account';
+    var urlToBeChanged = browser.params.Url+'brands';
 
 
     this.blankLoginCheck = function () {
         unityLoginButton.click();
-        commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/login');
+        commonActions.waitForUrlToChange(browser.params.Url+'auth/login');
         commonActions.waitElementToBeClickable(emailTextBox);
         emailTextBox.clear();
         passwordTextBox.clear();
@@ -40,7 +40,7 @@ function loginPage() {
 
         this.wrongCredentials = function (email, password) {
             //unityLoginButton.click();
-            commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/login');
+            commonActions.waitForUrlToChange(browser.params.Url+'auth/login');
             emailTextBox.clear();
             passwordTextBox.clear();
             emailTextBox.sendKeys(email);
@@ -54,7 +54,7 @@ function loginPage() {
 
     this.doLogin = function (UserEmail, Password) {
         unityLoginButton.click();
-        commonActions.waitForUrlToChange('https://staging.unityinfluence.com/auth/login');
+        commonActions.waitForUrlToChange(browser.params.Url+'auth/login');
         commonActions.waitElementToBeClickable(emailTextBox);
         emailTextBox.clear();
         emailTextBox.sendKeys(UserEmail);
@@ -91,7 +91,7 @@ function loginPage() {
                 commonActions.waitElementToBeClickable(element(by.css('#passwordNext')));
                 element(by.css('#passwordNext')).click().then(function () {
                     browser.logger.info('Login with google verified');
-                    commonActions.waitForUrlToChange('https://staging.unityinfluence.com/brands')
+                    commonActions.waitForUrlToChange(browser.params.Url+'brands')
 
                 });
             })

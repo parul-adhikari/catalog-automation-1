@@ -2,6 +2,7 @@ let physicalProductPagePo = require('../PageObject/physicalProduct.po');
 let clearData = require('../../ClearData/clearAutomationData');
 let faker = require('faker');
 var productName = faker.Name.firstName();
+let typeOfProduct = require('../PageObject/campaignProductTypeSelection.po');
 
 describe('Verify Physical Product Creation', function () {
 
@@ -15,13 +16,14 @@ describe('Verify Physical Product Creation', function () {
 
     it('Verify disabled Next:Audience button until product name field is filled', () => {
 
+        // typeOfProduct.getPhysicalProductTypeSelectionBox().click();
         physicalProductPagePo.fillPhysicalProductDetails("", browser.params.physicalProductValue, browser.params.physicalProductDescription, browser.params.websiteUrlForPhysicalProduct);
-        browser.sleep(1000);
+
         expect(physicalProductPagePo.getNextAudienceButton().isEnabled()).toBe(false);
     });
     it('Verify validation alert in case of wrong formatted website URL', () => {
         physicalProductPagePo.fillPhysicalProductDetails(browser.params.physicalProductName, browser.params.physicalProductValue, browser.params.physicalProductDescription, "gyfuyf");
-        browser.sleep(1000);
+        browser.sleep(5000);
         expect(physicalProductPagePo.getErrorDialog().isDisplayed()).toBeTruthy();
         browser.logger.info('Alert present in case of wrong formatted website URL');
     });

@@ -16,7 +16,7 @@ describe('Verify User Details Password Page', function () {
     it('Verify by filling the right formatted password then clicking on next button.', () => {
         userDetailsPasswordPo.getPasswordTextBox().clear();
         userDetailsPasswordPo.setPassword(browser.params.ValidPasswordForCustomSignup)
-        browser.actions().mouseMove(userDetailsPasswordPo.getTermsAndConditionCheckBox()).doubleClick().perform()
+        browser.actions().mouseMove(userDetailsPasswordPo.getTermsAndConditionCheckBox()).doubleClick().perform();
         userDetailsPasswordPo.getBrandSetupButton().click()
         commonActions.waitForUrlToChange(browser.params.Url+"brands")
         browser.sleep(1000)

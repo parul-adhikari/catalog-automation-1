@@ -7,7 +7,7 @@ let userDetailsPagePo = require('../PageObject/userDetails.po')
 describe('Verify OTP page', function () {
 
     beforeAll(function (done) {
-        expect(browser.getCurrentUrl()).toContain('https://staging.unityinfluence.com/auth/sign-up?email=')
+        expect(browser.getCurrentUrl()).toContain(browser.params.Url+'auth/sign-up?email=');
         done();
     });
 

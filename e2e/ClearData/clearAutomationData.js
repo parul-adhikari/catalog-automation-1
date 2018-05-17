@@ -15,13 +15,13 @@ function clearData() {
     this.currentSessionDataClear = function () {
         browser.executeScript('window.sessionStorage.clear();');
         browser.executeScript('window.localStorage.clear();');
-        browser.sleep(5000)
+        browser.sleep(5000);
         browser.refresh();
     }
 
     this.deleteUser = function (User) {
-        this.adminUrl("/user/user/")
-
+        this.adminUrl("user/user/")
+        // browser.sleep(5000);
         browser.isElementPresent(adminLogin.getEmailTextBox()).then(function (result) {
             if (result) {
                 adminLogin.doAdminLogin()
@@ -32,17 +32,18 @@ function clearData() {
     }
 
     this.deleteBrand=function (Brand) {
-        this.adminUrl("/brand/brand")
+        this.adminUrl("brand/brand");
+        // browser.sleep(5000);
         browser.isElementPresent(adminLogin.getEmailTextBox()).then(function (result) {
             if (result) {
                 adminLogin.doAdminLogin();
-            }
-        })
+            };
+        });
         this.deleteData(Brand);
     }
 
     this.adminUrl = function (RequiredPage) {
-        browser.navigate().to("https://api-staging.unityinfluence.com/admin" + RequiredPage)
+        browser.navigate().to(browser.params.AdminUrl + RequiredPage)
 
     }
 
