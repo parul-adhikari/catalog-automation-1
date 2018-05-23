@@ -128,7 +128,7 @@ var MapInfluencer = {
         })
 
         this.PageElements.search_Inf.sendKeys(browser.params.InfluencerName)
-        element(by.xpath('//*[@type="submit"]')).click()
+        element(by.xpath('//*[@type="submit"]')).click();
         this.PageElements.lnk_ExistingInfName.click().then(function () {
             console.log('Addedddddddddddd')
         })
@@ -187,13 +187,13 @@ var MapInfluencer = {
 
         this.PageElements.lnk_addInfluencer.click();
         CommonActions.browserWaitForElement(this.PageElements.img_searchInfluencer)
-        this.PageElements.img_searchInfluencer.click()
+        this.PageElements.img_searchInfluencer.click();
 
         var winHandles = browser.getAllWindowHandles();
         winHandles.then(function (handles) {
             var parentWindow = handles[0];
             var popUpWindow = handles[1];
-            browser.switchTo().window(popUpWindow)
+            browser.switchTo().window(popUpWindow);
             // browser.sleep(2000)
             browser.waitForAngular();
         })

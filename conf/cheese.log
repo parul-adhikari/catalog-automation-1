@@ -12415,3 +12415,312 @@ is clicked from search result
 [2018-05-16T13:30:25.331] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
 [2018-05-16T13:30:27.008] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
 [2018-05-16T13:30:27.009] [INFO] protractorLog4js - logOut functionality verified
+[2018-05-17T12:39:53.280] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-17T12:39:53.280] [INFO] protractorLog4js - Url is loading....
+[2018-05-17T12:40:28.254] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up/form;access_token Url...
+[2018-05-17T12:40:28.264] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:41:01.222] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-17T12:41:22.933] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:41:59.485] [INFO] protractorLog4js - Register Button is present and it is disabled.
+[2018-05-17T12:42:00.352] [INFO] protractorLog4js - In case of wrong email id register button remain disable
+[2018-05-17T12:42:05.068] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up?email= Url...
+[2018-05-17T12:42:05.070] [INFO] protractorLog4js - User is on the otp screen.
+[2018-05-17T12:42:06.273] [INFO] protractorLog4js - confirm account button is disabled
+[2018-05-17T12:42:50.965] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:42:56.817] [INFO] protractorLog4js - Alert present in case of all ready existing brand name
+[2018-05-17T12:43:04.398] [INFO] protractorLog4js - Alert present in case of wrong formatted website URL
+[2018-05-17T12:43:05.330] [INFO] protractorLog4js - Brand got created with the name Adell Automation Brand
+[2018-05-17T12:43:37.411] [INFO] protractorLog4js - Alert present in case of wrong formatted website URL
+[2018-05-17T12:43:49.359] [INFO] protractorLog4js - Physical product successfully created
+[2018-05-17T12:44:58.094] [INFO] protractorLog4js - Loading Login Page
+[2018-05-17T12:45:07.374] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-17T12:45:07.375] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2018-05-17T12:45:07.941] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-17T12:45:08.373] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"vibhiff@jsid.com"
+""Password:"12345678
+[2018-05-17T12:45:09.811] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-17T12:45:09.813] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:45:10.803] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:45:10.812] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
+[2018-05-17T12:45:12.922] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
+[2018-05-17T12:45:12.922] [INFO] protractorLog4js - logOut functionality verified
+[2018-05-17T12:54:40.841] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-17T12:54:40.845] [INFO] protractorLog4js - Url is loading....
+[2018-05-17T12:54:59.237] [INFO] protractorLog4js - Register Button is present and it is disabled.
+[2018-05-17T12:54:59.956] [INFO] protractorLog4js - In case of wrong email id register button remain disable
+[2018-05-17T12:55:00.758] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up?email= Url...
+[2018-05-17T12:55:00.760] [INFO] protractorLog4js - User is on the otp screen.
+[2018-05-17T12:55:03.068] [INFO] protractorLog4js - confirm account button is disabled
+[2018-05-17T12:55:41.039] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:55:48.164] [INFO] protractorLog4js - Alert present in case of all ready existing brand name
+[2018-05-17T12:55:55.608] [INFO] protractorLog4js - Alert present in case of wrong formatted website URL
+[2018-05-17T12:55:56.533] [INFO] protractorLog4js - Brand got created with the name Una Automation Brand
+[2018-05-17T12:56:37.378] [INFO] protractorLog4js - Alert present in case of wrong formatted website URL
+[2018-05-17T12:56:49.093] [INFO] protractorLog4js - Physical product successfully created
+[2018-05-17T12:57:19.072] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-17T12:57:48.963] [INFO] protractorLog4js - Loading Login Page
+[2018-05-17T12:57:55.799] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-17T12:57:55.801] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2018-05-17T12:57:56.746] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-17T12:57:57.165] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"vibhiff@jsid.com"
+""Password:"12345678
+[2018-05-17T12:57:57.999] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-17T12:57:58.003] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:57:59.301] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-17T12:57:59.311] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
+[2018-05-17T12:58:00.719] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
+[2018-05-17T12:58:00.719] [INFO] protractorLog4js - logOut functionality verified
+[2018-05-18T18:11:36.767] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-18T18:11:36.835] [INFO] protractorLog4js - Url is loading....
+[2018-05-18T18:11:43.845] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-18T18:13:08.133] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-18T18:13:08.136] [INFO] protractorLog4js - Url is loading....
+[2018-05-18T18:13:13.520] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-19T15:47:23.436] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-19T15:47:23.439] [INFO] protractorLog4js - Url is loading....
+[2018-05-19T15:47:33.546] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-19T15:49:18.123] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-19T15:49:18.124] [INFO] protractorLog4js - Url is loading....
+[2018-05-19T15:49:24.253] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-19T16:04:42.087] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-19T16:04:42.087] [INFO] protractorLog4js - Url is loading....
+[2018-05-19T16:04:50.694] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-19T16:07:56.795] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-19T16:07:56.798] [INFO] protractorLog4js - Url is loading....
+[2018-05-19T16:08:04.064] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-19T23:58:35.861] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-19T23:58:35.866] [INFO] protractorLog4js - Url is loading....
+[2018-05-19T23:58:50.095] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-19T23:59:53.533] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-20T00:55:02.237] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-20T00:55:02.237] [INFO] protractorLog4js - Url is loading....
+[2018-05-20T00:55:09.061] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-20T00:55:51.089] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T15:21:08.936] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T15:21:08.951] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T15:21:16.719] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T15:22:18.037] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T15:45:46.087] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T15:45:46.089] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T15:45:51.024] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T15:46:27.496] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T15:48:42.337] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T15:48:42.337] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T15:48:48.115] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T15:49:35.033] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T15:50:59.005] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T15:50:59.005] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T15:51:04.116] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T15:51:28.379] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T16:03:47.548] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:03:47.548] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:03:52.233] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:04:33.548] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T16:08:30.400] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:08:30.402] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:08:35.642] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:09:04.539] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T16:10:31.538] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:10:31.540] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:10:36.598] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:13:54.892] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:13:54.896] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:13:59.671] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:15:14.996] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:15:15.001] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:15:19.877] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:15:51.507] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T16:16:29.359] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:16:29.361] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:16:34.379] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:17:16.780] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T16:21:05.226] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:21:05.226] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:21:10.379] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:22:28.706] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T16:22:28.721] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T16:22:33.187] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-21T16:23:04.578] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-21T22:20:03.518] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-21T22:20:03.523] [INFO] protractorLog4js - Url is loading....
+[2018-05-21T22:20:08.933] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-22T15:39:44.082] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-22T15:39:44.097] [INFO] protractorLog4js - Url is loading....
+[2018-05-22T15:39:51.990] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-22T15:40:43.150] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-22T17:56:55.942] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-22T17:56:55.942] [INFO] protractorLog4js - Url is loading....
+[2018-05-22T17:57:00.959] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-22T17:57:46.629] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-22T18:00:17.651] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-22T18:00:17.651] [INFO] protractorLog4js - Url is loading....
+[2018-05-22T18:00:23.162] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-22T18:00:57.447] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T12:54:14.824] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T12:54:14.833] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T12:54:21.411] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T12:54:55.649] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T12:56:15.380] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T12:56:15.387] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T12:56:20.167] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T12:56:43.644] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T13:02:11.981] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:02:11.985] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:02:16.795] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T13:02:43.049] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T13:03:03.629] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:03:03.632] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:03:30.689] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:03:30.691] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:03:36.293] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T13:08:15.247] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:08:15.251] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:08:19.945] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T13:08:43.124] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T13:09:16.019] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:09:16.022] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:09:20.724] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T13:09:44.110] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T13:12:08.879] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:12:08.881] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:12:13.609] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T13:21:28.624] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T13:21:28.627] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T13:21:33.480] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T15:09:29.025] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T15:09:29.025] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T15:09:34.119] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T15:19:42.441] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T15:19:42.446] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T15:19:47.467] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T15:27:39.984] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T15:27:39.990] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T15:27:44.973] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T15:28:16.969] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T16:16:07.635] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T16:16:07.650] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T16:16:12.477] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T16:16:51.044] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T16:20:18.975] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T16:20:18.975] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T16:20:23.727] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T16:21:04.292] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T16:52:23.658] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T16:52:23.658] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T16:52:28.458] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T16:52:56.604] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T16:54:06.661] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T16:54:06.676] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T16:54:11.393] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T16:54:39.985] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T17:32:36.236] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T17:32:36.236] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T17:32:41.267] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T17:33:31.924] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T17:36:24.467] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T17:36:24.467] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T17:36:29.819] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T17:37:10.467] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T17:39:10.710] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T17:39:10.710] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T17:39:15.812] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T17:40:00.784] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T17:41:58.798] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T17:41:58.800] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T17:42:03.736] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T17:42:44.555] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T17:45:53.971] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T17:45:53.971] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T17:46:16.180] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up/form;access_token Url...
+[2018-05-23T17:46:16.182] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:46:41.094] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T17:46:58.479] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:47:29.555] [INFO] protractorLog4js - Register Button is present and it is disabled.
+[2018-05-23T17:47:29.587] [INFO] protractorLog4js - In case of wrong email id register button remain disable
+[2018-05-23T17:47:29.620] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up?email= Url...
+[2018-05-23T17:47:29.621] [INFO] protractorLog4js - User is on the otp screen.
+[2018-05-23T17:47:29.646] [INFO] protractorLog4js - confirm account button is disabled
+[2018-05-23T17:47:29.874] [INFO] protractorLog4js - Alert present in case of all ready existing brand name
+[2018-05-23T17:47:40.513] [INFO] protractorLog4js - Loading Login Page
+[2018-05-23T17:47:40.519] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-23T17:47:40.520] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2018-05-23T17:48:51.729] [INFO] protractorLog4js - Starting Test With Logs
+[2018-05-23T17:48:51.745] [INFO] protractorLog4js - Url is loading....
+[2018-05-23T17:49:12.808] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up/form;access_token Url...
+[2018-05-23T17:49:12.812] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:49:39.626] [INFO] protractorLog4js - Admin is going to login with credentials as:admin@unityinfluence.com"
+"unityinfluence
+[2018-05-23T17:49:58.232] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:50:33.904] [INFO] protractorLog4js - Register Button is present and it is disabled.
+[2018-05-23T17:50:34.601] [INFO] protractorLog4js - In case of wrong email id register button remain disable
+[2018-05-23T17:50:35.446] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/sign-up?email= Url...
+[2018-05-23T17:50:35.448] [INFO] protractorLog4js - User is on the otp screen.
+[2018-05-23T17:50:36.524] [INFO] protractorLog4js - confirm account button is disabled
+[2018-05-23T17:51:11.736] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:51:17.225] [INFO] protractorLog4js - Alert present in case of all ready existing brand name
+[2018-05-23T17:51:23.747] [INFO] protractorLog4js - Alert present in case of wrong formatted website URL
+[2018-05-23T17:51:24.460] [INFO] protractorLog4js - Brand got created with the name Emilia Automation Brand
+[2018-05-23T17:51:52.867] [INFO] protractorLog4js - Alert present in case of wrong formatted website URL
+[2018-05-23T17:52:04.134] [INFO] protractorLog4js - Physical product successfully created
+[2018-05-23T17:53:11.035] [INFO] protractorLog4js - Influencer added successfully
+[2018-05-23T17:53:33.532] [INFO] protractorLog4js - Loading Login Page
+[2018-05-23T17:53:34.604] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-23T17:53:34.605] [INFO] protractorLog4js - Blank check verified tried clicking on Login button without filling any value in username and password
+[2018-05-23T17:53:35.014] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-23T17:53:35.426] [INFO] protractorLog4js - Wrong credentials check verified using following +"
+"vibhiff@jsid.com"
+""Password:"12345678
+[2018-05-23T17:53:36.889] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/auth/login Url...
+[2018-05-23T17:53:36.889] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:53:37.775] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/brands Url...
+[2018-05-23T17:53:37.784] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
+[2018-05-23T17:53:39.978] [INFO] protractorLog4js - Landing on: https://staging.unityinfluence.com/ Url...
+[2018-05-23T17:53:39.979] [INFO] protractorLog4js - logOut functionality verified

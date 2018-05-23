@@ -1,6 +1,6 @@
 let commonActions = require('../../../Common/CommonActions');
 
-function categoryListingPage() {
+function BrandCategoryListingPage() {
 
     var addNewCategoryBox = $('p > span');
     var submitCategoryButton = $('div.container-fluid > form > button');
@@ -46,4 +46,4 @@ function categoryListingPage() {
 }
 
 
-module.exports = new categoryListingPage();
+module.exports = new BrandCategoryListingPage();

@@ -56,22 +56,15 @@ exports.config = {
             __dirname + 'e2e/FrontEndApp/Spec/audienceDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/socialPostDetails.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/planSelection.spec.js',
+            __dirname + 'e2e/Admin/Spec/createNewInfluencer.spec.js',
             __dirname + 'e2e/Admin/Spec/adminCampaignListing.spec.js',
             __dirname + 'e2e/Admin/Spec/adminCampaignProfile.spec.js',
             __dirname + 'e2e/FrontEndApp/Spec/login.spec.js',
 
 
+
         ]
-        //
-        //     AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js',
-        //     reg: '../testCases/MapInfluencerPageTest.js',
-        //     AdminRegression: '../testCases/AcceptCollaborationPageTest.js',
-        //
-        //     //  AdminRegression: '../AdminFlowWithExistingInfluencer/Test/MapExistInfluencerPageTest.js'
-        //     //   reg: ['../testCases/AdminLoginPageTest.js','../testCases/AdminHomePageTest.js']
-        //     // AdminRegression: '../testCases/AcceptCollaborationPageTest.js'
-        //
-        //
+
     },
     helpers: ["../node_modules/jasmine-expect/index.js"],
 

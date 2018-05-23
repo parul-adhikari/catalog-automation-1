@@ -2,7 +2,7 @@ let commonActions = require('../../../Common/CommonActions');
 let homePagePo = require('../PageObject/home.po')
 let fbPo = require('../PageObject/facebook.po')
 let clearData = require('../../ClearData/clearAutomationData')
-let adminLogin = require('../../Admin/PageObject/AdminLogin.po')
+let adminLogin = require('../../Admin/PageObject/adminLogin.po')
 
 describe('Verify the Unity home page with facebook button and registration with facebook', function () {
 

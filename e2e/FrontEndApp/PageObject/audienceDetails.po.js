@@ -1,19 +1,19 @@
 let commonActions = require('../../../Common/CommonActions');
 
 
-function audienceDetails() {
-    var pageHeading = $('div.container-fluid > h2 > b');
-    var pageSubHeading = $('div.container-fluid > p');
-    var ageCheckBox = $('label > span.custom-control-indicator');
-    var genderDropDown = element(by.cssContainingText('[class*="placeholder"]', 'Please select a gender'));
-    var selectGenderDropDown = $('select-dropdown > div > div > ul > li');
-    var countryDropDown = element(by.cssContainingText('[class*="placeholder"]', 'Select a country'));
-    var selectCountryDropDown = $('div.options > ul > li:nth-child(174)');
-    var targetByAreaCheckBox = element(by.cssContainingText('[class*="custom-control-input-text.right-question-icon.small-font"]', 'Target by area'));
-    var stateDropDown = element(by.cssContainingText('[class*="placeholder"]', 'State'));
-    var targetByInterestCheckBox = element(by.cssContainingText('[class*="custom-control-input-text.right-question-icon.small-font"]', 'Target by interest'));
-    var targetByInterestTextField = $('#interest > div > ul > li > input');
-    var nextPostSettingButton = $("[class*='custom-submit']");
+function AudienceDetails() {
+    let pageHeading = $('div.container-fluid > h2 > b');
+    let pageSubHeading = $('div.container-fluid > p');
+    let ageCheckBox = $('label > span.custom-control-indicator');
+    let genderDropDown = element(by.cssContainingText('[class*="placeholder"]', 'Please select a gender'));
+    let selectGenderDropDown = $('select-dropdown > div > div > ul > li');
+    let countryDropDown = element(by.cssContainingText('[class*="placeholder"]', 'Select a country'));
+    let selectCountryDropDown = $('div.options > ul > li:nth-child(174)');
+    let targetByAreaCheckBox = element(by.cssContainingText('[class*="custom-control-input-text.right-question-icon.small-font"]', 'Target by area'));
+    let stateDropDown = element(by.cssContainingText('[class*="placeholder"]', 'State'));
+    let targetByInterestCheckBox = element(by.cssContainingText('[class*="custom-control-input-text.right-question-icon.small-font"]', 'Target by interest'));
+    let targetByInterestTextField = $('#interest > div > ul > li > input');
+    let nextPostSettingButton = $("[class*='custom-submit']");
 
 
     this.getPageHeading = function () {
@@ -100,5 +100,5 @@ function audienceDetails() {
 
 };
 
-module.exports = new audienceDetails();
+module.exports = new AudienceDetails();
 

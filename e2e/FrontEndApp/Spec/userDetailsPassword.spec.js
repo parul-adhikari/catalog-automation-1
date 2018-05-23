@@ -1,7 +1,7 @@
 let userDetailsPasswordPo = require('../PageObject/userDetailsPassword.po')
 let commonActions = require('../../../Common/CommonActions');
 let fakeData = require('../../../Utils/FakeData.js');
-let adminLogin = require('../../Admin/PageObject/AdminLogin.po')
+let adminLogin = require('../../Admin/PageObject/adminLogin.po')
 
 describe('Verify User Details Password Page', function () {
     beforeAll(function (done) {
