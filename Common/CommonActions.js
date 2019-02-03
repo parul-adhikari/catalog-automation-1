@@ -101,20 +101,19 @@ scrollToElement: function scrollToElement(element) {
     }
 
     ,
-
-    selectDropdownbyNum: function selectDropdownbyNum(element, optionNum) {
-        if (optionNum) {
-            var options = element.all(by.tagName('option'))
-                .then(function (options) {
-                    //  options[optionNum].click();
-                    options[optionNum].getText().then(function (value) {
-                        browser.logger.info('Selected value is :' + value)
-                    })
-                    options[optionNum].click()
-                });
-        }
-    }
-    ,
+    //
+    // selectDropdownbyNum: function selectDropdownbyNum(element, optionNum) {
+    //     if (optionNum) {
+    //         var options = element.all(by.tagName('option'))
+    //             .then(function (options) {
+    //                 //  options[optionNum].click();
+    //                 options[optionNum].getText().then(function (value) {
+    //                     browser.logger.info('Selected value is :' + value)
+    //                 })
+    //                 options[optionNum].click()
+    //             });
+    //     }
+    // },
 
     selectDropdownbyCssValue: function selectDropdownbyCssValue(selector, item) {
         element(by.cssContainingText('option', 'Vibhor Mathur')).click();

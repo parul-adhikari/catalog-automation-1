@@ -43,7 +43,7 @@ function clearData() {
     }
 
     this.adminUrl = function (RequiredPage) {
-        browser.navigate().to(browser.params.AdminUrl + RequiredPage)
+        browser.navigate().to(browser.params.adminUrl + RequiredPage)
 
     }
 

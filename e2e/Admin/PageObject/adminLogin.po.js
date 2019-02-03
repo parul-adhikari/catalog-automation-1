@@ -1,31 +1,16 @@
+let dataDictionary = require ('../../../Utils/DataFile.js');
+let EC = protractor.ExpectedConditions;
+
 function adminLoginPage() {
-    let emailTextBox= element(by.id('id_username'))
-    let passwordTextBox= element(by.id('id_password'))
-    let loginButton= element(by.xpath('.//*[@type=\'submit\']'))
 
-    let urlToBeChanged= 'https://api-staging.unityinfluence.com/admin/'
-
-    this.doAdminLogin = function () {
-        emailTextBox.sendKeys(browser.params.AdminEmail)
-        passwordTextBox.sendKeys(browser.params.AdminPassword)
-        loginButton.click()
-        browser.logger.info('Admin is going to login with credentials as:' +browser.params.AdminEmail +'"\n"' +browser.params.AdminPassword)
-    }
-    this.getEmailTextBox=function () {
-
-        return emailTextBox;
-
-    }
-
+    this.adminLogin = function () {
+        dataDictionary.waitForElement(dataDictionary.emailTextBox);
+        dataDictionary.emailTextBox.sendKeys(dataDictionary.adminEmail);
+        dataDictionary.passwordTextBox.sendKeys(dataDictionary.adminPassword);
+        dataDictionary.loginButton.click();
+        // expect(this.getContentOnAdminHome().isPresent()).toBe(true);
+        browser.logger.info('Admin is successfully logged in through ' + dataDictionary.adminEmail + '| ' + dataDictionary.adminPassword);
+    };
 }
-
-
-
-
-
-
-
-
-
 
 module.exports = new adminLoginPage();
