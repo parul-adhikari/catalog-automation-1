@@ -39,7 +39,7 @@ let dataDictionary = {
     brandName : $("#id_name"),
     createOnFrontEndButton : $('div.form-row.field-content_requests > div > div > a:nth-child(1)'),
     viewOnAdminButton : $('div.form-row.field-content_requests > div > div > a:nth-child(2)'),
-    viewContentLibraryLink : $('#content_library_id_514'),
+    viewContentLibraryLink : $('#content_library_id_515'),
 
     //Content request listing page
     actionDropDown : $('label > select'),
@@ -49,6 +49,7 @@ let dataDictionary = {
     idOfContentRequest : $('[class="field-id"]'),
     editButton : $('#result_list > tbody > tr > th > a.button'),
     brandDropDown : $('ul.admin-filter-brandname > li > select'),
+    status : $('ul.admin-filter-status > li > select'),
 
     //Content request detail page
     firstRequestedShotType : $('#id_requestcontentitem_set-0-content_category'),
@@ -80,8 +81,53 @@ let dataDictionary = {
     //Order page
     orderID : $('div.form-row.field-id > div > div'),
 
+    //Invoices
+    amount: '1000',
+    invoiceAmount: $('#cr_invoice_amount'),
+    sendInvoiceButton: $('#id-send-invoice'),
+    creditCardNumber : $("[formcontrolname*='cardNumber']"),
+    expiryDate : $("[formcontrolname*='expiryDate']"),
+    cvv : $("[formcontrolname*='cvc']"),
+    brandNameOnInvoice: $('div.order-details > h3'),
+    amountOnInvoice: $("[class*='value source-san-semi']"),
+    //amountOnInvoice: $('span.value.source-san-semi'),
+    placeOrderButton:element(by.cssContainingText('[class*="app-default-button button-fullwidth"]', 'Place your order')),
+    validCard: '4242424242424242',
+    validExpiryDate: '03/27',
+    validCvv: '344',
+    invalidExpiryDate:'05/15',
+    failedCard: '6011000990139424',
+    invalidCardDetailsError: $("[class*='error-dialogue source-san']"),
+    errorOnFailedCard: $('body > app-root > app-success-dialog > div > div.col-10.pull-left.notify-message-text > div'),
+    closeError: $("[class*='Cancel']"),
+    viewInvoicesButton : $('#id-view-invoice'),
+    statusOnInvoicesScreen : $('tr:nth-child(1) > td.field-status'),
+
+    //Success Screen
+    paymentCompleted: $('div.payment-completed-transaction.text-center > h3'),
+    paymentCompletedMessage: 'Payment completed',
+    idOnSuccessScreen: $('div.order-ident.d-block > span'),
+
+    //Payment already made
+    paymentAlreadyMadeMessage: 'This invoice has been paid',
+
+    //Mailinator
+    emailSubject: $('td:nth-child(4)'),
+    extendedUrl: 'quovantis3',
+    completePaymentButton: $('tr:nth-child(7) > td > a'),
+    //emailSubject : element(by.cssContainingText('td:nth-child(4)', 'Catalog | Invoice for your new photos')),
+    //emailSubject : element(by.cssContainingText('.all_message-min_text', 'Catalog | Invoice for your new photos')),
+
+
+    //Front end login
+    emailTextField: $('div:nth-child(1) > input'),
+    passwordField: $('div.input-wrapper-v2.m-0 > input'),
+    loginAction: $("[class*='app-default-button source-san-semi w-100']"),
+    emailFE: 'quovantis3@mailinator.com',
+    passwordFE: 'Qwerty@123',
+
     //Content Library (front-end)
-    brandDropDownOnFrontEnd : $('#multiBrandDropdown'),
+    brandDropDownOnFrontEnd : $('#brandSelectionDropdown'),
     contentComponent : $('ngx-masonry > ngxmasonryitem:nth-child(1) > div'),
     freeTag : $("[class*='status-tag free text-center source-san-semi']"),
     freeContentId : $('ngxmasonryitem:nth-child(1) > div > div.overlay-metadata > p'),
@@ -90,7 +136,14 @@ let dataDictionary = {
     downloadButton : $("[class*='brick-action brick-action-download']"),
     addToCart : $("[class*='brick-action brick-action-add']"),
     contentCategory : $("[class*='content-category rubik-semibold']"),
-    contentId : $("[class*='content-code source-san']"),
+    closeIconOnLightbox : $("[class*='global-lightbox-close']"),
+    freeOnLightbox : $("[class*='status-tag free text-center source-san-semi animated delay-2s fadeIn']"),
+    idOnLightbox : $("[class*='div.lightbox-information-details > p']"),
+    tappableAreaOnthumbnail : $("[class*='download-image-overlay d-flex align-items-end justify-content-between animated fadeIn']"),
+    downloadOnLightbox : $("[class*='btn btn-download']"),
+    orderOnOrderHistory : $('span.order-ident.source-san.d-block > b'),
+
+
 
     //Function to get different admin URLs based on screens
     getUrl: function (type) {

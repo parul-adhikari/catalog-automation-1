@@ -1,5 +1,5 @@
-let brandListingPage = require('../PageObject/brandListing.po.js');
-let adminLoginPage = require('../PageObject/adminLogin.po.js');
+let brandListingPage = require('../PageObject/brandListing-po.js');
+let adminLoginPage = require('../PageObject/adminLogin-po.js');
 let dataDictionary = require ('../../../Utils/DataFile.js');
 
 describe('Verify searching on brand listing page and check its linked content requests', function () {

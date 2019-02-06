@@ -7,7 +7,6 @@ var unPublishedContent = [];
 
 function contentListing() {
 
-
     this.errorStateAfterPurchased = function () {
 
         dataDictionary.selectMultipleChecks(['1']);
@@ -147,6 +146,7 @@ function contentListing() {
         {
             dataDictionary.freeTag.click();
             dataDictionary.waitForElement((dataDictionary.freeOnLightbox));
+            dataDictionary.freeOnLightbox.click();
             dataDictionary.idOnLightbox.getText().then(function(text) {
                 if(text === '#'+freeContent[0]) {
 
@@ -217,8 +217,6 @@ function contentListing() {
         }
 
     };
-
-
 
 }
 

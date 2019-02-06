@@ -1,4 +1,5 @@
-let adminLoginPage = require('../PageObject/adminLogin.po.js');
+let adminLoginPage = require('../PageObject/adminLogin-po.js');
+//import * as adminLoginPage from "../PageObject/adminLogin-po.js";
 let dataDictionary = require ('../../../Utils/DataFile.js');
 
 describe('Verify Catalog Admin Login', function () {

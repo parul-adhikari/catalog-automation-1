@@ -1,6 +1,6 @@
-let uploadContentPage = require('../PageObject/uploadContent.po');
+let uploadContentPage = require('./uploadContent-po');
 let dataDictionary = require ('../../../Utils/DataFile.js');
-
+var order;
 
  function contentRequestDetail() {
 
@@ -11,8 +11,8 @@ let dataDictionary = require ('../../../Utils/DataFile.js');
                     browser.switchTo().window(handles[2]).then(function () {
                         dataDictionary.waitForElement(dataDictionary.orderID);
                         dataDictionary.orderID.getText().then(function (value) {
-                            browser.logger.info('Order link for this content request: ' + value);
-                            return value;
+                            order = value;
+                            browser.logger.info('Order link for this content request: ' + order);
                         })
 
                          browser.driver.close();
@@ -60,6 +60,17 @@ let dataDictionary = require ('../../../Utils/DataFile.js');
             });
       })
 
+     };
+
+     this.verifyOrderInOrderHistory = function () {
+         browser.get('https://staging.catalog.cc/brands/' +dataDictionary.existingBrandId+ '/order-history');
+         browser.logger.info("Order value is:" + order);
+         if(expect(dataDictionary.orderOnOrderHistory.getText()).toBe('#'+order)){
+             browser.logger.info("Order ID matched on order history page on front end!!");
+         }
+         else{
+             browser.logger.info("Order ID did not match on order history page on front end!");
+         }
      };
 
 

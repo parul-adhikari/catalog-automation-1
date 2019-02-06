@@ -5,9 +5,11 @@ function contentLibrary() {
 
     this.brandOnFrontEnd = function() {
         browser.waitForAngular();
+        browser.sleep(10000);
         dataDictionary.brandDropDownOnFrontEnd.getText().then(function (text) {
             expect(text).toEqual(dataDictionary.existingBrand);
             browser.logger.info("Selected brand on front end is: " + text);
+            browser.sleep(4000);
         });
     };
 

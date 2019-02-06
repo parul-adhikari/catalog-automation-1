@@ -1,7 +1,7 @@
-let contentRequestListingPage = require('../PageObject/contentRequestListing.po');
+let contentRequestListingPage = require('../PageObject/contentRequestListing-po');
 let dataDictionary = require ('../../../Utils/DataFile.js');
-let contentRequestDetailPage = require('../PageObject/contentRequestDetail.po');
-let contentListingPage = require('../PageObject/contentListing.po');
+let contentRequestDetailPage = require('../PageObject/contentRequestDetail-po');
+let contentListingPage = require('../PageObject/contentListing-po');
 
 describe('Verify opening content requests for which payment has/ has not been made', function () {
 

@@ -1,9 +1,9 @@
-let contentLibraryPage = require('../PageObject/contentLibrary.po.js');
-let adminLoginPage = require('../PageObject/adminLogin.po.js');
+let contentLibraryPage = require('../PageObject/contentLibrary-po.js');
+let adminLoginPage = require('../PageObject/adminLogin-po.js');
 let dataDictionary = require ('../../../Utils/DataFile.js');
-let contentListingPage = require('../PageObject/contentListing.po');
-let contentRequestDetailPage = require('../PageObject/contentRequestDetail.po');
-//var loginPage = require('../../FrontEnd/PageObject/login.po.js');
+let contentListingPage = require('../PageObject/contentListing-po');
+let contentRequestDetailPage = require('../PageObject/contentRequestDetail-po');
+let loginPage = require('../../FrontEnd/PageObject/login-po.js');
 
 describe('Verify transition to various statuses from admin panel using bulk edit functionality', function () {
 
@@ -13,7 +13,7 @@ describe('Verify transition to various statuses from admin panel using bulk edit
            dataDictionary.viewContentLibraryLink.click();
            browser.getAllWindowHandles().then(function (handles) {
                browser.switchTo().window(handles[1]);
-               // loginPage.doLogin();
+               //loginPage.doLogin();
                browser.sleep(5000);
                contentLibraryPage.brandOnFrontEnd();
            });
@@ -42,7 +42,7 @@ describe('Verify transition to various statuses from admin panel using bulk edit
            contentListingPage.verifyDownloadIcon();
        });
 
-       // it('Verify add to cart button on available images', function () {
-       //     contentListingPage.verifyAddToCartButton();
-       // });
+       it('Verify add to cart button on available images', function () {
+           contentListingPage.verifyAddToCartButton();
+       });
    });

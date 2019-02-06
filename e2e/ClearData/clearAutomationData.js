@@ -1,4 +1,4 @@
-let adminLogin = require('../Admin/PageObject/adminLogin.po');
+let adminLogin = require('../Admin/PageObject/adminLogin-po');
 let commonActions = require('../../Common/CommonActions');
 
 

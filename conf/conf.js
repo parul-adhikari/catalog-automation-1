@@ -1,5 +1,6 @@
 // let dirname = process.env['FOLDER_PATH'];
-let dirname = '/media/parul/E21A2A4E1A2A1FD1/catalog/'
+let dirname = '/media/parul/E21A2A4E1A2A1FD1/catalog-automation/';
+
 let log4js = require('log4js');
 let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 let nodeMailer = require('nodemailer');
@@ -21,9 +22,6 @@ exports.config = {
         // }
 
     ],
-//
-//     params: {
-// allContent    },
 
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',
@@ -32,12 +30,14 @@ exports.config = {
         SanitySuite: [
 
             //Admin Panel
-            dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
+            //dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
             dirname + 'e2e/Admin/Spec/brandListing.spec.js',
             dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
-            // dirname + 'e2e/Admin/Spec/contentListing.spec.js',
-            // dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
-            // dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
+            dirname + 'e2e/Admin/Spec/contentListing.spec.js',
+            dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
+            dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
+            dirname + 'e2e/Admin/Spec/orderHistory.spec.js',
+            dirname + 'e2e/Admin/Spec/invoice.spec.js'
         ]
 
     },
@@ -104,7 +104,7 @@ exports.config = {
                 text: 'This email contains report generated after running the automation suite. Please find below the test result in html file attached.',
                 attachments: [
                     {
-                        'path':'/media/parul/E21A2A4E1A2A1FD1/catalog/Reports/htmlReport.html'
+                        'path':'/media/parul/E21A2A4E1A2A1FD1/catalog-automation/Reports/htmlReport.html'
                     }]
             };
 

@@ -1,24 +1,24 @@
 let dataDictionary = require ('../../../Utils/DataFile.js');
 
-function brandListing() {
+let brandListing = {
 
-    this.searchForBrandAndClick = function (brand) {
+    searchForBrandAndClick : function (brand) {
 
         dataDictionary.searchTextBox.sendKeys(brand);
         dataDictionary.searchButton.click();
         dataDictionary.brandLink.click();
-    };
+    },
 
-    this.verifyBrandDetails = function () {
+    verifyBrandDetails : function () {
 
         dataDictionary.brandName.getAttribute('value').then(function (value) {
                 expect(value).toEqual(dataDictionary.existingBrand);
                 browser.logger.info("Admin has landed on detail page of" + dataDictionary.existingBrand + " brand");
             }
         )
-    };
+    },
 
-    this.viewOnAdminLink = function () {
+    viewOnAdminLink : function () {
         dataDictionary.viewOnAdminButton.click();
         browser.getAllWindowHandles().then(function (handles) {
             browser.switchTo().window(handles[1]).then(function () {
@@ -31,6 +31,6 @@ function brandListing() {
             });
         });
 
-    };
+    },
 }
-module.exports = new brandListing()
+module.exports = brandListing;
