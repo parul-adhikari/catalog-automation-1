@@ -2,25 +2,19 @@ let clearData = require('../../ClearData/clearAutomationData');
 let dictionary = require ('../../../Utils/DataFile.js');
 
 
-describe('Verify logging in through gmail', function () {
+describe('Verify selecting channels for a brand', function () {
     beforeAll(function (done) {
         browser.sleep(4000);
         expect(browser.getCurrentUrl()).toContain('order/channel');
         done();
     });
 
-    afterEach(function () {
+    afterAll(function () {
     dictionary.dataDictionary.waitForElement(dictionary.brandDetails.shotCards);
+        expect(browser.getCurrentUrl()).toContain('/shot');
+
     });
-    //
-    // afterAll(function () {
-    //
-    //     // loginPage.logOut();
-    //     // clearData.currentSessionDataClear();
-    //     // clearData.deleteUser(browser.params.gmailAddress);
-    //
-    //
-    // });
+
 
     it('Verify that initially Continue button is disabled', () => {
         expect(dictionary.brandDetails.continueButton.isDisabled).toBe(dictionary.brandDetails.continueButton.isDisabled);

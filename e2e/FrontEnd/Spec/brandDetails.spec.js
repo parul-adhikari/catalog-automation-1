@@ -5,10 +5,10 @@ let dictionary = require ('../../../Utils/DataFile.js');
 let loginPage = require('../PageObject/login_po');
 let fakeData = require('../../../Utils/FakeData.js');
 
-describe('Verify logging in through gmail', function () {
+describe('Verify brand details screen!', function () {
     beforeAll(function (done) {
         browser.sleep(4000);
-        expect(browser.getCurrentUrl()).toContain('brands/create?new=true');
+        expect(browser.getCurrentUrl()).toContain('brands/create');
             done();
     });
     // beforeEach(function () {
@@ -19,6 +19,7 @@ describe('Verify logging in through gmail', function () {
 
     afterAll(function () {
 
+        dictionary.dataDictionary.waitForElement(dictionary.brandDetails.channelSelection1);
         expect(browser.getCurrentUrl()).toContain('order/channel');
         // loginPage.logOut();
         // clearData.currentSessionDataClear();
@@ -49,7 +50,7 @@ describe('Verify logging in through gmail', function () {
     });
 
     it('Verify that Continue button enables only when all mandatory fields are filled', () => {
-        brandDetailsPage.fillBrandDetails(dictionary.dataDictionary.existingBrand, '@' + fakeData.randomFirstName);
+        brandDetailsPage.fillBrandDetails(fakeData.randomFirstName,'','@' + fakeData.randomFirstName);
         expect(dictionary.brandDetails.continueButton.isDisabled).toBe(dictionary.brandDetails.continueButton.isDisabled);
         browser.logger.info("Continue button is disabled until an mandatory fields are filled!")
 
@@ -57,7 +58,7 @@ describe('Verify logging in through gmail', function () {
 
     it('Verify that Continue button enables only when all mandatory fields are filled', () => {
         brandDetailsPage.fillBrandDetails(fakeData.randomFirstName, fakeData.randomFirstName + '.com', '@' + fakeData.randomFirstName);
-        browser.logger.info(fakeData.randomFirstName + ": Brand created successfully!!")
+        browser.logger.info(fakeData.randomFirstName + ": Brand created successfully!!");
     });
 
 

@@ -17,13 +17,13 @@ function loginPage() {
         //     dictionary.dataDictionary.waitForElement(dictionary.loginPage.errorOnLogin);
         //     browser.logger.info('User entered wrong login credentials!');
         // });
-        if(dictionary.loginPage.errorOnLogin) {
-            browser.logger.info('User entered wrong login credentials!')
-        }
-        else {
-            browser.wait(protractor.ExpectedConditions.urlContains('brands'), 7000);
-            browser.logger.info('User successfully logged in!');
-        }
+        // if(dictionary.loginPage.errorOnLogin) {
+        //     browser.logger.info('User entered wrong login credentials!')
+        // }
+        // else {
+        //     browser.wait(protractor.ExpectedConditions.urlContains('brands'), 7000);
+        //     browser.logger.info('User successfully logged in!');
+        // }
     };
 
 

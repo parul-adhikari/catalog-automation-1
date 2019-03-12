@@ -20,6 +20,11 @@ describe('Verify custom sign up functionality', function () {
         done();
     });
 
+    afterAll(function () {
+        dictionary.dataDictionary.waitForElement(dictionary.loginPage.loginOnHome);
+    });
+
+
     it('Verify heading on sign up screen', () => {
         expect(dictionary.loginPage.pageHeading.getText()).toBe(dictionary.signUpPage.headingText);
         browser.logger.info('Heading on sign up page matched!!')

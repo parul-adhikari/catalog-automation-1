@@ -39,6 +39,8 @@ exports.config = {
             dirname + 'e2e/FrontEnd/Spec/login.spec.js',
             dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
             dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/shotSelection.spec.js',
+
 
 
             //Admin Panel

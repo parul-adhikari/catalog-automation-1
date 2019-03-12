@@ -7,7 +7,7 @@ let fakeData = require('../../../Utils/FakeData.js');
 describe('Verify Login functionality', function () {
 
     beforeAll(function () {
-        //dictionary.dataDictionary.waitForElement(dictionary.loginPage.loginOnHome);
+        dictionary.dataDictionary.waitForElement(dictionary.loginPage.loginOnHome);
         dictionary.loginPage.loginOnHome.click();
         browser.logger.info('Loading Login Page');
     });
@@ -27,12 +27,15 @@ describe('Verify Login functionality', function () {
 
     it('Wrong credentials check', function () {
         loginPage.doLogin(fakeData.randomFirstName + "@mailinator.com", "123");
+        expect(dictionary.loginPage.errorOnLogin.isDisplayed()).toBeTruthy();
+        browser.logger.info('User entered wrong login credentials!');
     });
 
     it('Verify successful login', function () {
 
         loginPage.doLogin(fakeData.randomFirstName + "@mailinator.com", dictionary.signUpPage.userPassword);
-
+        browser.wait(protractor.ExpectedConditions.urlContains('brands'), 7000);
+        browser.logger.info('User successfully logged in!');
     });
 
 
