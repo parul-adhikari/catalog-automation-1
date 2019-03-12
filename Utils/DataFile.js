@@ -244,7 +244,16 @@ exports.shotScreen = {
     shotPlus1 : $('div:nth-child(1) > div > div.shot-card-details > div > div.row.no-gutters.align-items-top > div.col-6.text-right > div > button.toggle-plus > span'),
     shotPlus2 : $('div:nth-child(4) > div > div.shot-card-details > div > div.row.no-gutters.align-items-top > div.col-6.text-right > div > button.toggle-plus > span'),
     shotMinus : $('div:nth-child(1) > div > div.shot-card-details > div > div.row.no-gutters.align-items-top > div.col-6.text-right > div > button.toggle-minus > span'),
-}
+};
+
+exports.shotScreen = {
+
+    continueOnStyling : $('div.styling-actions > div > div > button'),
+
+
+
+};
+
 exports.gmail = {
 
     continueWithGmailButton : $('button.app-default-button.google-button.source-san-semi.w-100'),
