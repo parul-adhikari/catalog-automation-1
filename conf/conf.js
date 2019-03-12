@@ -1,5 +1,6 @@
 // let dirname = process.env['FOLDER_PATH'];
-let dirname = '/media/parul/E21A2A4E1A2A1FD1/catalog/'
+
+let dirname = '/home/parul/catalog_auto/catalog-automation/'
 let log4js = require('log4js');
 let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 let nodeMailer = require('nodemailer');
@@ -31,10 +32,19 @@ exports.config = {
     suites: {
         SanitySuite: [
 
+            //Brand Portal
+            //dirname + 'e2e/FrontEnd/Spec/home.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/signUp.spec.js',
+            //dirname + 'e2e/FrontEnd/Spec/gmail.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/login.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
+
+
             //Admin Panel
-            dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
-            dirname + 'e2e/Admin/Spec/brandListing.spec.js',
-            dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
+            // dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
+            // dirname + 'e2e/Admin/Spec/brandListing.spec.js',
+            // dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
             // dirname + 'e2e/Admin/Spec/contentListing.spec.js',
             // dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
             // dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
@@ -64,6 +74,7 @@ exports.config = {
     },
 
     onPrepare: function () {
+
         // For initializing the Console Logs
         browser.logger = log4js.getLogger('protractorLog4js');
 
@@ -104,7 +115,7 @@ exports.config = {
                 text: 'This email contains report generated after running the automation suite. Please find below the test result in html file attached.',
                 attachments: [
                     {
-                        'path':'/media/parul/E21A2A4E1A2A1FD1/catalog/Reports/htmlReport.html'
+                        'path':'/home/parul/catalog_auto/catalog-automation/Reports/htmlReport.html'
                     }]
             };
 

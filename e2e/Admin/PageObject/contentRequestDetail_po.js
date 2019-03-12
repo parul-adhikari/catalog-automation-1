@@ -1,4 +1,4 @@
-let uploadContentPage = require('../PageObject/uploadContent.po');
+let uploadContentPage = require('./uploadContent_po');
 let dataDictionary = require ('../../../Utils/DataFile.js');
 
 

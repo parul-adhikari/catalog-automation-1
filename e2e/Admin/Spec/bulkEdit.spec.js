@@ -1,5 +1,5 @@
-let contentListingPage = require('../PageObject/contentListing.po');
-let adminLoginPage = require('../PageObject/adminLogin.po.js');
+let contentListingPage = require('../PageObject/contentListing_po');
+let adminLoginPage = require('../PageObject/adminLogin_po.js');
 let dataDictionary = require ('../../../Utils/DataFile.js');
 
 describe('Verify transition to various statuses from admin panel using bulk edit functionality', function () {

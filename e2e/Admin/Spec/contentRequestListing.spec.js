@@ -1,7 +1,7 @@
-let contentRequestListingPage = require('../PageObject/contentRequestListing.po');
+let contentRequestListingPage = require('../PageObject/contentRequestListing_po');
 let dataDictionary = require ('../../../Utils/DataFile.js');
-let contentRequestDetailPage = require('../PageObject/contentRequestDetail.po');
-let contentListingPage = require('../PageObject/contentListing.po');
+let contentRequestDetailPage = require('../PageObject/contentRequestDetail_po');
+let contentListingPage = require('../PageObject/contentListing_po');
 
 describe('Verify opening content requests for which payment has/ has not been made', function () {
 
@@ -11,7 +11,7 @@ describe('Verify opening content requests for which payment has/ has not been ma
             browser.logger.info("Admin is on brand specific content request listing")
 
         }
-        // dataDictionary.getUrl('content requests' + "?brand_id=" + dataDictionary.existingBrandId);
+        // dataDictionary.getAdminUrl('content requests' + "?brand_id=" + dataDictionary.existingBrandId);
         // // browser.isElementPresent(dataDictionary.emailTextBox).then( function (result) {
         // //     if (result) {
         // //         adminLoginPage.adminLogin();
@@ -22,7 +22,7 @@ describe('Verify opening content requests for which payment has/ has not been ma
 
     beforeEach(function () {
 
-        dataDictionary.getUrl('content requests');
+        dataDictionary.getAdminUrl('content requests');
         dataDictionary.selectRequestedValueInDropDown(dataDictionary.brandDropDown, dataDictionary.existingBrand);
     });
 

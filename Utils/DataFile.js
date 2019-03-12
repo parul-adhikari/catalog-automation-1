@@ -1,9 +1,10 @@
-let dataDictionary = {
+exports.dataDictionary = {
 
     //General admin panel info
     adminUrl: "https://api-staging.unityinfluence.com/admin/",
     brandsUrl: "https://api-staging.unityinfluence.com/admin/brand/brand/",
     contentRequestsUrl: "https://api-staging.unityinfluence.com/admin/content/contentrequest/",
+    homeUrl : "https://staging.catalog.cc/",
     adminEmail: "development@unityinfluence.com",
     adminPassword: "unityinfluence",
     existingBrand: "Automation Brand : Do not Touch",
@@ -93,7 +94,7 @@ let dataDictionary = {
     contentId : $("[class*='content-code source-san']"),
 
     //Function to get different admin URLs based on screens
-    getUrl: function (type) {
+    getAdminUrl: function (type) {
         switch (type) {
             case 'admin': browser.get(this.adminUrl);
                 break;
@@ -159,7 +160,93 @@ let dataDictionary = {
 
         var EC = protractor.ExpectedConditions;
         browser.wait(EC.visibilityOf(elem), 20000, "Element was not visible!");
-    }
+    },
+
+    waitForUrlToChange: function waitForUrlToChange(expectedUrl) {
+
+
+        const EC = protractor.ExpectedConditions;
+        browser.wait(EC.urlContains(expectedUrl),40000);
+    },
+
+    getBrandUrl: function (type) {
+        switch (type) {
+            case 'home': browser.get(brandUrl.home);
+                break;
+
+            case 'login': browser.get(brandUrl.login);
+                break;
+
+            case 'content requests': browser.get(this.contentRequestsUrl);
+                break;
+
+            default:  browser.logger.info("Unknown Url type");
+        }
+
+    },
+
 };
 
-module.exports = dataDictionary;
+exports.brandUrl = {
+
+     home : "https://staging.catalog.cc/home",
+
+
+};
+
+exports.loginPage = {
+
+    scrollToSection : $('div.steps-section-header.text-center > h3'),
+    topHeaderOnScroll : $('div.email-header.email-form-header.email-form-header-show'),
+    photographersButtonOnHome : element(by.cssContainingText('#btn-login > button', 'Photographers')),
+    loginOnHome : element(by.cssContainingText('#btn-login > button', 'Log In')),
+    pageHeading : $('div.onboarding-form-header.text-center > h3'),
+    headingText : "Log in to your Catalog Account",
+    emailTextBox : $("input[formcontrolname*='email']"),
+    passwordTextBox : $("input[formcontrolname*='password']"),
+    loginOrSignUpButton : $('form > button'),
+    errorOnLogin : element(by.cssContainingText('[class*="msg fixed row align-items-center error"]', 'login credentials are not valid.')),
+
+
+};
+
+exports.signUpPage = {
+
+    signUpButtonOnHome : $('div.hero-primary-action.text-center > a'),
+    headingText : "Create an account",
+    nameTextBox : $("input[formcontrolname*='name']"),
+    termsAndConditionsCheckBox : $('label > span'),
+    existingUser: 'parul.adhikari@quovantis.com',
+    userPassword : 'Qwerty@123',
+    invalidPasswordError : element(by.cssContainingText('[class*="error-dialogue source-san"]', 'Please make sure you follow the guidelines.')),
+    existingUserError : element(by.cssContainingText('[class*="error-dialogue source-san"]', 'Sorry! User with this email already exists!')),
+};
+
+exports.brandDetails = {
+
+    userProfileDropDown : $('div.brand-image'),
+    signOutOption : $('a > div'),
+    websiteName : $("input[formcontrolname*='website']"),
+    brandInstagramHandle : $("input[formcontrolname*='instagramHandle']"),
+    brandCategory : $('div:nth-child(2) > label > input[type="radio"]'),
+    continueButton : $("[class*='app-default-button submit-button']"),
+    errorOnBrandDetail : $("[class*='error-dialogue']"),
+    channelSelection1 : $('div:nth-child(2) > label > div > div > div'),
+    channelSelection2 : $('div:nth-child(1) > label > div > div > div'),
+    shotCards : $("[class*='shot-card-details']"),
+
+};
+
+exports.gmail = {
+
+    continueWithGmailButton : $('button.app-default-button.google-button.source-san-semi.w-100'),
+    gmailTextBox : $('input[type="email"]'),
+    gmailNextButton : $('#identifierNext'),
+    gmailPasswordTextBox : $('input[type="password"]'),
+    passwordNextButton : $('#passwordNext'),
+    gmailEmail : 'quovantis1@gmail.com',
+    gmailPassword: 'quovantis@123'
+};
+
+
+

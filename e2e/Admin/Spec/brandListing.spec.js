@@ -1,12 +1,12 @@
-let brandListingPage = require('../PageObject/brandListing.po.js');
-let adminLoginPage = require('../PageObject/adminLogin.po.js');
+let brandListingPage = require('../PageObject/brandListing_po.js');
+let adminLoginPage = require('../PageObject/adminLogin_po.js');
 let dataDictionary = require ('../../../Utils/DataFile.js');
 
 describe('Verify searching on brand listing page and check its linked content requests', function () {
 
 
     beforeAll(function (done) {
-        dataDictionary.getUrl('brands');
+        dataDictionary.getAdminUrl('brands');
         browser.isElementPresent(dataDictionary.emailTextBox).then( function (result) {
             if (result) {
                 adminLoginPage.adminLogin();

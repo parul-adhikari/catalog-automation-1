@@ -1,6 +1,6 @@
 let path = require('path');
-let dirnameFile = '/media/parul/E21A2A4E1A2A1FD1/catalog/Images/';
-let remote = require('../../../node_modules/protractor/node_modules/selenium-webdriver/remote');
+let dirnameFile = '/home/parul/catalog_auto/catalog-automation/Images/';
+let remote = require('../../../node_modules/selenium-webdriver/remote');
 browser.setFileDetector(new remote.FileDetector());
 let dataDictionary = require ('../../../Utils/DataFile.js');
 function uploadContent() {

@@ -1,4 +1,4 @@
-let uploadContentPage = require('../PageObject/uploadContent.po');
+let uploadContentPage = require('../PageObject/uploadContent_po');
 
 
    describe('Verify Upload content functionality', function () {
