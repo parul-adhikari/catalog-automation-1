@@ -1,9 +1,10 @@
 exports.dataDictionary = {
 
     //General admin panel info
-    adminUrl: "https://api-staging.unityinfluence.com/admin/",
-    brandsUrl: "https://api-staging.unityinfluence.com/admin/brand/brand/",
-    contentRequestsUrl: "https://api-staging.unityinfluence.com/admin/content/contentrequest/",
+    adminUrl: "https://api-staging.catalog.cc/admin/",
+    brandsUrl: "https://api-staging.catalog.cc/admin/brand/brand/",
+    contentRequestsUrl: "https://api-staging.catalog.cc/admin/content/contentrequest/",
+    userUrl : 'https://api-staging.catalog.cc/admin/user/user/',
     homeUrl : "https://staging.catalog.cc/",
     adminEmail: "development@unityinfluence.com",
     adminPassword: "unityinfluence",
@@ -57,6 +58,7 @@ exports.dataDictionary = {
     uploadLink : $('#upload_contents'),
     viewContentLink : $('#view_contents'),
     orderLink : $('div.form-row.field-order > div > div > a'),
+    paymentReceivedFlag : $('#id_payment_received'),
 
     //Upload content screen
     addFileButton : $('div.ui-fileupload-buttonbar.ui-widget-header.ui-corner-top > span'),
@@ -69,7 +71,7 @@ exports.dataDictionary = {
     //Content listing page
     firstEditLink : $('tr:nth-child(1) > td.field-file > div > a:nth-child(3)'),
     action : $('label > select'),
-    goButton : $("[class*='button']"),
+    goButton : $('div.actions > button'),
     selectAll : $('#action-toggle'),
     deleteButton : $('input[type="submit"]:nth-child(4)'),
     statusColumn : $('tr:nth-child(1) > td.field-status'),
@@ -100,6 +102,9 @@ exports.dataDictionary = {
                 break;
 
             case 'brands': browser.get(this.brandsUrl);
+                break;
+
+            case 'user' : browser.get(this.userUrl);
                 break;
 
             case 'content requests': browser.get(this.contentRequestsUrl);
@@ -205,8 +210,7 @@ exports.loginPage = {
     emailTextBox : $("input[formcontrolname*='email']"),
     passwordTextBox : $("input[formcontrolname*='password']"),
     loginOrSignUpButton : $('form > button'),
-    errorOnLogin : element(by.cssContainingText('[class*="msg fixed row align-items-center error"]', 'login credentials are not valid.')),
-
+    errorOnLogin : $("[class*='msg fixed row align-items-center error']"),
 
 };
 
@@ -246,12 +250,28 @@ exports.shotScreen = {
     shotMinus : $('div:nth-child(1) > div > div.shot-card-details > div > div.row.no-gutters.align-items-top > div.col-6.text-right > div > button.toggle-minus > span'),
 };
 
-exports.shotScreen = {
+exports.stylingScreen = {
 
     continueOnStyling : $('div.styling-actions > div > div > button'),
+    creativeSuggestions : $('div:nth-child(2) > div > div:nth-child(1) > div > textarea'),
+    creativeSuggestionsText : 'Play With Shapes',
+    files:{
+        pdfFile : 'samplepdf.pdf',
+        jpgFile1 : 'test1.jpeg',
+        jpgFile2 : 'test2.jpeg',
 
-
-
+    },
+    colorSelection : 'div > div:nth-child(5) > label',
+    favoriteInstagramHandle : $('div.ng-pristine.ng-valid.ng-touched > div > div > div > input'),
+    favoriteInstagramHandleText : 'https://www.instagram.com/mamabunch/',
+    onlineBlogs : $('div:nth-child(2) > div > div > div > input'),
+    onlineBlogsText : 'https://www.wpbeginner.com/beginners-guide/how-to-choose-the-best-blogging-platform/',
+    pinterestBoards : $('div:nth-child(3) > div > div > div > input'),
+    pinterestBoardsText : 'https://www.postplanner.com/pinterest-board-name-ideas-to-get-more-clicks-pins-followers/',
+    brandedWebsites : $('div:nth-child(4) > div > div > div > input'),
+    brandWebsitesText : 'https://in.puma.com/',
+    loaderOnStyling : $('app-loader > div > img'),
+    headingOnPayment : $('div > h3'),
 };
 
 exports.gmail = {

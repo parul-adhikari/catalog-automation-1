@@ -40,16 +40,17 @@ exports.config = {
             dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
             dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
             dirname + 'e2e/FrontEnd/Spec/shotSelection.spec.js',
-
-
+            dirname + 'e2e/FrontEnd/Spec/styling.spec.js',
 
             //Admin Panel
             // dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
-            // dirname + 'e2e/Admin/Spec/brandListing.spec.js',
-            // dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
+            dirname + 'e2e/Admin/Spec/brandListing.spec.js',
+            dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
             // dirname + 'e2e/Admin/Spec/contentListing.spec.js',
             // dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
             // dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
+            dirname + 'e2e/Admin/Spec/deleteFromAdmin.spec.js',
+
         ]
 
     },

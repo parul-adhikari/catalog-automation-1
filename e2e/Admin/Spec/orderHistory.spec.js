@@ -1,6 +1,6 @@
 let contentLibraryPage = require('../PageObject/contentLibrary_po');
 let adminLoginPage = require('../PageObject/adminLogin_po.js');
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 let contentListingPage = require('../PageObject/contentListing_po');
 let contentRequestDetailPage = require('../PageObject/contentRequestDetail_po');
 
@@ -8,10 +8,10 @@ let contentRequestDetailPage = require('../PageObject/contentRequestDetail_po');
    describe('Verify transition to various statuses from admin panel using bulk edit functionality', function () {
 
        beforeAll(function () {
-           expect(browser.getCurrentUrl()).toContain('brands/' + dataDictionary.existingBrandId);
-           dataDictionary.orderHistoryOnSidePanel.click();
-           dataDictionary.waitForElement((dataDictionary.orderIdOnOrderHistory));
-           expect(browser.getCurrentUrl()).toContain(dataDictionary.existingBrandId + "/order-history");
+           expect(browser.getCurrentUrl()).toContain('brands/');
+           dictionary.dataDictionary.orderHistoryOnSidePanel.click();
+           dictionary.dataDictionary.waitForElement((dictionary.dataDictionary.orderIdOnOrderHistory));
+           expect(browser.getCurrentUrl()).toContain("/order-history");
        });
 
 

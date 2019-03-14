@@ -2,7 +2,7 @@ let path = require('path');
 let dirnameFile = '/home/parul/catalog_auto/catalog-automation/Images/';
 let remote = require('../../../node_modules/selenium-webdriver/remote');
 browser.setFileDetector(new remote.FileDetector());
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 function uploadContent() {
 
     this.multipleFileUpload = function (fileToUpload1, fileToUpload2, fileToUpload3, fileToUpload4, fileToUpload5, fileToUpload6) {
@@ -14,20 +14,20 @@ function uploadContent() {
         let imagePath5 = path.resolve(dirnameFile, fileToUpload5);
         let imagePath6 = path.resolve(dirnameFile, fileToUpload6);
         browser.logger.info("Path of image 1 is : " + imagePath1);
-        dataDictionary.fileElement.sendKeys(imagePath1+ "\n" + imagePath2+ "\n" + imagePath3+ "\n" + imagePath4 +  "\n" + imagePath5+ "\n" + imagePath6);
+        dictionary.dataDictionary.fileElement.sendKeys(imagePath1+ "\n" + imagePath2+ "\n" + imagePath3+ "\n" + imagePath4 +  "\n" + imagePath5+ "\n" + imagePath6);
     };
 
     this.afterUploadClick = function() {
 
         //Verify after upload screen (disabled states) and success screen
         browser.logger.info("Upload button is enabled!");
-        dataDictionary.uploadButton.click();
-        dataDictionary.waitForElement(dataDictionary.progressBar);
-        expect(dataDictionary.progressBar.isDisplayed()).toBeTruthy();
-        expect(dataDictionary.crossIcon.isDisplayed()).toEqual(false);
-        expect(dataDictionary.uploadButton.isEnabled()).toBe(false);
+        dictionary.dataDictionary.uploadButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.progressBar);
+        expect(dictionary.dataDictionary.progressBar.isDisplayed()).toBeTruthy();
+        expect(dictionary.dataDictionary.crossIcon.isDisplayed()).toEqual(false);
+        expect(dictionary.dataDictionary.uploadButton.isEnabled()).toBe(false);
         browser.sleep(3000);
-        dataDictionary.waitForElement(dataDictionary.successMessageAfterUpload);
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.successMessageAfterUpload);
         browser.logger.info("Content successfully uploaded!!");
 
     };

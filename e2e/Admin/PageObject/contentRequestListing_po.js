@@ -1,19 +1,33 @@
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 
 
 function contentRequestListing() {
     
-    this.checkStatusOfRequestInListing = function (contentRequestId) {
+    // this.checkStatusOfRequestInListing = function (contentRequestId) {
+    //
+    //     if (expect(dictionary.dataDictionary.idOfContentRequest.getText()).toBe(contentRequestId))
+    //     {
+    //
+    //         dictionary.dataDictionary.statusOfContentRequest.getText().then(function (text) {
+    //             browser.logger.info("Status of content request " + contentRequestId + "is: " + text);
+    //         });
+    //     }
+    //
+    //     dictionary.dataDictionary.idOfContentRequest.getText().then(function (value) {
+    //         browser.logger.info('Value of element is: ' + value);
+    //         requestID=value;
+    //         browser.logger.info("Value of requestID is:" + requestID)
+    //     })
+    // };
 
-        if (expect(dataDictionary.idOfContentRequest.getText()).toBe(contentRequestId))
-        {
+    this.checkStatusOfRequestInListing = function () {
 
-            dataDictionary.statusOfContentRequest.getText().then(function (text) {
-                browser.logger.info("Status of content request " + contentRequestId + "is: " + text);
+        dictionary.dataDictionary.statusOfContentRequest.getText().then(function (text) {
+                browser.logger.info("Status of content request is: " + text);
             });
-        }
 
-        dataDictionary.idOfContentRequest.getText().then(function (value) {
+
+        dictionary.dataDictionary.idOfContentRequest.getText().then(function (value) {
             browser.logger.info('Value of element is: ' + value);
             requestID=value;
             browser.logger.info("Value of requestID is:" + requestID)

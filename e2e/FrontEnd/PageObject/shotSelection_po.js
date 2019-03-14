@@ -16,7 +16,6 @@ function shotSelectionPage() {
     this.addShots = function () {
 
         this.addProducts(fakeData.randomFirstName);
-
         for(let a = 0; a < 4; a++) {
             dictionary.shotScreen.shotPlus1.click();
         }
@@ -24,7 +23,7 @@ function shotSelectionPage() {
         dictionary.shotScreen.shotPlus2.click();
 
         dictionary.shotScreen.continueOnShots.click();
-
+        browser.sleep(4000);
     };
 
 

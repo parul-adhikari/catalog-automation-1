@@ -1,15 +1,15 @@
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 let EC = protractor.ExpectedConditions;
 
 function adminLoginPage() {
 
     this.adminLogin = function () {
-        dataDictionary.waitForElement(dataDictionary.emailTextBox);
-        dataDictionary.emailTextBox.sendKeys(dataDictionary.adminEmail);
-        dataDictionary.passwordTextBox.sendKeys(dataDictionary.adminPassword);
-        dataDictionary.loginButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.emailTextBox);
+        dictionary.dataDictionary.emailTextBox.sendKeys(dictionary.dataDictionary.adminEmail);
+        dictionary.dataDictionary.passwordTextBox.sendKeys(dictionary.dataDictionary.adminPassword);
+        dictionary.dataDictionary.loginButton.click();
         // expect(this.getContentOnAdminHome().isPresent()).toBe(true);
-        browser.logger.info('Admin is successfully logged in through ' + dataDictionary.adminEmail + '| ' + dataDictionary.adminPassword);
+        browser.logger.info('Admin is successfully logged in through ' + dictionary.dataDictionary.adminEmail + '| ' + dictionary.dataDictionary.adminPassword);
     };
 }
 

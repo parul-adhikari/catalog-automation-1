@@ -1,5 +1,5 @@
 let EC = protractor.ExpectedConditions;
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 let freeContent = [];
 var availableContent = [];
 var purchasedWithRequestContent = [];
@@ -10,20 +10,20 @@ function contentListing() {
 
     this.errorStateAfterPurchased = function () {
 
-        dataDictionary.selectMultipleChecks(['1']);
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,2);
-        dataDictionary.goButton.click();
-        dataDictionary.waitForElement(dataDictionary.error);
+        dictionary.dataDictionary.selectMultipleChecks(['1']);
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,2);
+        dictionary.dataDictionary.goButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.error);
     };
 
     this.deleteContentFromListing = function () {
 
-        dataDictionary.selectMultipleChecks(['1']);
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,1);
-        dataDictionary.goButton.click().then(function(){
-            dataDictionary.waitForElement(dataDictionary.deleteButton);
-            dataDictionary.deleteButton.click();
-            dataDictionary.waitForElement(dataDictionary.successMessage);
+        dictionary.dataDictionary.selectMultipleChecks(['1']);
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,1);
+        dictionary.dataDictionary.goButton.click().then(function(){
+            dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.deleteButton);
+            dictionary.dataDictionary.deleteButton.click();
+            dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.successMessage);
         });
 
     };
@@ -31,50 +31,50 @@ function contentListing() {
     this.bulkEditOptions = function () {
 
         // //Change status to Un-published
-        dataDictionary.selectMultipleChecks(['1','2','3','4']);
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,3);
-        dataDictionary.goButton.click();
-        dataDictionary.waitForElement(dataDictionary.statusColumn);
+        dictionary.dataDictionary.selectMultipleChecks(['1','2','3','4']);
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,3);
+        dictionary.dataDictionary.goButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.statusColumn);
 
         //Change status to Free
-        dataDictionary.selectMultipleChecks(['3','4','5','6']);
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,5);
-        dataDictionary.goButton.click();
-        dataDictionary.waitForElement(dataDictionary.statusColumn);
+        dictionary.dataDictionary.selectMultipleChecks(['3','4','5','6']);
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,5);
+        dictionary.dataDictionary.goButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.statusColumn);
 
         //Change status to Purchased with request
-        dataDictionary.selectMultipleChecks(['5','6']);
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,4);
-        dataDictionary.goButton.click();
-        dataDictionary.waitForElement(dataDictionary.statusColumn);
+        dictionary.dataDictionary.selectMultipleChecks(['5','6']);
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,4);
+        dictionary.dataDictionary.goButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.statusColumn);
 
         //Change status to Available
-        dataDictionary.selectMultipleChecks(['5','6','9','10']);
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,2);
-        dataDictionary.goButton.click();
-        dataDictionary.waitForElement(dataDictionary.warning);
+        dictionary.dataDictionary.selectMultipleChecks(['5','6','9','10']);
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,2);
+        dictionary.dataDictionary.goButton.click();
+        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.warning);
 
 
     };
 
     this.allBulkEdit = function () {
 
-        dataDictionary.selectAll.click();
-        dataDictionary.selectDropdownbyNum(dataDictionary.action,2);
-        dataDictionary.goButton.click();
-        //dataDictionary.waitForElement(dataDictionary.warning);
+        dictionary.dataDictionary.selectAll.click();
+        dictionary.dataDictionary.selectDropdownbyNum(dictionary.dataDictionary.action,2);
+        dictionary.dataDictionary.goButton.click();
+        //dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.warning);
     };
 
     this.checkAllPossibleTransitions = function () {
 
-        dataDictionary.firstEditLink.click().then(function () {
+        dictionary.dataDictionary.firstEditLink.click().then(function () {
             browser.getAllWindowHandles().then(function (handles) {
                 browser.switchTo().window(handles[3]).then(function () {
                     browser.waitForAngular();
-                    dataDictionary.waitForElement(dataDictionary.statusDropDown);
+                    dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.statusDropDown);
                     expect(browser.driver.getCurrentUrl()).toContain('content/content/');
                     browser.logger.info("Admin is on content detail screen");
-                    dataDictionary.getDropDownValues(dataDictionary.statusDropDown, 'option');
+                    dictionary.dataDictionary.getDropDownValues(dictionary.dataDictionary.statusDropDown, 'option');
                     browser.sleep(1000);
                     browser.driver.close();
                     browser.switchTo().window(handles[2]);
@@ -90,7 +90,7 @@ function contentListing() {
 
     this.getContent = function (status) {
 
-        dataDictionary.selectRequestedValueInDropDown(dataDictionary.status, status);
+        dictionary.dataDictionary.selectRequestedValueInDropDown(dictionary.dataDictionary.status, status);
 
         for (i=1;; i++) {
             if (i >= 3) break;
@@ -143,11 +143,11 @@ function contentListing() {
 
     this.verifyFreeTag = function () {
 
-        if (dataDictionary.freeTag.isDisplayed())
+        if (dictionary.dataDictionary.freeTag.isDisplayed())
         {
-            dataDictionary.freeTag.click();
-            dataDictionary.waitForElement((dataDictionary.freeOnLightbox));
-            dataDictionary.idOnLightbox.getText().then(function(text) {
+            dictionary.dataDictionary.freeTag.click();
+            dictionary.dataDictionary.waitForElement((dictionary.dataDictionary.freeOnLightbox));
+            dictionary.dataDictionary.idOnLightbox.getText().then(function(text) {
                 if(text === '#'+freeContent[0]) {
 
                     browser.logger.info("Free image has free tag on it!!");
@@ -167,11 +167,11 @@ function contentListing() {
     };
 
     this.verifyDownloadIcon = function () {
-        if (dataDictionary.downloadButton.isDisplayed())
+        if (dictionary.dataDictionary.downloadButton.isDisplayed())
         {
-            dataDictionary.tappableAreaOnthumbnail.click();
-            dataDictionary.waitForElement((dataDictionary.downloadOnLightbox));
-            dataDictionary.idOnLightbox.getText().then(function(text) {
+            dictionary.dataDictionary.tappableAreaOnthumbnail.click();
+            dictionary.dataDictionary.waitForElement((dictionary.dataDictionary.downloadOnLightbox));
+            dictionary.dataDictionary.idOnLightbox.getText().then(function(text) {
                 if(text === '#'+purchasedWithRequestContent[0]) {
 
                     browser.logger.info("available image has download tag on it!!");
@@ -192,13 +192,13 @@ function contentListing() {
     };
 
     this.verifyAddToCartButton = function () {
-        if (dataDictionary.addToCart.isDisplayed())
+        if (dictionary.dataDictionary.addToCart.isDisplayed())
         {
-            //dataDictionary.tappableAreaOnThumbnailAvailable.click();
+            //dictionary.dataDictionary.tappableAreaOnThumbnailAvailable.click();
 
-            browser.actions().mouseMove((dataDictionary.addToCart), -20, -20).click().perform();
-            dataDictionary.waitForElement((dataDictionary.addToCart));
-            dataDictionary.idOnLightbox.getText().then(function(text) {
+            browser.actions().mouseMove((dictionary.dataDictionary.addToCart), -20, -20).click().perform();
+            dictionary.dataDictionary.waitForElement((dictionary.dataDictionary.addToCart));
+            dictionary.dataDictionary.idOnLightbox.getText().then(function(text) {
                 if(text === '#'+availableContent[0]) {
 
                     browser.logger.info("available image has download tag on it!!");

@@ -1,16 +1,16 @@
 let uploadContentPage = require('./uploadContent_po');
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 
 
  function contentRequestDetail() {
 
      this.verifyOrderCreated = function () {
 
-         dataDictionary.orderLink.click().then(function () {
+         dictionary.dataDictionary.orderLink.click().then(function () {
                 browser.getAllWindowHandles().then(function (handles) {
                     browser.switchTo().window(handles[2]).then(function () {
-                        dataDictionary.waitForElement(dataDictionary.orderID);
-                        dataDictionary.orderID.getText().then(function (value) {
+                        dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.orderID);
+                        dictionary.dataDictionary.orderID.getText().then(function (value) {
                             browser.logger.info('Order link for this content request: ' + value);
                             return value;
                         })
@@ -24,17 +24,17 @@ let dataDictionary = require ('../../../Utils/DataFile.js');
     }
 
      this.uploadContent = function () {
-        //dataDictionary.selectRequestedValueInDropDown(dataDictionary.shotDropDown,"Product: Flatlay $19");
-        dataDictionary.uploadLink.click().then(function () {
+        //dictionary.dataDictionary.selectRequestedValueInDropDown(dictionary.dataDictionary.shotDropDown,"Product: Flatlay $19");
+         dictionary.dataDictionary.uploadLink.click().then(function () {
         // $('#upload_contents').click().then(function () {
             browser.getAllWindowHandles().then(function (handles) {
                 browser.switchTo().window(handles[2]).then(function () {
                     browser.waitForAngular();
-                    dataDictionary.waitForElement(dataDictionary.addFileButton);
+                    dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.addFileButton);
                     expect(browser.driver.getCurrentUrl()).toContain('content-upload');
                     browser.logger.info("Admin is on content upload screen");
                     uploadContentPage.multipleFileUpload("test1.jpg", "test2.jpg", "test3.jpg", "test4.jpg", "test5.jpg", "test6.jpg");
-                    dataDictionary.crossIcon.click();
+                    dictionary.dataDictionary.crossIcon.click();
                     uploadContentPage.multipleFileUpload("test1.jpg", "test7.jpg", "test8.jpg", "test9.jpg", "test10.jpg", "test11.jpg");
                     uploadContentPage.afterUploadClick();
                     browser.driver.close();
@@ -45,16 +45,16 @@ let dataDictionary = require ('../../../Utils/DataFile.js');
         })
     };
 
-     this.viewContent = function (contentRequestId) {
+     this.viewContent = function () {
 
-         dataDictionary.waitForElement(dataDictionary.viewContentLink);
-        // dataDictionary.selectRequestedValueInDropDown(dataDictionary.shotDropDown,"Product: Flatlay $19");
-        dataDictionary.viewContentLink.click().then(function () {
+         dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.viewContentLink);
+        // dictionary.dataDictionary.selectRequestedValueInDropDown(dictionary.dataDictionary.shotDropDown,"Product: Flatlay $19");
+         dictionary.dataDictionary.viewContentLink.click().then(function () {
             browser.getAllWindowHandles().then(function (handles) {
                 browser.switchTo().window(handles[2]).then(function () {
-                    dataDictionary.waitForElement(dataDictionary.searchTextBox);
-                    expect(browser.driver.getCurrentUrl()).toContain('content/content/?content_request__id__exact=' + contentRequestId);
-                    dataDictionary.waitForElement(dataDictionary.searchTextBox);
+                    dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.searchTextBox);
+                    expect(browser.driver.getCurrentUrl()).toContain('content/content/?content_request__id__exact=');
+                    dictionary.dataDictionary.waitForElement(dictionary.dataDictionary.searchTextBox);
                     browser.logger.info("Admin is on view content screen");
                 });
             });

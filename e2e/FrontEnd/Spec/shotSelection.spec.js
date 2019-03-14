@@ -4,7 +4,7 @@ let fakeData = require('../../../Utils/FakeData.js');
 
 describe('Verify shot selection screen', function () {
     // beforeAll(function (done) {
-    //     expect(browser.getCurrentUrl()).toContain('/shot');
+    //     dictionary.dataDictionary.waitForElement(dictionary.shotScreen.productTextBox);
     //     done();
     // });
 
