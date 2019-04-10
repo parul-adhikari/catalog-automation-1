@@ -1,10 +1,10 @@
-let adminLoginPage = require('../PageObject/adminLogin.po.js');
-let dataDictionary = require ('../../../Utils/DataFile.js');
+let adminLoginPage = require('../PageObject/adminLogin_po.js');
+let dictionary = require ('../../../Utils/DataFile.js');
 
 describe('Verify Catalog Admin Login', function () {
 
     beforeAll(function () {
-        dataDictionary.getUrl('admin');
+        dictionary.dataDictionary.getAdminUrl('admin');
     });
 
     it('Verify Admin successful login', function () {
