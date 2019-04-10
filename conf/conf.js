@@ -13,13 +13,17 @@ exports.config = {
     multiCapabilities: [
         {
 
-            'browserName': 'chrome'
+            'browserName': 'chrome',
+            chromeOptions: {
 
-        },
-        // {
-        //     'browserName':'firefox'
-        //
-        // }
+                args: ["--headless", "--disable-gpu", "--window-size=800x600"]
+
+                // {
+                //     'browserName':'firefox'
+                //
+                //
+            }
+        }
 
     ],
 //

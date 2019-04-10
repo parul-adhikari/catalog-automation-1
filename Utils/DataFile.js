@@ -222,7 +222,7 @@ exports.signUpPage = {
     termsAndConditionsCheckBox : $('label > span'),
     existingUser: 'parul.adhikari@quovantis.com',
     userPassword : 'Qwerty@123',
-    invalidPasswordError : element(by.cssContainingText('[class*="error-dialogue source-san"]', 'Please make sure you follow the guidelines.')),
+    invalidPasswordError : element(by.cssContainingText('[class*="abcerror-dialogue source-san"]', 'Please make sure you follow the guidelines.')),
     existingUserError : element(by.cssContainingText('[class*="error-dialogue source-san"]', 'Sorry! User with this email already exists!')),
 };
 
