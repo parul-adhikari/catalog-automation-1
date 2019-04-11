@@ -1,9 +1,9 @@
-let dirname = process.env['FOLDER_PATH'];
+//let dirname = process.env['FOLDER_PATH'];
 
-//let dirname = '/home/parul/catalog_auto/catalog-automation/'
+let dirname = '/home/ubuntu/'
 let log4js = require('log4js');
 let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
-let nodeMailer = require('nodemailer');
+// let nodeMailer = require('nodemailer');
 
 exports.config = {
 
@@ -14,15 +14,15 @@ exports.config = {
         {
 
             'browserName': 'chrome',
-            chromeOptions: {
-
-                args: ["--headless", "--disable-gpu", "--window-size=1600x1000"]
-
-                // {
-                //     'browserName':'firefox'
-                //
-                //
-            }
+            // chromeOptions: {
+            //
+            //     args: ["--headless", "--disable-gpu", "--window-size=1600x1000"]
+            //
+            //     // {
+            //     //     'browserName':'firefox'
+            //     //
+            //     //
+            // }
         }
 
     ],
@@ -79,8 +79,8 @@ exports.config = {
     },
 
     onPrepare: function () {
-         console.log(dirname);
-         console.log(dirname +'e2e/FrontEnd/Spec/signUp.spec.js');
+         console.log(' set path = ' + dirname);
+         console.log(dirname +'catalog-automation/e2e/Admin/Spec');
 
         // For initializing the Console Logs
         browser.logger = log4js.getLogger('protractorLog4js');
@@ -103,40 +103,40 @@ exports.config = {
         );
     },
 
-    onComplete: function () {
-        return new Promise(function (fulfill, reject) {
-
-            var transport = nodeMailer.createTransport({
-                service: 'Gmail',
-                auth: {
-                    user: "quovantis1@gmail.com",
-                    pass: "quovantis@123"
-                }
-            });
-
-            var mailOptions = {
-                from: 'quovantis1@gmail.com', // sender address
-                to: 'parul.adhikari@quovantis.com', // receiver address
-                subject: 'Catalog| Automation Report(Admin Panel)',
-                //text: info.body,
-                text: 'This email contains report generated after running the automation suite. Please find below the test result in html file attached.',
-                attachments: [
-                    {
-                        'path':'/home/parul/catalog_auto/catalog-automation/Reports/htmlReport.html'
-                    }]
-            };
-
-
-            transport.sendMail(mailOptions, function (error, info) {
-                if (error) {
-                    console.log(error);
-                    response.send(err);
-                }
-                else {
-                    console.log("Message sent: " + info.response);
-                    response.send(info);
-                }
-            });
-        });
-    }
+    // onComplete: function () {
+    //     return new Promise(function (fulfill, reject) {
+    //
+    //         var transport = nodeMailer.createTransport({
+    //             service: 'Gmail',
+    //             auth: {
+    //                 user: "quovantis1@gmail.com",
+    //                 pass: "quovantis@123"
+    //             }
+    //         });
+    //
+    //         var mailOptions = {
+    //             from: 'quovantis1@gmail.com', // sender address
+    //             to: 'parul.adhikari@quovantis.com', // receiver address
+    //             subject: 'Catalog| Automation Report(Admin Panel)',
+    //             //text: info.body,
+    //             text: 'This email contains report generated after running the automation suite. Please find below the test result in html file attached.',
+    //             attachments: [
+    //                 {
+    //                     'path':'/home/parul/catalog_auto/catalog-automation/Reports/htmlReport.html'
+    //                 }]
+    //         };
+    //
+    //
+    //         transport.sendMail(mailOptions, function (error, info) {
+    //             if (error) {
+    //                 console.log(error);
+    //                 response.send(err);
+    //             }
+    //             else {
+    //                 console.log("Message sent: " + info.response);
+    //                 response.send(info);
+    //             }
+    //         });
+    //     });
+    // }
 };
