@@ -8,7 +8,7 @@ function shotSelectionPage() {
         dictionary.shotScreen.productTextBox.sendKeys(name);
         browser.actions().sendKeys(protractor.Key.ENTER).perform();
         dictionary.dataDictionary.waitForElement(dictionary.shotScreen.crossOnProductTag);
-        dictionary.shotScreen.productTextBox.sendKeys(name + 'Product 2');
+        dictionary.shotScreen.productTextBox.sendKeys(fakeData.randomFirstName + "Spray");
         browser.actions().sendKeys(protractor.Key.ENTER).perform();
 
     };

@@ -17,11 +17,11 @@ describe('Verify shot selection screen', function () {
         expect(browser.getCurrentUrl()).toContain('/styling');
 
     });
-
-    it('Verify that initially Continue button is disabled', () => {
-        expect(dictionary.shotScreen.continueOnShots.isDisabled).toBe(dictionary.shotScreen.continueOnShots.isDisabled);
-        browser.logger.info("Continue button is disabled until all fields are filled!")
-    });
+    //
+    // it('Verify that initially Continue button is disabled', () => {
+    //     expect(dictionary.shotScreen.continueOnShots.isDisabled).toBe(dictionary.shotScreen.continueOnShots.isDisabled);
+    //     browser.logger.info("Continue button is disabled until all fields are filled!")
+    // });
 
 
     it('Verify while adding products', () => {

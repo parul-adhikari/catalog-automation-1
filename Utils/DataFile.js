@@ -5,9 +5,10 @@ exports.dataDictionary = {
     brandsUrl: "https://api-staging.catalog.cc/admin/brand/brand/",
     contentRequestsUrl: "https://api-staging.catalog.cc/admin/content/contentrequest/",
     userUrl : 'https://api-staging.catalog.cc/admin/user/user/',
-    homeUrl : "https://staging.catalog.cc/",
-    adminEmail: "development@unityinfluence.com",
-    adminPassword: "unityinfluence",
+    homeUrl : "http://staging.catalog.cc",
+    adminEmail: "adhikariparul1807+test@gmail.com",
+    adminPassword: "12345678",
+    adminLogOut : $('a:nth-child(5)'),
     existingBrand: "Automation Brand : Do not Touch",
     existingBrandId: "401",
     orderTypeForPaymentReceived: "1",
@@ -94,6 +95,10 @@ exports.dataDictionary = {
     addToCart : $("[class*='brick-action brick-action-add']"),
     contentCategory : $("[class*='content-category rubik-semibold']"),
     contentId : $("[class*='content-code source-san']"),
+    brandDropDownOption :  $("[class*='dropdown-trigger rubik-semibold d-block']"),
+    createBrand : $("[class*='static-area-item d-block w-100']"),
+
+
 
     //Function to get different admin URLs based on screens
     getAdminUrl: function (type) {
@@ -176,7 +181,7 @@ exports.dataDictionary = {
 
     getBrandUrl: function (type) {
         switch (type) {
-            case 'home': browser.get(brandUrl.home);
+            case 'home': browser.get("https:/staging.catalog.cc/home");
                 break;
 
             case 'login': browser.get(brandUrl.login);
@@ -194,7 +199,7 @@ exports.dataDictionary = {
 
 exports.brandUrl = {
 
-     home : "https://staging.catalog.cc/home",
+     home : "staging.catalog.cc/home",
 
 
 };
@@ -284,6 +289,7 @@ exports.gmail = {
     gmailEmail : 'quovantis1@gmail.com',
     gmailPassword: 'quovantis@123'
 };
+
 
 
 

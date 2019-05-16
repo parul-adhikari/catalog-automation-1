@@ -7,6 +7,9 @@ let nodeMailer = require('nodemailer');
 
 exports.config = {
 
+
+
+
     directConnect: true,
 
     // Capabilities to be passed to the webdriver instance.
@@ -14,15 +17,15 @@ exports.config = {
         {
 
             'browserName': 'chrome',
-            chromeOptions: {
-
-                args: ["--headless", "--disable-gpu", "--window-size=800x600"]
-
-                // {
-                //     'browserName':'firefox'
-                //
-                //
-            }
+            // chromeOptions: {
+            //
+            //     args: ["--headless", "--disable-gpu", "--window-size=800x600"]
+            //
+            //     // {
+            //     //     'browserName':'firefox'
+            //     //
+            //     //
+            // }
         }
 
     ],
@@ -33,33 +36,39 @@ exports.config = {
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',
 
+
     suites: {
         SanitySuite: [
 
+
+
             //Brand Portal
-            //dirname + 'e2e/FrontEnd/Spec/home.spec.js',
-            dirname + 'e2e/FrontEnd/Spec/signUp.spec.js',
-            //dirname + 'e2e/FrontEnd/Spec/gmail.spec.js',
-            dirname + 'e2e/FrontEnd/Spec/login.spec.js',
-            dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
-            dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
-            dirname + 'e2e/FrontEnd/Spec/shotSelection.spec.js',
-            dirname + 'e2e/FrontEnd/Spec/styling.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/home.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/signUp.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/gmail.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/login-front-end.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/shotSelection.spec.js',
+            // dirname + 'e2e/FrontEnd/Spec/styling.spec.js',
 
             //Admin Panel
             // dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
-            dirname + 'e2e/Admin/Spec/brandListing.spec.js',
-            dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
+            // dirname + 'e2e/Admin/Spec/brandListing.spec.js',
+            // dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
             // dirname + 'e2e/Admin/Spec/contentListing.spec.js',
             // dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
             // dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
-            dirname + 'e2e/Admin/Spec/deleteFromAdmin.spec.js',
+            // dirname + 'e2e/Admin/Spec/deleteFromAdmin.spec.js',
 
+            //React Admin
+            dirname + 'e2e/ReactAdmin/Spec/login-spec.js',
+            dirname + 'e2e/ReactAdmin/Spec/contentRequest-spec.js',
         ]
 
     },
 
-    //helpers: ["../node_modules/jasmine-expect/index.js"],
+    helpers: ["../node_modules/jasmine-expect/index.js"],
 
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
