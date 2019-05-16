@@ -7,6 +7,8 @@ describe('Verify custom sign up functionality', function () {
 
     beforeAll(function (done) {
         browser.get('https://staging.catalog.cc/auth/sign-up');
+
+        console.log('STARTED THE SEREVER and IT IS UP AND RUNNING')
         // expect(browser.getCurrentUrl()).toContain('auth/sign-up');
         done();
     });
