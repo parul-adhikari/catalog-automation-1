@@ -36,9 +36,9 @@ exports.config = {
         SanitySuite: [
             //Brand Portal
             //dirname + 'catalog-automation/e2e/FrontEnd/Spec/home.spec.js',
-            dirname + 'catalog-automation/e2e/FrontEnd/Spec/signUp.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/signUp.spec.js',
             //dirname + 'catalog-automation/e2e/FrontEnd/Spec/gmail.spec.js',
-            dirname + 'catalog-automation/e2e/FrontEnd/Spec/login.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/login.spec.js',
             dirname + 'catalog-automation/e2e/FrontEnd/Spec/brandDetails.spec.js',
             dirname + 'catalog-automation/e2e/FrontEnd/Spec/brandChannels.spec.js',
             dirname + 'catalog-automation/e2e/FrontEnd/Spec/shotSelection.spec.js',
