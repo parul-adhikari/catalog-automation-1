@@ -35,23 +35,23 @@ exports.config = {
     suites: {
         SanitySuite: [
             //Brand Portal
-            //dirname + 'catalog-automation/e2e/FrontEnd/Spec/home.spec.js',
+            //dirname + 'e2e/FrontEnd/Spec/home.spec.js',
             dirname + 'e2e/FrontEnd/Spec/signUp.spec.js',
-            //dirname + 'catalog-automation/e2e/FrontEnd/Spec/gmail.spec.js',
+            //dirname + 'e2e/FrontEnd/Spec/gmail.spec.js',
             dirname + 'e2e/FrontEnd/Spec/login.spec.js',
-            dirname + 'catalog-automation/e2e/FrontEnd/Spec/brandDetails.spec.js',
-            dirname + 'catalog-automation/e2e/FrontEnd/Spec/brandChannels.spec.js',
-            dirname + 'catalog-automation/e2e/FrontEnd/Spec/shotSelection.spec.js',
-            dirname + 'catalog-automation/e2e/FrontEnd/Spec/styling.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/shotSelection.spec.js',
+            dirname + 'e2e/FrontEnd/Spec/styling.spec.js',
 
             //Admin Panel
-            // dirname + 'catalog-automation/e2e/Admin/Spec/adminLogin.spec.js',
-            dirname + 'catalog-automation/e2e/Admin/Spec/brandListing.spec.js',
-            dirname + 'catalog-automation/e2e/Admin/Spec/contentRequestListing.spec.js',
-            // dirname + 'catalog-automation/e2e/Admin/Spec/contentListing.spec.js',
-            // dirname + 'catalog-automation/e2e/Admin/Spec/bulkEdit.spec.js',
-            // dirname + 'catalog-automation/e2e/Admin/Spec/contentLibrary.spec.js',
-            dirname + 'catalog-automation/e2e/Admin/Spec/deleteFromAdmin.spec.js',
+            // dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
+            dirname + 'e2e/Admin/Spec/brandListing.spec.js',
+            dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
+            // dirname + 'e2e/Admin/Spec/contentListing.spec.js',
+            // dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
+            // dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
+            dirname + 'e2e/Admin/Spec/deleteFromAdmin.spec.js',
 
         ]
 
@@ -80,7 +80,7 @@ exports.config = {
 
     onPrepare: function () {
          console.log(' set path = ' + dirname);
-         console.log(dirname +'catalog-automation/e2e/Admin/Spec');
+         console.log(dirname +'e2e/Admin/Spec');
 
         // For initializing the Console Logs
         browser.logger = log4js.getLogger('protractorLog4js');
@@ -95,7 +95,7 @@ exports.config = {
         //Initializing the reports
         jasmine.getEnv().addReporter(
             new Jasmine2HtmlReporter({
-                savePath: dirname + 'catalog-automation/Reports',
+                savePath: dirname + 'Reports',
                 takeScreenshots: true,
                 takeScreenshotsOnlyOnFailures: true,
                 cleanDestination: true
@@ -122,7 +122,7 @@ exports.config = {
     //             text: 'This email contains report generated after running the automation suite. Please find below the test result in html file attached.',
     //             attachments: [
     //                 {
-    //                     'path':'/home/parul/catalog_auto/catalog-automation/Reports/htmlReport.html'
+    //                     'path':'/home/parul/catalog_auto/Reports/htmlReport.html'
     //                 }]
     //         };
     //
