@@ -1,6 +1,7 @@
 // let dirname = process.env['FOLDER_PATH'];
 
-let dirname = '/home/ubuntu/';
+//let dirname = '/home/ubuntu/';
+let dirname= '/var/lib/jenkins/workspace/Protractortest';
 let log4js = require('log4js');
 let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 // let nodeMailer = require('nodemailer');
