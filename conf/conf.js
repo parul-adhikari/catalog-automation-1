@@ -5,6 +5,7 @@ var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
 var nodeMailer = require('nodemailer');
 var readSpecs = require('./readSpecs');
 
+
 exports.config = {
 
     directConnect: true,
@@ -24,7 +25,6 @@ exports.config = {
 
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',
-
 
     suites: {
         SanitySuite:
@@ -110,4 +110,5 @@ exports.config = {
             });
         });
     }
+
 };
