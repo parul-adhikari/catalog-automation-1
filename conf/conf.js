@@ -1,78 +1,42 @@
 // let dirname = process.env['FOLDER_PATH'];
-
-let dirname = '/home/parul/catalog_auto/catalog-automation/'
-let log4js = require('log4js');
-let Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
-let nodeMailer = require('nodemailer');
+var dirname = '/home/parul/Protractor Automation/catalog-automation/'
+var log4js = require('log4js');
+var Jasmine2HtmlReporter = require('protractor-jasmine2-html-reporter');
+var nodeMailer = require('nodemailer');
+var readSpecs = require('./readSpecs');
 
 exports.config = {
 
-
-
-
     directConnect: true,
 
-    // Capabilities to be passed to the webdriver instance.
+// Capabilities to be passed to the webdriver instance.
     multiCapabilities: [
         {
-
             'browserName': 'chrome',
-            // chromeOptions: {
-            //
-            //     args: ["--headless", "--disable-gpu", "--window-size=800x600"]
-            //
-            //     // {
-            //     //     'browserName':'firefox'
-            //     //
-            //     //
-            // }
+            chromeOptions: {
+
+                // args: ["--headless", "--disable-gpu", "--window-size=800x600"]
+                args: ['--incognito']
+            }
         }
 
     ],
-//
-//     params: {
-// allContent    },
 
     // Framework to use. Jasmine is recommended.
     framework: 'jasmine',
 
 
     suites: {
-        SanitySuite: [
-
-
-
-            //Brand Portal
-            // dirname + 'e2e/FrontEnd/Spec/home.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/signUp.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/gmail.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/login-front-end.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/brandDetails.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/brandChannels.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/shotSelection.spec.js',
-            // dirname + 'e2e/FrontEnd/Spec/styling.spec.js',
-
-            //Admin Panel
-            // dirname + 'e2e/Admin/Spec/adminLogin.spec.js',
-            // dirname + 'e2e/Admin/Spec/brandListing.spec.js',
-            // dirname + 'e2e/Admin/Spec/contentRequestListing.spec.js',
-            // dirname + 'e2e/Admin/Spec/contentListing.spec.js',
-            // dirname + 'e2e/Admin/Spec/bulkEdit.spec.js',
-            // dirname + 'e2e/Admin/Spec/contentLibrary.spec.js',
-            // dirname + 'e2e/Admin/Spec/deleteFromAdmin.spec.js',
-
-            //React Admin
-            dirname + 'e2e/ReactAdmin/Spec/login-spec.js',
-            dirname + 'e2e/ReactAdmin/Spec/contentRequest-spec.js',
-        ]
-
+        SanitySuite:
+        //Test cases to run
+            readSpecs.returnSpecs()
     },
 
     helpers: ["../node_modules/jasmine-expect/index.js"],
 
     // Options to be passed to Jasmine.
     jasmineNodeOpts: {
-        defaultTimeoutInterval: 90000
+        defaultTimeoutInterval: 50000
     },
 
     beforeLaunch: function () {
@@ -90,13 +54,11 @@ exports.config = {
     },
 
     onPrepare: function () {
-
         // For initializing the Console Logs
         browser.logger = log4js.getLogger('protractorLog4js');
 
         //For Url loading...
         browser.ignoreSynchronization = true;
-        //browser.waitForAngularEnabled = true;
         browser.logger.info("Starting Test With Logs");
         browser.driver.manage().window().maximize();
         browser.logger.info("Url is loading....");
@@ -107,7 +69,7 @@ exports.config = {
                 savePath: dirname + 'Reports',
                 takeScreenshots: true,
                 takeScreenshotsOnlyOnFailures: true,
-                cleanDestination: true
+                // cleanDestination: true
             })
         );
     },
@@ -131,7 +93,7 @@ exports.config = {
                 text: 'This email contains report generated after running the automation suite. Please find below the test result in html file attached.',
                 attachments: [
                     {
-                        'path':'/home/parul/catalog_auto/catalog-automation/Reports/htmlReport.html'
+                        'path':'/home/parul/Protractor Automation/catalog-automation/Reports/htmlReport.html'
                     }]
             };
 
